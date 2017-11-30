@@ -1,0 +1,25 @@
+@import "./base";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: $sans_serif_font;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea, button {
+  font-size: 1rem;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-radius: 0;
+  appearance: none;
+  font-family: $sans_serif_font;
+}
