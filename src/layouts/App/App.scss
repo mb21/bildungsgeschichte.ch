@@ -1,4 +1,8 @@
 @import "../../styles/base";
 
 .App {
+  .container {
+    max-width: 1000px;
+    padding: 0 100px;
+  }
 }

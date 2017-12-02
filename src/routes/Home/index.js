@@ -1,9 +1,21 @@
 import React from 'react'
 
-export const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
-)
+export default class Home extends React.Component {
 
-export default Home
+  handleSubmit = e => {
+    e.preventDefault();
+    this.props.history.push("/records?q=" + encodeURI(this.refs.searchInput.value) );
+  }
+
+  render() {
+    return (
+    <div>
+      <p>Willkommen beim Wissensportal Bildungsgeschichte Schweiz</p>
+      <form onSubmit={this.handleSubmit}>
+        <input type="text" ref="searchInput" placeholder="Suche" />
+        <input type="submit" value="🔍" />
+      </form>
+    </div>
+    )
+  }
+}
