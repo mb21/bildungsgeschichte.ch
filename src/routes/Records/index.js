@@ -1,8 +1,9 @@
 import React from 'react'
 
 import {queryRecords} from '../../utils'
+import {translate}    from '../../utils/translate'
 
-export default class Records extends React.Component {
+class Records extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -24,3 +25,5 @@ export default class Records extends React.Component {
     )
   }
 }
+
+export default translate('Records')(Records)

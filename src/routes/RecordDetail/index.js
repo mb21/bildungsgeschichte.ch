@@ -1,8 +1,9 @@
 import React from 'react'
 
-import {getRecord} from '../../utils'
+import {getRecord}    from '../../utils'
+import {translate}    from '../../utils/translate'
 
-export default class RecordDetail extends React.Component {
+class RecordDetail extends React.Component {
   constructor(props) {
     super(props)
 
@@ -27,3 +28,5 @@ export default class RecordDetail extends React.Component {
     )
   }
 }
+
+export default translate('RecordDetail')(RecordDetail)

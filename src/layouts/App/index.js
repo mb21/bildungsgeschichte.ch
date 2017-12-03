@@ -4,6 +4,7 @@ import {
   Route
 } from 'react-router-dom'
 
+import {langs}       from '../../utils/translate'
 import Header        from '../../components/Header'
 
 import Home          from '../../routes/Home'
@@ -13,19 +14,34 @@ import Records       from '../../routes/Records'
 import './App.css'
 import '../../styles/scaffolds.css'
 
-export const App = () => (
-  <Router>
-    <div className="App">
-      <Header />
-      <div className="container">
-        <main>
-          <Route exact path="/"                           component={Home} />
-          <Route exact path="/records/:id"                component={RecordDetail} />
-          <Route exact path="/records"                    component={Records} />
-        </main>
-      </div>
-    </div>
-  </Router>
-)
+let routes = [];
+[ { path: "/",            component: Home }
+, { path: "/records/:id", component: RecordDetail }
+, { path: "/records",     component: Records }
+].forEach(r => {
+  langs.forEach( lang => {
+    routes.push({
+      path: "/" + lang + r.path
+    , component: r.component
+    });
+  });
+});
 
-export default App;
+export const App = () => {
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <div className="container">
+          <main>
+            {routes.map( (r, i) =>
+              <Route key={r.path} exact path={r.path} component={r.component} />
+            )}
+          </main>
+        </div>
+      </div>
+    </Router>
+  )
+}
+
+export default App

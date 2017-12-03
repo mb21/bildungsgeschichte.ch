@@ -1,14 +1,20 @@
 import React    from 'react'
 import { Link } from 'react-router-dom'
 
+import {translate, getBaseUrl} from '../../utils/translate'
+
 import './Header.css'
 
-export const Header = () => (
-  <header className="Header">
-    <Link to="/">
-      Wissensportal Bildungsgeschichte Schweiz
-    </Link>
-  </header>
-)
+class Header extends React.Component {
+  render() {
+    return (
+      <header className="Header">
+        <Link to={ getBaseUrl() }>
+          { this.props.strings.appTitle }
+        </Link>
+      </header>
+    )
+  }
+}
 
-export default Header
+export default translate('Global')(Header)
