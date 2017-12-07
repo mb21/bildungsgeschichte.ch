@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {queryRecords} from '../../utils'
-import {translate, getLocalizedProp}    from '../../utils/translate'
+import {translate, getLocalizedProp} from '../../utils/translate'
 
 import './Records.css'
 
@@ -31,7 +31,7 @@ class Records extends React.Component {
       <div className="Records">
         <p>{ typeof this.state.nrHits === "number"
              ? this.state.nrHits + ' ' + this.props.strings.foundDocs
-             : 'Suche...'
+             : this.props.strings.loading
         }</p>
         { this.state.records.map( rec => {
           const doc = rec._source.doc.properties
@@ -44,7 +44,7 @@ class Records extends React.Component {
               </h3>
               <p>{ this.props.strings.collection + ': ' + getLocalizedProp(doc, 'collection') }</p>
               <p>{ doc.source }</p>
-              <p>{ doc.body }</p>
+              <p>{ doc.body.substr(0, 400) + '...' }</p>
             </div>
           )
         }) }
