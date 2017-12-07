@@ -4,5 +4,23 @@
   background: $background_color;
   height: 40px;
   padding: 0 100px;
+
+  .langs {
+    float: right;
+    >li {
+      display: inline-block;
+      list-style: none;
+    }
+    a {
+      color: white;
+      padding: 5px;
+      margin-left: 5px;
+      text-decoration: none;
+      background-color: $primary_dark;
+      &.active, &:hover {
+        background-color: $primary_light;
+      }
+    }
+  }
 }
 

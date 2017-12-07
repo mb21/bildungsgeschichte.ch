@@ -6,7 +6,6 @@ import en from '../i18n/en'
 import fr from '../i18n/fr'
 import it from '../i18n/it'
 
-const getCurrentLang = () => window.location.pathname.substr(1, 2)
 const languages = {
   de
 , en
@@ -14,9 +13,18 @@ const languages = {
 , it
 }
 
-export const langs      = ["de", "fr", "it", "en"]
-export const userLang   = (navigator.language || navigator.userLanguage || "de").split("-")[0]
-export const getBaseUrl = () => "/" + getCurrentLang()
+export const getCurrentLang     = () => window.location.pathname.substr(1, 2)
+export const langs              = ["de", "fr", "it", "en"]
+export const userLang           = (navigator.language || navigator.userLanguage || "de").split("-")[0]
+export const getBaseUrl         = () => "/" + getCurrentLang()
+export const getSwitchToLangUrl = l => {
+  const pth  =  window.location.pathname
+      , path = langs.indexOf( pth.substr(1, 2) ) > -1
+               ? pth.substr(3)
+               : pth
+      ;
+  return ['/', l, path, window.location.search].join('')
+}
 
 export const getLocalizedProp = (doc, name) => {
   switch ( getCurrentLang() ) {
