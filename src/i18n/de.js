@@ -1,6 +1,7 @@
 export default {
   Global: {
-    appTitle: 'Wissensportal Bildungsgeschichte Schweiz'
+    appTitle:   'Wissensportal Bildungsgeschichte Schweiz'
+  , collection: 'Sammlung'
   }
 , Home: {
     welcome: 'Willkommen im Wissensportal Bildungsgeschichte Schweiz'
@@ -8,7 +9,6 @@ export default {
 , RecordDetail: {
   }
 , Records: {
-    collection: 'Sammlung'
-  , foundDocs: 'Dokumente gefunden'
+    foundDocs: 'Dokumente gefunden'
   }
 }

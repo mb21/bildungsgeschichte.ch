@@ -29,4 +29,4 @@ class Header extends React.Component {
   }
 }
 
-export default translate('Global')(Header)
+export default translate()(Header)

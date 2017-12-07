@@ -56,7 +56,8 @@ export const translate = function(key) {
         document.title = languages[currentLang].Global.appTitle
         document.body.lang = currentLang
 
-        const strings = languages[currentLang][key]
+        const dicts   = languages[currentLang]
+        const strings = {...dicts.Global, ...dicts[key]}
         return <Component {...this.props} {...this.state} strings={strings} />
       }
     }
