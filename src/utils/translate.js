@@ -18,6 +18,19 @@ export const langs      = ["de", "fr", "it", "en"]
 export const userLang   = (navigator.language || navigator.userLanguage || "de").split("-")[0]
 export const getBaseUrl = () => "/" + getCurrentLang()
 
+export const getLocalizedProp = (doc, name) => {
+  switch ( getCurrentLang() ) {
+    case 'de':
+      return doc[name + '_de'] || doc[name + '_en'] || doc[name + '_fr'] || doc[name + '_it']
+    case 'fr':
+      return doc[name + '_fr'] || doc[name + '_en'] || doc[name + '_de'] || doc[name + '_it']
+    case 'it':
+      return doc[name + '_it'] || doc[name + '_en'] || doc[name + '_fr'] || doc[name + '_de']
+    default:
+      return doc[name + '_en'] || doc[name + '_de'] || doc[name + '_fr'] || doc[name + '_de']
+  }
+}
+
 // Higher Order Component, adapted from https://stackoverflow.com/a/33422278/214446
 export const translate = function(key) {
   return Component => {

@@ -1,7 +1,9 @@
 import React from 'react'
 
 import {queryRecords} from '../../utils'
-import {translate}    from '../../utils/translate'
+import {translate, getLocalizedProp}    from '../../utils/translate'
+
+import './Records.css'
 
 class Records extends React.Component {
   constructor(props) {
@@ -11,16 +13,37 @@ class Records extends React.Component {
     };
 
     const q = new URLSearchParams(document.location.search).get("q");
-    queryRecords(q).then( data => {
-      console.log(data);
-      this.setState({records: data});
-    });
+    queryRecords(q)
+      .then( d => d.json() )
+      .then( json => {
+        if (json.timed_out) {
+          alert("search timed out");
+        } else {
+          this.setState({ nrHits:  json.hits.total
+                        , records: json.hits.hits
+                        });
+        }
+      });
   }
 
   render() {
     return (
-      <div>
-        <h2>Records</h2>
+      <div className="Records">
+        <p>{ typeof this.state.nrHits === "number"
+             ? this.state.nrHits + ' ' + this.props.strings.foundDocs
+             : 'Suche...'
+        }</p>
+        { this.state.records.map( rec => {
+          const doc = rec._source.doc.properties
+          return (
+            <div key={rec._id} className="record">
+              <h3>{ getLocalizedProp(doc, 'title') }</h3>
+              <p>{ this.props.strings.collection + ': ' + getLocalizedProp(doc, 'collection') }</p>
+              <p>{ doc.source }</p>
+              <p>{ doc.body }</p>
+            </div>
+          )
+        }) }
       </div>
     )
   }

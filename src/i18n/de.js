@@ -8,5 +8,7 @@ export default {
 , RecordDetail: {
   }
 , Records: {
+    collection: 'Sammlung'
+  , foundDocs: 'Dokumente gefunden'
   }
 }
