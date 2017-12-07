@@ -6,7 +6,7 @@ class Home extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    this.props.history.push(getBaseUrl() + "/records?q=" + encodeURI(this.refs.searchInput.value) );
+    this.props.history.push(getBaseUrl() + "/records/?q=" + encodeURI(this.refs.searchInput.value) );
   }
 
   render() {

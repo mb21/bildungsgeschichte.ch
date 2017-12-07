@@ -47,7 +47,7 @@ export const translate = function(key) {
         const currentLang = getCurrentLang()
 
         if (currentLang === "") {
-          return <Redirect to={"/" + userLang} />
+          return <Redirect to={ ["/", userLang, "/"].join("") } />
         }
         if (languages[currentLang] === undefined) {
           return <div>Language <code>{currentLang}</code> not found.</div>

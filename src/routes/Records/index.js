@@ -37,7 +37,11 @@ class Records extends React.Component {
           const doc = rec._source.doc.properties
           return (
             <div key={rec._id} className="record">
-              <h3>{ getLocalizedProp(doc, 'title') }</h3>
+              <h3>
+                <a href={rec._id}>
+                  { getLocalizedProp(doc, 'title') }
+                </a>
+              </h3>
               <p>{ this.props.strings.collection + ': ' + getLocalizedProp(doc, 'collection') }</p>
               <p>{ doc.source }</p>
               <p>{ doc.body }</p>

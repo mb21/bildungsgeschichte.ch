@@ -1,7 +1,9 @@
 import React from 'react'
 import {
-  BrowserRouter as Router,
-  Route
+  BrowserRouter as Router
+, Redirect
+, Route
+, Switch
 } from 'react-router-dom'
 
 import {langs}       from '../../utils/translate'
@@ -15,14 +17,16 @@ import './App.css'
 import '../../styles/scaffolds.css'
 
 let routes = [];
-[ { path: "/",            component: Home }
+[ { path: "",             component: props => <Redirect to={props.location.pathname + '/'} /> }
+, { path: "/",            component: Home }
 , { path: "/records/:id", component: RecordDetail }
-, { path: "/records",     component: Records }
+, { path: "/records/",    component: Records }
 ].forEach(r => {
   langs.forEach( lang => {
     routes.push({
       path: "/" + lang + r.path
     , component: r.component
+    , render:    r.render
     });
   });
 });
@@ -34,9 +38,12 @@ export const App = () => {
         <Header />
         <div className="container">
           <main>
-            {routes.map( (r, i) =>
-              <Route key={r.path} exact path={r.path} component={r.component} />
-            )}
+            <Switch>
+              {routes.map( (r, i) =>
+                <Route key={r.path} exact strict path={r.path} component={r.component} />
+              )}
+              <Route key="fallback" path="*" component={ () => <Redirect to="/" /> } />
+            </Switch>
           </main>
         </div>
       </div>
