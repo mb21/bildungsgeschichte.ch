@@ -1,5 +1,7 @@
 # Wissensportal Bildungsgeschichte Schweiz
 
+Testable under: <http://mb21.gitlab.io>
+
 ## Setup
 
 Install `yarn`. If you are on macOS:
@@ -21,6 +23,13 @@ Run development server:
 
 ## Deploy
 
+To publish directly to GitHub Pages:
+
+    $ yarn deploy
+
+Otherwise:
+
     $ yarn build
 
 Then copy the `/build` folder to your web server.
+
