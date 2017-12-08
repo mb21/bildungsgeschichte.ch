@@ -15,7 +15,11 @@ const languages = {
 
 export const getCurrentLang     = () => window.location.pathname.substr(1, 2)
 export const langs              = ["de", "fr", "it", "en"]
-export const userLang           = (navigator.language || navigator.userLanguage || "de").split("-")[0]
+export const userLang           = () => {
+  const l = (navigator.language || navigator.userLanguage).split("-")[0]
+  // TODO: replace `["de"]` with `langs`
+  return ["de"].indexOf(l) > -1 ? l : "de"
+}
 export const getBaseUrl         = () => "/" + getCurrentLang()
 export const getSwitchToLangUrl = l => {
   const pth  =  window.location.pathname
@@ -47,7 +51,7 @@ export const translate = function(key) {
         const currentLang = getCurrentLang()
 
         if (currentLang === "") {
-          return <Redirect to={ ["/", userLang, "/"].join("") } />
+          return <Redirect to={ ["/", userLang(), "/"].join("") } />
         }
         if (languages[currentLang] === undefined) {
           return <div>Language <code>{currentLang}</code> not found.</div>

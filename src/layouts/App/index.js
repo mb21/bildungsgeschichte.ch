@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router
 , Redirect
 , Route
-, Switch
 } from 'react-router-dom'
 
 import {langs}       from '../../utils/translate'
@@ -39,12 +38,9 @@ export const App = () => {
         <Header />
         <div className="container">
           <main>
-            <Switch>
-              {routes.map( (r, i) =>
-                <Route key={r.path} exact strict path={r.path} component={r.component} />
-              )}
-              <Route key="fallback" path="*" component={ () => <Redirect to="/" /> } />
-            </Switch>
+            {routes.map( (r, i) =>
+              <Route key={r.path} exact strict path={r.path} component={r.component} />
+            )}
           </main>
           <nav>
             <Facets />
