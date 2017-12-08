@@ -2,7 +2,9 @@
 
 .App {
   .container {
-    max-width: 1000px;
-    padding: 0 100px;
+    display: flex;
+  }
+  main {
+    padding: 0 $layout_padding;
   }
 }

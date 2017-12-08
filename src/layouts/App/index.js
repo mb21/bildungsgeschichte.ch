@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 
 import {langs}       from '../../utils/translate'
+import Facets        from '../../components/Facets'
 import Header        from '../../components/Header'
 
 import Home          from '../../routes/Home'
@@ -45,6 +46,9 @@ export const App = () => {
               <Route key="fallback" path="*" component={ () => <Redirect to="/" /> } />
             </Switch>
           </main>
+          <nav>
+            <Facets />
+          </nav>
         </div>
       </div>
     </Router>

@@ -1,0 +1,19 @@
+@import "../../styles/base";
+
+.Facets {
+  background: $background_color;
+  width: 300px;
+
+  .facets {
+    padding: 20px;
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      list-style-type: none;
+    }
+    .label {
+      cursor: pointer;
+    }
+  }
+}
