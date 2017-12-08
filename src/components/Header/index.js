@@ -16,11 +16,12 @@ class Header extends React.Component {
         <ul className="langs">
           { langs.map( l =>
               <li key={l}>
-                <a className={l === currentLang ? 'active' : ''}
-                   href={ getSwitchToLangUrl(l) }
-                   >
-                   { l.toUpperCase() }
-                </a>
+                <Link
+                  to={ getSwitchToLangUrl(l) }
+                  className={l === currentLang ? 'active' : ''}
+                  >
+                  { l.toUpperCase() }
+                </Link>
               </li>
             )}
         </ul>
