@@ -1,0 +1,15 @@
+@import "../../styles/base";
+
+.Home {
+
+  .searchfield {
+    height: 80px;
+    width: 800px;
+    padding: 10px 30px;
+    background-color: $background_color;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+  }
+
+}
