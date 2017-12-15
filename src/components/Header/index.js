@@ -10,21 +10,23 @@ class Header extends React.Component {
     const currentLang = getCurrentLang();
     return (
       <header className="Header">
-        <Link to={ getBaseUrl() }>
-          { this.props.strings.appTitle }
-        </Link>
-        <ul className="langs">
-          { langs.map( l =>
-              <li key={l}>
-                <Link
-                  to={ getSwitchToLangUrl(l) }
-                  className={l === currentLang ? 'active' : ''}
-                  >
-                  { l.toUpperCase() }
-                </Link>
-              </li>
-            )}
-        </ul>
+        <div className="container">
+          <Link to={ getBaseUrl() }>
+            { this.props.strings.appTitle }
+          </Link>
+          <ul className="langs">
+            { langs.map( l =>
+                <li key={l}>
+                  <Link
+                    to={ getSwitchToLangUrl(l) }
+                    className={l === currentLang ? 'active' : ''}
+                    >
+                    { l.toUpperCase() }
+                  </Link>
+                </li>
+              )}
+          </ul>
+        </div>
       </header>
     )
   }
