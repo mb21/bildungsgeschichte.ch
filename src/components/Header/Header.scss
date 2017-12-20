@@ -2,9 +2,15 @@
 
 .Header {
   background: $background_color;
+  box-shadow: 0 0 5px $border_color;
   font-weight: $bold_font_weight;
   height: 80px;
   padding: 0 $layout_padding;
+
+  .logo {
+    height: 56px;
+    margin: 12px 20px 0 0;
+  }
 
   .langs {
     float: right;

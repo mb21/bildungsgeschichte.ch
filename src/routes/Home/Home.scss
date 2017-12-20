@@ -2,14 +2,43 @@
 
 .Home {
 
+  .welcome, .introduction {
+    text-align: center;
+    max-width: 700px;
+  }
+
+  .searcharea {
+    position: relative;
+  }
+
   .searchfield {
-    height: 80px;
-    width: 800px;
-    padding: 10px 30px;
-    background-color: $background_color;
+    height: 70px;
+    width: 700px;
+    padding: 10px 70px 10px 20px;
+    background-color: $secondary_light;
     border: none;
     border-radius: 5px;
     font-size: 30px;
+  }
+
+  .button {
+    position: absolute;
+    right: 0;
+    height: 70px;
+    width: 70px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 8px;
+  }
+
+  .lupe {
+    width: 50px;
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    top: 0px;
   }
 
 }

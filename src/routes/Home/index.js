@@ -3,6 +3,7 @@ import React from 'react'
 import {translate, getBaseUrl} from '../../utils/translate'
 
 import './Home.css'
+import Lupe from './lupe.svg'
 
 class Home extends React.Component {
 
@@ -14,10 +15,12 @@ class Home extends React.Component {
   render() {
     return (
     <div className="Home">
-      <p>{ this.props.strings.welcome }</p>
-      <form onSubmit={this.handleSubmit}>
+      <h2 className="welcome" >{ this.props.strings.welcome }</h2>
+      <p className="introduction" >{ this.props.strings.quickInfo }</p>
+      <form onSubmit={this.handleSubmit} className="searcharea" >
         <input type="text" ref="searchInput" className="searchfield" />
-        <input type="submit" value="🔍" />
+        <img alt="Search" src={Lupe} className="lupe" />
+        <input type="submit" value="" className="button" />
       </form>
     </div>
     )

@@ -5,6 +5,15 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: $sans_serif_font;
+  color: $black_color;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+p {
+  line-height: 20px;
 }
 
 a {

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import {translate, getBaseUrl, langs, getCurrentLang, getSwitchToLangUrl} from '../../utils/translate'
 
 import './Header.css'
+import Logo from './logo-wbgs.svg'
 
 class Header extends React.Component {
   render() {
@@ -11,7 +12,8 @@ class Header extends React.Component {
     return (
       <header className="Header">
         <Link to={ getBaseUrl() }>
-          { this.props.strings.appTitle }
+          <img alt="Logo" src={Logo} className="logo">
+          </img>
         </Link>
         <ul className="langs">
           { langs.map( l =>

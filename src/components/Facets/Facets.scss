@@ -2,15 +2,41 @@
 
 .Facets {
   background: $background_color;
-  width: 300px;
+  width: 400px;
 
   .facets {
-    padding: 20px;
+    padding: 10px 20px;
+    margin: 0;
+    font-family: $sans_serif_font;
+    font-weight: $bold_font_weight;
+    line-height: 44px;
+    font-size: 17px;
     ul {
-      padding-left: 20px;
+      padding-left: 0;
     }
     li {
       list-style-type: none;
+      input[type="checkbox"] {
+        -webkit-appearance: none;
+      	background-color: $background_color;
+      	border: 3px solid $black_color;
+      	box-shadow: none;
+      	padding: 8px;
+        top: 7px;
+      	border-radius: 2px;
+      	display: inline-block;
+      	position: relative;
+        margin-right: 20px;
+        }
+      input[type="checkbox"]:hover {
+        background-color: $black_color;
+      }
+      input[type="checkbox"]:checked {
+        background-color: $primary_light;
+        border-color: $primary_light;
+        color: white;
+        content: "X"
+      }
     }
     .label {
       cursor: pointer;

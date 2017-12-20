@@ -5,7 +5,8 @@ export default {
   , loading:    'Lädt...'
   }
 , Home: {
-    welcome: 'Willkommen im Wissensportal Bildungsgeschichte Schweiz'
+    welcome: 'Willkommen beim Wissensportal Bildungsgeschichte Schweiz'
+  , quickInfo: 'Dieses Wissensportal ist ein Projekt der Uni Zürich. Ein kurzer Erklärungstext darüber, was das Wissensportal Bildungsgeschichte Schweiz ist und wozu es dient.'
   }
 , RecordDetail: {
   }
