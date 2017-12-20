@@ -1,5 +1,6 @@
 import React    from 'react'
 import { Link } from 'react-router-dom'
+import URLSearchParams from 'url-search-params'; //polyfill
 
 import {queryRecords} from '../../utils'
 import {translate, getLocalizedProp} from '../../utils/translate'

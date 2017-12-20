@@ -11,22 +11,23 @@ class Header extends React.Component {
     const currentLang = getCurrentLang();
     return (
       <header className="Header">
-        <Link to={ getBaseUrl() }>
-          <img alt="Logo" src={Logo} className="logo">
-          </img>
-        </Link>
-        <ul className="langs">
-          { langs.map( l =>
-              <li key={l}>
-                <Link
-                  to={ getSwitchToLangUrl(l) }
-                  className={l === currentLang ? 'active' : ''}
-                  >
-                  { l.toUpperCase() }
-                </Link>
-              </li>
-            )}
-        </ul>
+        <div className="container">
+          <Link to={ getBaseUrl() }>
+            <img alt={ this.props.strings.appTitle } src={Logo} className="logo" />
+          </Link>
+          <ul className="langs">
+            { langs.map( l =>
+                <li key={l}>
+                  <Link
+                    to={ getSwitchToLangUrl(l) }
+                    className={l === currentLang ? 'active' : ''}
+                    >
+                    { l.toUpperCase() }
+                  </Link>
+                </li>
+              )}
+          </ul>
+        </div>
       </header>
     )
   }
