@@ -3,7 +3,25 @@
 .Records {
   .record {
     background: $background_color;
-    padding: 10px 30px;
+    padding: 25px 30px 5px 30px;
     margin-bottom: 30px;
+  }
+
+  .hits {
+    margin: 20px 0;
+    font-weight: $bold_font_weight;
+    color: $primary_dark;
+  }
+
+  h3 {
+    margin: 0 0 20px 0;
+  }
+  a:hover {
+    text-decoration: none;
+    background-color: $border_color;
+  }
+
+  p {
+    margin: 0 0 20px 0;
   }
 }

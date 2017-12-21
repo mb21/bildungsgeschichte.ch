@@ -23,7 +23,7 @@
 
   .button {
     position: absolute;
-    right: 0;
+    right: 10%;
     height: 70px;
     width: 70px;
     -webkit-appearance: none;
@@ -31,13 +31,14 @@
     border: none;
     box-shadow: none;
     padding: 8px;
+    cursor: pointer;
   }
 
   .lupe {
     width: 50px;
     position: absolute;
     padding: 10px;
-    right: 0;
+    right: 10%;
     top: 0px;
   }
 

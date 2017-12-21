@@ -29,4 +29,26 @@
       }
     }
   }
+
+  .button {
+    position: absolute;
+    right: 0;
+    top: 4px;
+    height: 70px;
+    width: 70px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .lupe {
+    width: 30px;
+    position: absolute;
+    padding: 20px;
+    right: 0;
+    top: 4px;
+  }
 }

@@ -31,7 +31,7 @@ class Records extends React.Component {
   render() {
     return (
       <div className="Records">
-        <p>{ typeof this.state.nrHits === "number"
+        <p className="hits">{ typeof this.state.nrHits === "number"
              ? this.state.nrHits + ' ' + this.props.strings.foundDocs
              : this.props.strings.loading
         }</p>

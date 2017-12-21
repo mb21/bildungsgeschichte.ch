@@ -36,15 +36,15 @@ export const App = () => {
     <Router>
       <div className="App">
         <Header />
+        <nav>
+          <Facets />
+        </nav>
         <div className="container -flex">
           <main>
             {routes.map( (r, i) =>
               <Route key={r.path} exact strict path={r.path} component={r.component} />
             )}
           </main>
-          <nav>
-            <Facets />
-          </nav>
         </div>
       </div>
     </Router>

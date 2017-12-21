@@ -4,6 +4,13 @@
   background: $background_color;
   width: 300px;
   margin-left: 30px;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  top: 80px;
+  right: 0;
+  z-index: 100;
+  overflow-y: auto;
 
   .facets {
     padding: 10px 20px;
@@ -15,8 +22,10 @@
     ul {
       padding-left: 0;
     }
-    li {
+    li, label {
       list-style-type: none;
+      width: 100%;
+      cursor: pointer;
       input[type="checkbox"] {
         -webkit-appearance: none;
       	background-color: $background_color;
@@ -30,17 +39,49 @@
         margin-right: 20px;
         }
       input[type="checkbox"]:hover {
-        background-color: $black_color;
+        border: 3px solid $border_color;
+        background-color: $border_color;
+        cursor: pointer;
       }
+
       input[type="checkbox"]:checked {
         background-color: $primary_light;
         border-color: $primary_light;
         color: white;
-        content: "X"
+        content: "";
+      }
+
+      input[type="checkbox"]:checked:after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: absolute;
+        left: 4.66667px;
+        top: .22222px;
+        display: table;
+        width: 6.66667px;
+        height: 13.33333px;
+        border-width: 2px;
+        border-style: solid;
+        border-top: 0;
+        border-left: 0;
+        content: "";
+      }
+
+      .label {
+        width: 100%;
+        display: inline-block;
+        cursor: pointer;
       }
     }
-    .label {
-      cursor: pointer;
+
+    .dropdown {
+      width: 12px;
+      float: right;
+      margin-top: 20px;
     }
+
   }
 }

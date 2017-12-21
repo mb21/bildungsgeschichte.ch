@@ -3,6 +3,8 @@ import React    from 'react'
 import './Facets.css'
 import facets from './facets.json'
 
+import Dropdown from './dropdown.svg'
+
 const toggle = (e) => {
   const children = e.target.nextElementSibling;
   if (children) {
@@ -19,7 +21,7 @@ const renderFacets = f => {
       <span className="label" onClick={toggle}>
         { f.label }
         { hasChildren
-          ? ' ▾'
+          ? <img alt={ f.label } src={Dropdown} className="dropdown" />
           : null
         }
       </span>
