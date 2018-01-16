@@ -1,50 +1,137 @@
-{
-  "label":"Metadata",
-  "children" : [{
-    "label":"Technische Daten",
-    "children":[
-      {"label":"Autorschaft",
-      "children":["Thomas Ruoss", "Anja Giudici", "Nauka Dobler", "Lara Ullmann", "Miriam Mathys", "Claudia Züger", "David Schmocker", "Svetlana Asch", "Susanne Gebauer", "Nicole Merz", "Sabina Staub", "Mirjam Schellenberg", "Mirjam Hösli", "Carmen Flury", "Selin Kilic", "Nancy Eckert", "Stefan Schönenberger", "Simon Isenring", "Anja Gemperle", "Franziska Stegmann", "Melike Hocaoğlu", "Yvette Heimgartner", "Nathanael Schori", "Luca Tanner"]},
-      {"label":"Herausgeber",
-      "children":[]},
-      {"label":"Rechte",
-      "children":[]},
-      {"label":"Projekt",
-      "children":["Bildung in Zahlen", "Forschungsseminar Karin Manz UZH"]},
-      {"label":"Referenz-Publikationen",
-      "children":[]},
-      {"label":"Publikationsort",
-      "children":[]},
-      {"label":"Publikationsjahr",
-      "children":[2012,2013,2014,2015,2016]},
-      {"label":"Version",
-      "children":[]},
-      {"label":"Textgattung",
-      "children":["Periodika","Lehrmittel","Amtsdruckschrifft","Monographie","Akten","Andere"]},
-      {"label":"Medientyp",
-      "children":["Zeichnung","Foto","Grafik","Karte","Video","Statistik","Forschungsdaten","Andere"]},
-      {"label":"Sprache",
-      "children":["de","fr","it"]}
-
-    ]},{
-    "label":"Inhalte",
-    "children":[
-      {"label":"Bezugsort",
-      "children":[{"label":"CH",
-                    "children":["AG","AR","AI","BL","BS","BE","FR","GE","GL","GR","JU","LU","NE","NW","OW","SG","SZ","SO","TG","TI","UR","VD","VS","ZG","ZH"]}]},
-      {"label":"Referenzzeitraum",
-      "children":[1852, 1853, 1854, 1855, 1856, 1857, 1858, 1859, 1860, 1861, 1862, 1863, 1864, 1865, 1866, 1867, 1868, 1869, 1870, 1871, 1872, 1873, 1874, 1875, 1876, 1877, 1878, 1879, 1880, 1881, 1882, 1883, 1884, 1885, 1886, 1887, 1888, 1889, 1890, 1891, 1892, 1893, 1894, 1895, 1896, 1897, 1898, 1899, 1900, 1901, 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981]},
-      {"label":"Bildungssystmatik",
-      "children":["Vorschule","Obligatorische Schule","Mittelschule","Lehrerbildung","Hochschule","Berufsbildung","Weiterbildung","Separation & Integration","Ausserschulische Institution","Privatschule","Andere"]},
-      {"label":"Bezugsthema",
-      "children":["Finanzen & Organisation","Geschlecht","Disziplinieren","Evaluation","Mobilität","Curricula","Didaktik","Gesundheit","Fürsorge","Freizeit","Familie","Kindheit","Jugend","Erwachsene","Andere"]},
-      {"label":"Personen",
-      "children":[]},
-      {"label":"Körperschaften",
-      "children":["Lehrpersonen","Lernende","Behörden","Verbände","Wissenschaft","Eltern","Andere"]},
-      {"label":"Beschreibung",
-      "children":[]}
-      ]
-    }
-  ]
-}
+[{
+	"label": "technische Daten",
+	"children": [{
+		"label": "lang",
+		"children": [{
+			"label": "DE",
+			"children": null,
+			"freq": 1614
+		}, {
+			"label": "FR",
+			"children": null,
+			"freq": 248
+		}, {
+			"label": "IT",
+			"children": null,
+			"freq": 98
+		}],
+		"freq": 0
+	}, {
+		"label": "autorschaft",
+		"children": [{
+			"label": "Susanne Gebauer",
+			"children": null,
+			"freq": 636
+		}, {
+			"label": "Thomas Ruoss",
+			"children": null,
+			"freq": 248
+		}, {
+			"label": "Lara Ullmann",
+			"children": null,
+			"freq": 143
+		}],
+		"freq": 0
+	}, {
+		"label": "herausgeber",
+		"children": null,
+		"freq": 0
+	}, {
+		"label": "rechte",
+		"children": null,
+		"freq": 0
+	}, {
+		"label": "projekt",
+		"children": null,
+		"freq": 0
+	}, {
+		"label": "referenzpub1ikationen",
+		"children": null,
+		"freq": 0
+	}, {
+		"label": "publikationsort",
+		"children": null,
+		"freq": 0
+	}, {
+		"label": "publikationsjahr",
+		"children": null,
+		"freq": 0
+	}, {
+		"label": "version",
+		"children": null,
+		"freq": 0
+	}, {
+		"label": "textgattung",
+		"children": null,
+		"freq": 0
+	}, {
+		"label": "medientyp",
+		"children": [{
+			"label": "Zeichnung",
+			"children": null,
+			"freq": 1614
+		}, {
+			"label": "Foto",
+			"children": null,
+			"freq": 1185
+		}, {
+			"label": "Video",
+			"children": null,
+			"freq": 354
+		}],
+		"freq": 0
+	}],
+	"freq": 0
+}, {
+	"label": "inhalte",
+	"children": [{
+		"label": "bezugsort",
+		"children": null,
+		"freq": 0
+	}, {
+		"label": "koerperschaften",
+		"children": null,
+		"freq": 0
+	}, {
+		"label": "bildungssystematik",
+		"children": [{
+			"label": "Mittelschule",
+			"children": null,
+			"freq": 934
+		}, {
+			"label": "Obligatorische Schule",
+			"children": null,
+			"freq": 908
+		}, {
+			"label": "Lehrerbildung",
+			"children": null,
+			"freq": 666
+		}],
+		"freq": 0
+	}, {
+		"label": "bezugsthema",
+		"children": [{
+			"label": "Geschlecht",
+			"children": null,
+			"freq": 498
+		}, {
+			"label": "Lernende",
+			"children": null,
+			"freq": 326
+		}, {
+			"label": "Behörden",
+			"children": null,
+			"freq": 314
+		}],
+		"freq": 0
+	}, {
+		"label": "personen",
+		"children": null,
+		"freq": 0
+	}, {
+		"label": "beschreibung",
+		"children": null,
+		"freq": 0
+	}],
+	"freq": 0
+}]

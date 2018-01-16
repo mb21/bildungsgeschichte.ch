@@ -48,7 +48,7 @@ class Facets extends React.Component {
     return (
       <div className="Facets">
         <ul className="facets">
-          { facets.children.map(renderFacets) }
+          { facets.map(renderFacets) }
         </ul>
       </div>
     )
