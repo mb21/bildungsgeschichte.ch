@@ -9,18 +9,11 @@ export function getRecord(id) {
 }
 
 // Returns a promise
-export function queryRecords(q) {
-  const url = "http://uzhifetest.eurospider.com/search/uzh_bildungsgeschichte/doc/_search"
+export function queryRecords(q, facets=[]) {
+  const url = "http://uzhifetest.eurospider.com/ife-service/rest/search"
       , query = {
-          "query" : {
-            "bool" : {
-              "must" : {
-                "query_string" : {
-                  "query" : q
-                }
-              }
-            }
-          }
+          "query" : q
+        , facets: facets
         }
       ;
   return fetch(url, {
