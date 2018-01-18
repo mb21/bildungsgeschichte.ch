@@ -21,8 +21,8 @@ class Records extends React.Component {
         if (json.timed_out) {
           alert("search timed out");
         } else {
-          this.setState({ nrHits:  json.hits.total
-                        , records: json.hits.hits
+          this.setState({ nrHits:  json.numberOfHits
+                        , records: json.hits
                         });
         }
       });
@@ -36,11 +36,11 @@ class Records extends React.Component {
              : this.props.strings.loading
         }</p>
         { this.state.records.map( rec => {
-          const doc = rec._source.doc.properties
+          const doc = rec.content
           return (
-            <div key={rec._id} className="record">
+            <div key={rec.id} className="record">
               <h3>
-                <Link to={rec._id}>
+                <Link to={rec.id}>
                   { getLocalizedProp(doc, 'title') }
                 </Link>
               </h3>
