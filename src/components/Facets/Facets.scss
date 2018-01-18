@@ -7,7 +7,7 @@
   display: block;
   position: fixed;
   bottom: 0;
-  top: 80px;
+  top: 70px;
   right: 0;
   z-index: 100;
   overflow-y: auto;
@@ -26,49 +26,6 @@
       list-style-type: none;
       width: 100%;
       cursor: pointer;
-      input[type="checkbox"] {
-        -webkit-appearance: none;
-      	background-color: $background_color;
-      	border: 3px solid $black_color;
-      	box-shadow: none;
-      	padding: 8px;
-        top: 7px;
-      	border-radius: 2px;
-      	display: inline-block;
-      	position: relative;
-        margin-right: 20px;
-        }
-      input[type="checkbox"]:hover {
-        border: 3px solid $border_color;
-        background-color: $border_color;
-        cursor: pointer;
-      }
-
-      input[type="checkbox"]:checked {
-        background-color: $primary_light;
-        border-color: $primary_light;
-        color: white;
-        content: "";
-      }
-
-      input[type="checkbox"]:checked:after {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        -webkit-transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-        position: absolute;
-        left: 4.66667px;
-        top: .22222px;
-        display: table;
-        width: 6.66667px;
-        height: 13.33333px;
-        border-width: 2px;
-        border-style: solid;
-        border-top: 0;
-        border-left: 0;
-        content: "";
-      }
 
       .label {
         width: 100%;
