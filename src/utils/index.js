@@ -1,11 +1,15 @@
-// Returns a promise
+const serverdata = fetch("http://uzhife.eurospider.com/configuration.json").then( d => d.json() );
+
 export function getFacets() {
   return queryRecords("", []).then(f => f.header)
 }
 
 // Returns a promise
-export function getRecord(id) {
-  return fetch("http://uzhifetest.eurospider.com/search/test_collection/doc/" + id, {
+export async function getRecord(id) {
+  const sd = await serverdata
+      , url = sd._links.item.href
+      ;
+  return fetch(url.replace("{id}", id), {
     headers: {
       'Accept': 'application/json'
     }
@@ -13,8 +17,9 @@ export function getRecord(id) {
 }
 
 // Returns a promise
-export function queryRecords(q, facets=[]) {
-  const url = "http://uzhifetest.eurospider.com/ife-service/rest/search"
+export async function queryRecords(q, facets=[]) {
+  const sd = await serverdata
+      , url = sd._links.search.href
       , query = {
           "query" : q
         , facets: facets
