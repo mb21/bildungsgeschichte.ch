@@ -1,7 +1,7 @@
 import React    from 'react'
+import {getFacets}    from '../../utils'
 
 import './Facets.css'
-import facets from './facets.json'
 
 import Dropdown from './dropdown.svg'
 
@@ -13,6 +13,7 @@ const toggle = (e) => {
                              : 'none';
   }
 }
+
 
 const renderFacets = f => {
   const hasChildren = f.children && f.children.length > 0
@@ -44,11 +45,20 @@ const renderFacets = f => {
 }
 
 class Facets extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      facets: []
+    }
+    getFacets().then( f => {
+      this.setState({facets: f})
+    });
+  }
   render() {
     return (
       <div className="Facets">
         <ul className="facets">
-          { facets.map(renderFacets) }
+          { this.state.facets.map(renderFacets) }
         </ul>
       </div>
     )

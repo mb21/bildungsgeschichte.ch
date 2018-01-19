@@ -1,4 +1,9 @@
 // Returns a promise
+export function getFacets() {
+  return queryRecords("", []).then(f => f.header)
+}
+
+// Returns a promise
 export function getRecord(id) {
   return fetch("http://uzhifetest.eurospider.com/search/test_collection/doc/" + id, {
     headers: {

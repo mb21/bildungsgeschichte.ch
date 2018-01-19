@@ -13,7 +13,6 @@ class RecordDetail extends React.Component {
     , record: null
     };
     getRecord(id).then( json => {
-        console.log(json)
         if (!json.found) {
           alert("not found");
         } else {
