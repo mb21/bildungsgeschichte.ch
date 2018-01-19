@@ -17,28 +17,27 @@ const toggle = (e) => {
 
 const renderFacets = f => {
   const hasChildren = f.children && f.children.length > 0
+      , str = f.label
   return (
     <li key={f.label}>
-      <span className="label" onClick={toggle}>
-        { f.label }
-        { hasChildren
-          ? <img alt={ f.label } src={Dropdown} className="dropdown" />
-          : null
-        }
-      </span>
       { hasChildren
-        ? <ul style={ {display: 'none'} }>
-          { typeof f.children[0] === "object"
-            ? f.children.map(renderFacets) //non-leaves
-            : f.children.map(str =>        //leaves
-                <li key={str}>
-                  <input type="checkbox" id={str} />
-                  <label htmlFor={str}>{str}</label>
-                </li>
-              )
-          }
-          </ul>
-        : null
+        ? <div>
+            <span className="label" onClick={toggle}>
+              { f.label }
+              <img alt={ f.label } src={Dropdown} className="dropdown" />
+            </span>
+            <ul style={ {display: 'none'} }>
+            { typeof f.children[0] === "object"
+              ? f.children.map(renderFacets) //non-leaves
+              : null
+            }
+            </ul>
+          </div>
+        : //leave
+          <div>
+            <input type="checkbox" id={str} />
+            <label htmlFor={str}>{str}</label>
+          </div>
       }
     </li>
   )
