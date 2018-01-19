@@ -12,9 +12,7 @@ class RecordDetail extends React.Component {
       id: id
     , record: null
     };
-    getRecord(id)
-      .then( d => d.json() )
-      .then( json => {
+    getRecord(id).then( json => {
         console.log(json)
         if (!json.found) {
           alert("not found");
@@ -26,7 +24,7 @@ class RecordDetail extends React.Component {
 
   render() {
     const doc = this.state.record
-                ? this.state.record._source.doc.properties
+                ? this.state.record._source
                 : null
     return (
       <div className="RecordDetail">

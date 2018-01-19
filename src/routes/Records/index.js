@@ -15,9 +15,7 @@ class Records extends React.Component {
     };
 
     const q = new URLSearchParams(document.location.search).get("q");
-    queryRecords(q)
-      .then( d => d.json() )
-      .then( json => {
+    queryRecords(q).then( json => {
         if (json.timed_out) {
           alert("search timed out");
         } else {

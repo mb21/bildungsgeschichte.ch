@@ -1,11 +1,10 @@
-
 // Returns a promise
 export function getRecord(id) {
-  return fetch("http://uzhifetest.eurospider.com/search/collection1/doc/" + id, {
+  return fetch("http://uzhifetest.eurospider.com/search/test_collection/doc/" + id, {
     headers: {
       'Accept': 'application/json'
     }
-  });
+  }).then( d => d.json() );
 }
 
 // Returns a promise
@@ -23,5 +22,5 @@ export function queryRecords(q, facets=[]) {
     },
     method: "POST",
     body: JSON.stringify(query)
-  });
+  }).then( d => d.json() )
 }
