@@ -28,4 +28,5 @@ export function queryRecords(q, facets=[]) {
     method: "POST",
     body: JSON.stringify(query)
   }).then( d => d.json() )
+    .then( d => {console.log("queryRecords", d); return d;} ) //debug
 }
