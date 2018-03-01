@@ -4,11 +4,12 @@ import {getFacets}    from '../../utils'
 import './Facets.css'
 
 import Dropdown from './dropdown.svg'
+import {getLocalizedProp} from '../../utils/translate'
 
 const toggle = (e) => {
-  const children = e.target.nextElementSibling;
-  if (children) {
-    children.style.display = children.style.display === 'none'
+  const valsUl = e.target.nextElementSibling;
+  if (valsUl) {
+    valsUl.style.display = valsUl.style.display === 'none'
                              ? ''
                              : 'none';
   }
@@ -16,29 +17,26 @@ const toggle = (e) => {
 
 
 const renderFacets = f => {
-  const hasChildren = f.children && f.children.length > 0
-      , str = f.label
   return (
-    <li key={f.label}>
-      { hasChildren
-        ? <div>
-            <span className="label" onClick={toggle}>
-              { f.label }
-              <img alt={ f.label } src={Dropdown} className="dropdown" />
-            </span>
-            <ul style={ {display: 'none'} }>
-            { typeof f.children[0] === "object"
-              ? f.children.map(renderFacets) //non-leaves
-              : null
-            }
-            </ul>
-          </div>
-        : //leave
-          <div>
-            <input type="checkbox" id={str} />
-            <label htmlFor={str}>{str}</label>
-          </div>
+    <li key={f.name}>
+      <span className="label" onClick={toggle}>
+        { getLocalizedProp(f, 'label') }
+        <img alt="" src={Dropdown} className="dropdown" />
+      </span>
+      <ul style={ {display: 'none'} }>
+      { f.values && f.values.length > 0
+        ? f.values.map(v => {
+            const str = v.name
+            return (
+              <li key={str}>
+                <input type="checkbox" id={str} />
+                <label htmlFor={str}>{ getLocalizedProp(v, 'label') }</label>
+              </li>
+            )
+          })
+        : null
       }
+      </ul>
     </li>
   )
 }

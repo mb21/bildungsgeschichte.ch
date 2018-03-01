@@ -1,7 +1,7 @@
 const serverdata = fetch("http://uzhife.eurospider.com/configuration.json").then( d => d.json() );
 
 export function getFacets() {
-  return queryRecords("", []).then(f => f.header)
+  return serverdata.then( d => d.facets )
 }
 
 // Returns a promise
