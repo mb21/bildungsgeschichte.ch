@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import URLSearchParams from 'url-search-params'; //polyfill
 
 import {getCheckedFacets, queryRecords} from '../../utils'
-import {translate, getLocalizedProp} from '../../utils/translate'
+import {translate} from '../../utils/translate'
 
 import './Records.css'
 
@@ -51,12 +51,18 @@ class Records extends React.Component {
             <div key={rec.id} className="record">
               <h3>
                 <Link to={rec.id}>
-                  { getLocalizedProp(doc, 'title') }
+                  { doc.title }
                 </Link>
               </h3>
-              <p>{ this.props.strings.collection + ': ' + getLocalizedProp(doc, 'collection') }</p>
-              <p>{ doc.source }</p>
-              <p>{ doc.body.substr(0, 400) + '...' }</p>
+              <p>{ this.props.strings.collection }</p>
+              <p>format: { doc.format }</p>
+
+              <p>Authors:</p>
+              <ul>{ doc.author.map(a => <li key={a}>{a}</li>) }</ul>
+              <p>editor: { doc.editor }</p>
+              <p>rights: { doc.rights }</p>
+              <p>project: { doc.project }</p>
+              <p>{ doc.body ? doc.body.substr(0, 400) + '...' : ''}</p>
             </div>
           )
         }) }
