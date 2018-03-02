@@ -13,7 +13,7 @@ export async function getRecord(id) {
     headers: {
       'Accept': 'application/json'
     }
-  }).then( d => d.json() );
+  }).then(handleResponse);
 }
 
 // Returns a promise
@@ -32,6 +32,15 @@ export async function queryRecords(q, facets=[]) {
     },
     method: "POST",
     body: JSON.stringify(query)
-  }).then( d => d.json() )
+  }).then(handleResponse)
     .then( d => {console.log("queryRecords", d); return d;} ) //debug
+}
+
+const handleResponse = res => {
+  if (res.ok) {
+    return res.json();
+  } else {
+    alert("Error fetching data");
+    return Promise.reject(res);
+  }
 }
