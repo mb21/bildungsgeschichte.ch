@@ -16,7 +16,7 @@ class Home extends React.Component {
     <div className="Home">
       <h2 className="welcome" >{ this.props.strings.welcome }</h2>
       <p className="introduction" >{ this.props.strings.quickInfo }</p>
-      <SearchField searchCb={ this.handleSubmit } />
+      <SearchField home={true} searchCb={ this.handleSubmit } />
     </div>
     )
   }

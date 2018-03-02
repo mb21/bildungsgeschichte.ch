@@ -108,7 +108,10 @@ class Facets extends React.Component {
   render() {
     return (
       <div className="Facets">
-        <SearchField textChangeCb={e => this.setState({q: e.target.value}) } searchCb={this.search} />
+        <SearchField
+          textChangeCb={e => this.setState({q: e.target.value}) }
+          searchCb={this.search}
+          />
         <ul className="facets">
           { this.state.facets.map(this.renderFacets) }
         </ul>

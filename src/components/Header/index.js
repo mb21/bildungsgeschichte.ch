@@ -5,7 +5,6 @@ import {translate, getBaseUrl, langs, getCurrentLang, getSwitchToLangUrl} from '
 
 import './Header.css'
 import Logo from './logo-wbgs.svg'
-import Lupe from './lupe.svg'
 
 class Header extends React.Component {
   render() {
@@ -28,10 +27,6 @@ class Header extends React.Component {
                 </li>
               )}
           </ul>
-          <form onSubmit={this.handleSubmit} className="searcharea" >
-            <img alt="Search" src={Lupe} className="lupe" />
-            <input type="submit" value="" className="button" />
-          </form>
         </div>
       </header>
     )

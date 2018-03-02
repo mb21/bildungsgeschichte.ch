@@ -7,39 +7,4 @@
     max-width: 700px;
   }
 
-  .searcharea {
-    position: relative;
-  }
-
-  .searchfield {
-    height: 70px;
-    width: 90%;
-    padding: 10px 70px 10px 20px;
-    background-color: $secondary_light;
-    border: none;
-    border-radius: 5px;
-    font-size: 30px;
-  }
-
-  .button {
-    position: absolute;
-    right: 10%;
-    height: 70px;
-    width: 70px;
-    -webkit-appearance: none;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 8px;
-    cursor: pointer;
-  }
-
-  .lupe {
-    width: 50px;
-    position: absolute;
-    padding: 10px;
-    right: 10%;
-    top: 0px;
-  }
-
 }
