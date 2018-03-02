@@ -4,6 +4,17 @@ export function getFacets() {
   return serverdata.then( d => d.facets )
 }
 
+export function getCheckedFacets() {
+  let facets;
+  try {
+    const params = new URLSearchParams(document.location.search);
+    facets = JSON.parse( decodeURIComponent( params.get('facets') ) )
+  } catch(e) {
+    console.error("failed to parse facets URI parameter", e)
+  }
+  return facets || [];
+}
+
 // Returns a promise
 export async function getRecord(id) {
   const sd = await serverdata

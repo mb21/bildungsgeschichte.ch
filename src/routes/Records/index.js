@@ -2,7 +2,7 @@ import React    from 'react'
 import { Link } from 'react-router-dom'
 import URLSearchParams from 'url-search-params'; //polyfill
 
-import {queryRecords} from '../../utils'
+import {getCheckedFacets, queryRecords} from '../../utils'
 import {translate, getLocalizedProp} from '../../utils/translate'
 
 import './Records.css'
@@ -13,17 +13,29 @@ class Records extends React.Component {
     this.state = {
       records: []
     };
+    this.fetchRecords();
+    this.unlistenHistoryChange = this.props.history.listen(loc => {
+      if (loc.pathname.endsWith("records/")) {
+        this.fetchRecords();
+      }
+    });
+  }
 
-    const q = new URLSearchParams(document.location.search).get("q");
-    queryRecords(q).then( json => {
-        if (json.timed_out) {
-          alert("search timed out");
-        } else {
-          this.setState({ nrHits:  json.numberOfHits
-                        , records: json.hits
-                        });
-        }
-      });
+  componentWillUnmount() {
+    this.unlistenHistoryChange();
+  }
+
+  fetchRecords = () => {
+    const params = new URLSearchParams(document.location.search);
+    queryRecords(params.get('q'), getCheckedFacets()).then( json => {
+      if (json.timed_out) {
+        alert("search timed out");
+      } else {
+        this.setState({ nrHits:  json.numberOfHits
+                      , records: json.hits
+                      });
+      }
+    });
   }
 
   render() {
@@ -51,6 +63,16 @@ class Records extends React.Component {
       </div>
     )
   }
+}
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith#Polyfill
+if (!String.prototype.endsWith) {
+  String.prototype.endsWith = function(search, this_len) {
+    if (this_len === undefined || this_len > this.length) {
+      this_len = this.length;
+    }
+    return this.substring(this_len - search.length, this_len) === search;
+  };
 }
 
 export default translate('Records')(Records)
