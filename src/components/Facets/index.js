@@ -74,7 +74,7 @@ class Facets extends React.Component {
           { getLocalizedProp(f, 'label') }
           <img alt="" src={Dropdown} className="dropdown" />
         </span>
-        <ul style={ {display: 'none'} }>
+        <ul>
         { f.values && f.values.length > 0
           ? f.values.map(v => {
               const str = v.name
