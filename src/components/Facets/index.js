@@ -1,26 +1,12 @@
 import React    from 'react'
-import {withRouter}   from 'react-router'
-import {getFacets}    from '../../utils'
 
 import './Facets.css'
 
 import Dropdown from './dropdown.svg'
-import {getCheckedFacets} from '../../utils'
-import {getBaseUrl, getLocalizedProp} from '../../utils/translate'
+import {getLocalizedProp} from '../../utils/translate'
 import SearchField from '../../components/SearchField'
 
 class Facets extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      q: this.props.q || ""
-    , facets: []  // tree for GUI render
-    , checkedFacets: getCheckedFacets() // flattened for submission, of format [{ type: "author", values : ["thomas"] }]
-    }
-    getFacets().then( f => {
-      this.setState({facets: f})
-    });
-  }
 
   toggle = e => {
     const valsUl = e.target.nextElementSibling;
@@ -31,12 +17,12 @@ class Facets extends React.Component {
     }
   }
 
-  handleFacetChange = (valName, facetName, e) => {
+  handleFacetChange = (facetName, valName, e) => {
     const checked = e.target.checked;
     let fs = []
       , foundFacet = false
       ;
-    this.state.checkedFacets.forEach(f => {
+    this.props.checkedFacets.forEach(f => {
       if (f.type === facetName) {
         foundFacet = true;
         let vals = f.values || [];
@@ -57,14 +43,7 @@ class Facets extends React.Component {
       // new facetName
       fs.push({type: facetName, values : [valName] })
     }
-    this.setState({checkedFacets: fs}, this.search);
-  }
-
-  search = () => {
-    const facets = encodeURIComponent( JSON.stringify(this.state.checkedFacets) )
-        , q      = encodeURIComponent( this.state.q )
-        ;
-    this.props.history.push(getBaseUrl() + "/records/?q=" + q + "&facets=" + facets);
+    this.props.onChangeCheckedFacets(fs);
   }
 
   renderFacets = f => {
@@ -78,7 +57,7 @@ class Facets extends React.Component {
         { f.values && f.values.length > 0
           ? f.values.map(v => {
               const str = v.name
-                  , checkedF = this.state.checkedFacets.find(cf => cf.type === f.name)
+                  , checkedF = this.props.checkedFacets.find(cf => cf.type === f.name)
                   , checked  = checkedF && checkedF.values
                                         && checkedF.values.indexOf(v.name) > -1
                   ;
@@ -89,7 +68,7 @@ class Facets extends React.Component {
                     <input type="checkbox"
                       id={str}
                       defaultChecked={checked}
-                      onChange={ this.handleFacetChange.bind(null, str, f.name) }
+                      onChange={ this.handleFacetChange.bind(null, f.name, str) }
                       />
                     <label htmlFor={str}>
                       { getLocalizedProp(v, 'label') + ' ' }
@@ -108,16 +87,13 @@ class Facets extends React.Component {
   render() {
     return (
       <div className="Facets">
-        <SearchField
-          textChangeCb={e => this.setState({q: e.target.value}) }
-          searchCb={this.search}
-          />
+        <SearchField defaultValue={this.props.q} onSubmit={this.props.onChangeQ} />
         <ul className="facets">
-          { this.state.facets.map(this.renderFacets) }
+          { this.props.facets.map(this.renderFacets) }
         </ul>
       </div>
     )
   }
 }
 
-export default withRouter(Facets)
+export default Facets

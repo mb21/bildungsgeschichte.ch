@@ -8,7 +8,7 @@ import './Home.css'
 class Home extends React.Component {
 
   handleSubmit = q => {
-    this.props.history.push(getBaseUrl() + "/records/?q=" + q);
+    this.props.history.push(getBaseUrl() + "/records/?q=" + encodeURIComponent(q));
   }
 
   render() {
@@ -16,7 +16,7 @@ class Home extends React.Component {
     <div className="Home">
       <h2 className="welcome" >{ this.props.strings.welcome }</h2>
       <p className="introduction" >{ this.props.strings.quickInfo }</p>
-      <SearchField home={true} searchCb={ this.handleSubmit } />
+      <SearchField home={true} onSubmit={ this.handleSubmit } />
     </div>
     )
   }

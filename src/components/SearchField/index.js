@@ -7,7 +7,7 @@ class SearchField extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    this.props.searchCb( this.refs.searchInput.value )
+    this.props.onSubmit( this.refs.searchInput.value )
   }
 
   render() {
@@ -16,9 +16,14 @@ class SearchField extends React.Component {
         onSubmit={this.handleSubmit}
         className={'SearchField ' + (this.props.home ? '-home' : '')}
         >
-        <input type="text" ref="searchInput" className="searchfield" onChange={this.props.textChangeCb} />
+        <input
+          type="text"
+          ref="searchInput"
+          className="searchfield"
+          defaultValue={this.props.defaultValue}
+          />
         <img alt="Search" src={Lupe} className="lupe" />
-        <input type="submit" value="" className="button" />
+        <input type="submit" className="button" />
       </form>
     )
   }

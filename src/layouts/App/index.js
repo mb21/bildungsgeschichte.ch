@@ -6,12 +6,11 @@ import {
 } from 'react-router-dom'
 
 import {langs}       from '../../utils/translate'
-import Facets        from '../../components/Facets'
 import Header        from '../../components/Header'
 
 import Home          from '../../routes/Home'
 import RecordDetail  from '../../routes/RecordDetail'
-import Records       from '../../routes/Records'
+import RecordList    from '../../routes/RecordList'
 
 import './App.css'
 import '../../styles/scaffolds.css'
@@ -20,7 +19,7 @@ let routes = [];
 [ { path: "",             component: props => <Redirect to={props.location.pathname + '/'} /> }
 , { path: "/",            component: Home }
 , { path: "/records/:id", component: RecordDetail }
-, { path: "/records/",    component: Records }
+, { path: "/records/",    component: RecordList }
 ].forEach(r => {
   langs.forEach( lang => {
     routes.push({
@@ -36,9 +35,6 @@ export const App = () => {
     <Router>
       <div className="App">
         <Header />
-        <nav>
-          <Facets />
-        </nav>
         <div className="container -flex">
           <main>
             {routes.map( (r, i) =>
