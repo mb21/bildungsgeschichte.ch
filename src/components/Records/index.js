@@ -1,6 +1,6 @@
 import React       from 'react'
 import { Link }    from 'react-router-dom'
-import {translate} from '../../utils/translate'
+import {translate, translateFacet} from '../../utils/translate'
 
 import './Records.css'
 
@@ -24,11 +24,13 @@ class Records extends React.Component {
               <p>{ this.props.strings.collection }</p>
               <p>format: { doc.format }</p>
 
-              <p>Authors:</p>
+              <p>{ translateFacet('author') }:</p>
               <ul>{ doc.author.map(a => <li key={a}>{a}</li>) }</ul>
-              <p>editor: { doc.editor }</p>
-              <p>rights: { doc.rights }</p>
-              <p>project: { doc.project }</p>
+
+              <p>{ translateFacet('editor') }: { doc.editor }</p>
+              <p>{ translateFacet('rights') }: { doc.rights }</p>
+              <p>{ translateFacet('project') }: { doc.project }</p>
+
               <p>{ doc.body ? doc.body.substr(0, 400) + '...' : ''}</p>
             </div>
           )

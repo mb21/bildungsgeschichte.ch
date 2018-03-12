@@ -4,6 +4,10 @@ export function getInitialFacets() {
   return serverdata.then( d => d.facets )
 }
 
+export function getFacetTranslations() {
+  return serverdata.then( d => d.translations )
+}
+
 // Returns a promise
 export async function getRecord(id) {
   const sd = await serverdata

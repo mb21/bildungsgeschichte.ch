@@ -1,5 +1,6 @@
 import { default as React } from 'react';
 import { Redirect }         from 'react-router-dom'
+import { getFacetTranslations } from '../utils'
 
 import de from '../i18n/de'
 import en from '../i18n/en'
@@ -12,6 +13,11 @@ const languages = {
 , fr
 , it
 }
+
+let facetNames = {};
+getFacetTranslations().then(ns => {
+  facetNames = ns;
+});
 
 export const getCurrentLang     = () => window.location.pathname.substr(1, 2)
 export const langs              = ["de", "fr", "it", "en"]
@@ -28,6 +34,12 @@ export const getSwitchToLangUrl = l => {
                : pth
       ;
   return ['/', l, path, window.location.search].join('')
+}
+
+export const translateFacet = name => {
+  if (facetNames) {
+    return facetNames[name][getCurrentLang()]
+  }
 }
 
 export const getLocalizedProp = (doc, name) => {
