@@ -28,9 +28,12 @@ class RecordList extends React.Component {
     , q: q
     , checkedFacets: checkedFacets || []
     , sort: sort
+    , loading: true
     };
+  }
 
-    if (q) {
+  componentWillMount = () => {
+    if (this.state.q) {
       this.fetchRecords();
     } else {
       alert("no query found");
@@ -56,9 +59,11 @@ class RecordList extends React.Component {
           nrHits:  json.numberOfHits
         , records: json.hits
         , facets:  json.header
+        , loading: false
         });
       }
     });
+    this.setState({loading: true});
   }
 
   handleQChange = q => {
@@ -87,7 +92,11 @@ class RecordList extends React.Component {
           value={this.state.sort}
           onChange={this.handleSortChange}
           />
-        <Records nrHits={this.state.nrHits} records={this.state.records} />
+        <Records
+          nrHits={this.state.nrHits}
+          records={this.state.records}
+          loading={this.state.loading}
+          />
       </div>
     )
   }

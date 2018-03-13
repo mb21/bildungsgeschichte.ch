@@ -8,10 +8,16 @@ class Records extends React.Component {
   render() {
     return (
       <div className="Records">
-        <p className="hits">{ typeof this.props.nrHits === "number"
-             ? this.props.nrHits + ' ' + this.props.strings.foundDocs
-             : this.props.strings.loading
-        }</p>
+        <div className="status">
+          { this.props.loading
+            ? <p>{ this.props.strings.loading }</p>
+            : null
+          }
+          { typeof this.props.nrHits === "number"
+            ? <p>{ this.props.nrHits + ' ' + this.props.strings.foundDocs }</p>
+            : null
+          }
+        </div>
         { this.props.records.map( rec => {
           const doc = rec.content
           return (
