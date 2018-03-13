@@ -47,43 +47,42 @@ class Facets extends React.Component {
   }
 
   renderFacets = f => {
-    return (
-      <li key={f.name}>
-        <span className="label" onClick={this.toggle}>
-          { getLocalizedProp(f, 'label') }
-          <img alt="" src={Dropdown} className="dropdown" />
-        </span>
-        <ul>
-        { f.values && f.values.length > 0
-          ? f.values.map(v => {
+    const vals = f.values.filter(v => v.freq > 0);
+    if (vals.length > 0) {
+      return (
+        <li key={f.name}>
+          <span className="label" onClick={this.toggle}>
+            { getLocalizedProp(f, 'label') }
+            <img alt="" src={Dropdown} className="dropdown" />
+          </span>
+          <ul>
+          { vals.map(v => {
               const str = v.name
                   , checkedF = this.props.checkedFacets.find(cf => cf.type === f.name)
                   , checked  = checkedF && checkedF.values
                                         && checkedF.values.indexOf(v.name) > -1
                   ;
               return (
-                v.freq > 0
-                ?
-                  <li key={str}>
-                    <input type="checkbox"
-                      id={str}
-                      defaultChecked={checked}
-                      onChange={ this.handleFacetChange.bind(null, f.name, str) }
-                      />
-                    <label htmlFor={str}>
-                      { getLocalizedProp(v, 'label') + ' ' }
-                      ({ v.freq })
-                    </label>
-                  </li>
-                : null
+                <li key={str}>
+                  <input type="checkbox"
+                    id={str}
+                    defaultChecked={checked}
+                    onChange={ this.handleFacetChange.bind(null, f.name, str) }
+                    />
+                  <label htmlFor={str}>
+                    { getLocalizedProp(v, 'label') + ' ' }
+                    ({ v.freq })
+                  </label>
+                </li>
               )
             })
-          : null
-        }
-        </ul>
-      </li>
-    )
+          }
+          </ul>
+        </li>
+      )
+    }
   }
+
   render() {
     return (
       <div className="Facets">
