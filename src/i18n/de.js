@@ -3,6 +3,8 @@ export default {
     appTitle:   'Wissensportal Bildungsgeschichte Schweiz'
   , collection: 'Sammlung'
   , loading:    'Lädt...'
+  , from: 'Von'
+  , until: 'Bis'
   }
 , Home: {
     welcome: 'Willkommen beim Wissensportal Bildungsgeschichte Schweiz'

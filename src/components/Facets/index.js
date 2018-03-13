@@ -3,7 +3,7 @@ import React    from 'react'
 import './Facets.css'
 
 import Dropdown from './dropdown.svg'
-import {getLocalizedProp} from '../../utils/translate'
+import {getLocalizedProp, translate} from '../../utils/translate'
 import SearchField from '../../components/SearchField'
 
 class Facets extends React.Component {
@@ -44,6 +44,18 @@ class Facets extends React.Component {
       fs.push({type: facetName, values : [valName] })
     }
     this.props.onChangeCheckedFacets(fs);
+  }
+
+  handleTimeChange = (fromOrTo, e) => {
+    if (e.key === 'Enter') {
+      const time = parseInt(e.target.value, 10)
+          , fs = this.props.checkedFacets.filter(f => f.type !== fromOrTo)
+          , [val, f] = time
+                       ? [ time, [{type: fromOrTo, values : [time] }] ]
+                       : [ "",   [] ]
+      e.target.value = val
+      this.props.onChangeCheckedFacets( f.concat(fs) );
+    }
   }
 
   renderFacets = f => {
@@ -87,6 +99,26 @@ class Facets extends React.Component {
     return (
       <div className="Facets">
         <SearchField defaultValue={this.props.q} onSubmit={this.props.onChangeQ} />
+
+        <div>
+          <label htmlFor="timebegin">{ this.props.strings.from }</label>
+          <input
+            id="timebegin"
+            type="number"
+            placeholder="YYYY"
+            onKeyPress={ this.handleTimeChange.bind(null, "timebegin") }
+            />
+        </div>
+        <div>
+          <label htmlFor="timeend">{ this.props.strings.until }</label>
+          <input
+            id="timeend"
+            type="number"
+            placeholder="YYYY"
+            onKeyPress={ this.handleTimeChange.bind(null, "timeend") }
+            />
+        </div>
+
         <ul className="facets">
           { this.props.facets.map(this.renderFacets) }
         </ul>
@@ -95,4 +127,4 @@ class Facets extends React.Component {
   }
 }
 
-export default Facets
+export default translate('Facets')(Facets)
