@@ -22,8 +22,11 @@ class SearchField extends React.Component {
           className="searchfield"
           defaultValue={this.props.defaultValue}
           />
-        <img alt="Search" src={Lupe} className="lupe" />
-        <input type="submit" className="button" />
+        <input
+          type="submit"
+          className="button"
+          style={{backgroundImage: "url(" + Lupe + ")" }}
+          />
       </form>
     )
   }
