@@ -13,4 +13,9 @@ export default {
 , Records: {
     foundDocs: 'Dokumente gefunden'
   }
+, SortDropdown: {
+    asc: 'Älteste zuerst'
+  , desc: 'Neueste zuerst'
+  , relevance: 'Relevanz'
+  }
 }

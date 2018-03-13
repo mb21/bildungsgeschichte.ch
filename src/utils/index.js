@@ -21,12 +21,13 @@ export async function getRecord(id) {
 }
 
 // Returns a promise
-export async function queryRecords(q, facets=[]) {
+export async function queryRecords(q, facets=[], sort="default") {
   const sd = await serverdata
       , url = sd._links.search.href
       , query = {
-          "query" : q
+          "query": q
         , facets: facets
+        , sort: sort
         }
       ;
   return fetch(url, {

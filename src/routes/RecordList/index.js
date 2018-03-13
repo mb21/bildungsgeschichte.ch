@@ -1,9 +1,10 @@
-import React    from 'react'
+import React           from 'react'
 import URLSearchParams from 'url-search-params'; //polyfill
 
-import Facets from '../../components/Facets'
-import Records from '../../components/Records'
-import {queryRecords} from '../../utils'
+import {queryRecords}  from '../../utils'
+import Facets          from '../../components/Facets'
+import Records         from '../../components/Records'
+import SortDropdown    from '../../components/SortDropdown'
 
 class RecordList extends React.Component {
   constructor(props) {
@@ -11,6 +12,7 @@ class RecordList extends React.Component {
 
     const params = new URLSearchParams(document.location.search)
         , q = params.get('q')
+        , sort = params.get('sort') || "default"
         ;
     let checkedFacets;
     try {
@@ -25,6 +27,7 @@ class RecordList extends React.Component {
     , facets: []
     , q: q
     , checkedFacets: checkedFacets || []
+    , sort: sort
     };
 
     if (q) {
@@ -38,12 +41,14 @@ class RecordList extends React.Component {
     const params = new URLSearchParams()
         , q = this.state.q
         , checkedFacets = this.state.checkedFacets
+        , sort = this.state.sort
         ;
     params.append("q", q)
     params.append("facets", JSON.stringify(checkedFacets) )
+    params.append("sort", sort)
     this.props.history.push("?" + params.toString() )
 
-    queryRecords(q, checkedFacets).then( json => {
+    queryRecords(q, checkedFacets, sort).then( json => {
       if (json.timed_out) {
         alert("search timed out");
       } else {
@@ -64,6 +69,10 @@ class RecordList extends React.Component {
     this.setState({ checkedFacets: fs }, this.fetchRecords);
   }
 
+  handleSortChange = s => {
+    this.setState({ sort: s }, this.fetchRecords);
+  }
+
   render() {
     return (
       <div>
@@ -73,6 +82,10 @@ class RecordList extends React.Component {
           checkedFacets={this.state.checkedFacets}
           onChangeQ={this.handleQChange}
           onChangeCheckedFacets={this.handleCheckedFacetsChange}
+          />
+        <SortDropdown
+          value={this.state.sort}
+          onChange={this.handleSortChange}
           />
         <Records nrHits={this.state.nrHits} records={this.state.records} />
       </div>
