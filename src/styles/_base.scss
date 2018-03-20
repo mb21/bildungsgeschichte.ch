@@ -15,3 +15,18 @@ $secondary_light:  #D7D5CE;
 $black_color:      #222222;
 $link_color:       #005AFF;
 $border_color:     #D7D2C8;
+
+
+$break: 900px;
+
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $break) { @content; }
+  }
+  @else if $media == non_mobile {
+    @media only screen and (min-width: $break + 1) { @content; }
+  }
+  @else {
+    @error "Not a valid breakpoint: #{$media}"
+  }
+}

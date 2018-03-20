@@ -2,16 +2,7 @@
 
 .App {
   .container {
-    max-width: 1000px;
     margin: 0 auto;
     padding: 0 80px;
-
-    &.-flex {
-      display: flex;
-    }
-
-    main {
-      flex-grow: 1
-    }
   }
 }

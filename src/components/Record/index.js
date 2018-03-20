@@ -71,7 +71,7 @@ class Record extends React.Component {
           : null
         }
 
-        <ul>
+        <ul className="properties">
           <li>
             <span className="label">{ translateFacet('author') }</span>
             { truncate(renderArray(doc.author), 30) }

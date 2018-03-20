@@ -35,7 +35,7 @@ export const App = () => {
     <Router>
       <div className="App">
         <Header />
-        <div className="container -flex">
+        <div className="container">
           <main>
             {routes.map( (r, i) =>
               <Route key={r.path} exact strict path={r.path} component={r.component} />

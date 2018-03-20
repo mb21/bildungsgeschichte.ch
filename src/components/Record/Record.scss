@@ -24,6 +24,12 @@
     bottom: 0
   }
 
+  .properties {
+    @include respond-to(non_mobile) {
+      column-count: 2;
+    }
+  }
+
   h3 {
     font-size: $title_font_size;
     margin: 0 0 20px 0;
