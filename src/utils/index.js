@@ -1,4 +1,18 @@
-const serverdata = fetch("http://uzhife.eurospider.com/configuration.json").then( d => d.json() );
+const handleResponse = res => {
+  if (res.ok) {
+    return res.json();
+  } else {
+    return Promise.reject(res.statusText);
+  }
+}
+
+const catchError = e => {
+  alert(e);
+  return Promise.reject(e);
+}
+
+const serverdata = fetch("http://uzhife.eurospider.com/configuration.json")
+                     .then( d => d.json() ).catch(catchError)
 
 export function getInitialFacets() {
   return serverdata.then( d => d.facets )
@@ -17,7 +31,7 @@ export async function getRecord(id) {
     headers: {
       'Accept': 'application/json'
     }
-  }).then(handleResponse);
+  }).then(handleResponse).catch(catchError)
 }
 
 // Returns a promise
@@ -37,15 +51,6 @@ export async function queryRecords(q, facets=[], sort="default") {
     },
     method: "POST",
     body: JSON.stringify(query)
-  }).then(handleResponse)
+  }).then(handleResponse).catch(catchError)
     .then( d => {console.log("queryRecords", q, facets, d); return d;} ) //debug
-}
-
-const handleResponse = res => {
-  if (res.ok) {
-    return res.json();
-  } else {
-    alert("Error fetching data");
-    return Promise.reject(res);
-  }
 }
