@@ -11,48 +11,45 @@
   right: 0;
   z-index: 100;
   overflow-y: auto;
+  font-family: $sans_serif_font;
+  font-weight: $bold_font_weight;
 
   .facets {
     padding: 10px 20px;
     margin: 0;
-    font-family: $sans_serif_font;
-    font-weight: $bold_font_weight;
     line-height: 44px;
     font-size: 17px;
-    li, label {
-      list-style-type: none;
-      width: 100%;
-      cursor: pointer;
-
-      .label {
-        width: 100%;
-        display: inline-block;
-        cursor: pointer;
-        border-top: 1px solid $border_color;
-      }
-    }
 
     ul {
       padding: 0;
     }
-
-    .dropdown {
-      width: 12px;
-      float: right;
-      margin-top: 20px;
-      pointer-events: none;
+    li {
+      list-style-type: none;
     }
+    label {
+      cursor: pointer;
+    }
+  }
 
+  .dropdown {
+    width: 12px;
+    float: right;
+    margin-top: 20px;
+    pointer-events: none;
+  }
+
+  .label {
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    border-top: 1px solid $border_color;
   }
 
   .timeinput {
     padding: 5px 20px;
     label {
-      display: inline-block;;
+      display: inline-block;
       width: 50px;
-    }
-    input {
-      background-color: $background_color;
     }
     ::placeholder {
       color: $border_color;

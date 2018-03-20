@@ -1,5 +1,8 @@
 export default {
-  Global: {
+  Facets: {
+    referencePeriod: 'Referenzzeitraum'
+  }
+, Global: {
     appTitle:   'Wissensportal Bildungsgeschichte Schweiz'
   , collection: 'Sammlung'
   , loading:    'Lädt...'
@@ -16,8 +19,8 @@ export default {
     foundDocs: 'Dokumente gefunden'
   }
 , SortDropdown: {
-    asc: 'Älteste zuerst'
-  , desc: 'Neueste zuerst'
+    asc: 'Älteste zuerst (Publikationsdatum)'
+  , desc: 'Neueste zuerst (Publikationsdatum)'
   , relevance: 'Relevanz'
   }
 }

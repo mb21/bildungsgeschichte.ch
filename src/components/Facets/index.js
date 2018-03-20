@@ -100,26 +100,28 @@ class Facets extends React.Component {
       <div className="Facets">
         <SearchField defaultValue={this.props.q} onSubmit={this.props.onChangeQ} />
 
-        <div className="timeinput">
-          <label htmlFor="timebegin">{ this.props.strings.from }</label>
-          <input
-            id="timebegin"
-            type="number"
-            placeholder="1918"
-            onKeyPress={ this.handleTimeChange.bind(null, "timebegin") }
-            />
-        </div>
-        <div className="timeinput">
-          <label htmlFor="timeend">{ this.props.strings.until }</label>
-          <input
-            id="timeend"
-            type="number"
-            placeholder="2018"
-            onKeyPress={ this.handleTimeChange.bind(null, "timeend") }
-            />
-        </div>
-
         <ul className="facets">
+          <li>
+            <span className="label">{ this.props.strings.referencePeriod }</span>
+            <div className="timeinput">
+              <label htmlFor="timebegin">{ this.props.strings.from }</label>
+              <input
+                id="timebegin"
+                type="number"
+                placeholder="1918"
+                onKeyPress={ this.handleTimeChange.bind(null, "timebegin") }
+                />
+            </div>
+            <div className="timeinput">
+              <label htmlFor="timeend">{ this.props.strings.until }</label>
+              <input
+                id="timeend"
+                type="number"
+                placeholder="2018"
+                onKeyPress={ this.handleTimeChange.bind(null, "timeend") }
+                />
+            </div>
+          </li>
           { this.props.facets.map(this.renderFacets) }
         </ul>
       </div>
