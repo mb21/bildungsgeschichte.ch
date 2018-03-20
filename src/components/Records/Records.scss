@@ -1,12 +1,12 @@
 @import "../../styles/base";
 
 .Records {
-  margin-right: 200px; // temp fix to push facets away
+  margin-right: 300px; // temp fix to push facets away
 
   .record {
-    background: $background_color;
-    padding: 25px 30px 5px 30px;
-    margin-bottom: 30px;
+    border-top: 1px solid $border_color;
+    padding: 10px 0 5px 0;
+    margin: 10px 0 30px 0;
   }
 
   .status {
@@ -16,14 +16,19 @@
   }
 
   h3 {
+    font-size: $title_font_size;
     margin: 0 0 20px 0;
   }
   a:hover {
     text-decoration: none;
-    background-color: $border_color;
+    color: $primary_color;
   }
 
   p {
     margin: 0 0 20px 0;
+  }
+
+  ul {
+    padding-left: 25px;
   }
 }

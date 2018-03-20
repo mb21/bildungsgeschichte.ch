@@ -2,7 +2,7 @@
 
 .Facets {
   background: $background_color;
-  width: 300px;
+  width: 400px;
   margin-left: 30px;
   display: block;
   position: fixed;
@@ -28,7 +28,12 @@
         width: 100%;
         display: inline-block;
         cursor: pointer;
+        border-top: 1px solid $border_color;
       }
+    }
+
+    ul {
+      padding: 0;
     }
 
     .dropdown {
@@ -38,5 +43,19 @@
       pointer-events: none;
     }
 
+  }
+
+  .timeinput {
+    padding: 5px 20px;
+    label {
+      display: inline-block;;
+      width: 50px;
+    }
+    input {
+      background-color: $background_color;
+    }
+    ::placeholder {
+      color: $border_color;
+    }
   }
 }

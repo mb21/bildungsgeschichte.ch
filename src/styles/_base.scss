@@ -1,14 +1,17 @@
 
 /* Fonts */
 $sans_serif_font: "Source Sans Pro", Helvetica, sans-serif;
+$standard_font_size: 17px;
+$title_font_size: 23px;
 $normal_font_weight: 400;
 $bold_font_weight: 600;
 
 /* Colors */
 $background_color: #F5F5F5;
-$primary_dark:     #C6A68D;
-$primary_light:    #0859FF;
+$primary_dark:     #154398;
+$primary_color:    #005AFF;
+$primary_light:    #64B4FF;
 $secondary_light:  #D7D5CE;
-$black_color:      #2F2F2F;
-$link_color:       rgba(47,47,47,0.1);
-$border_color:     rgba(8,89,255,0.2);
+$black_color:      #222222;
+$link_color:       #005AFF;
+$border_color:     #D7D2C8;

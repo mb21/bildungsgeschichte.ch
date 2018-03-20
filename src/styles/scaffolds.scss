@@ -6,6 +6,7 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: $sans_serif_font;
+  font-size: $standard_font_size;
   font-weight: $normal_font_weight;
   color: $black_color;
 }
@@ -16,7 +17,7 @@ h2 {
 }
 
 p {
-  line-height: 20px;
+  line-height: 24px;
 }
 
 a {
@@ -31,8 +32,8 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
   font-size: 1rem;
   padding: 5px;
   box-sizing: border-box;
-  border: 2px solid grey;
-  border-radius: 0;
+  border: 2px solid $black_color;
+  border-radius: 2px;
   appearance: none;
   font-family: $sans_serif_font;
 }
@@ -41,7 +42,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
 input[type="checkbox"] {
   appearance: none;
   background-color: $background_color;
-  border: 3px solid $black_color;
+  border: 2px solid $black_color;
   box-shadow: none;
   padding: 8px;
   top: 7px;
@@ -51,14 +52,13 @@ input[type="checkbox"] {
   margin-right: 20px;
 
   &:hover {
-    border: 3px solid $border_color;
     background-color: $border_color;
     cursor: pointer;
   }
 
   &:checked {
-    background-color: $primary_light;
-    border-color: $primary_light;
+    background-color: $primary_color;
+    border-color: $primary_color;
     color: white;
     content: "";
   }

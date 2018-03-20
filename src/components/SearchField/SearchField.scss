@@ -2,11 +2,14 @@
 
 .SearchField {
   position: relative;
+  margin-bottom: 20px;
 
   &.-home {
     .searchfield {
       height: 70px;
       width: 90%;
+      font-size: 30px;
+      border-radius: 5px;
       padding: 10px 70px 10px 20px;
     }
 
@@ -18,10 +21,13 @@
   }
 
   .searchfield {
+    width: 100%;
+    min-height: 50px;
+    padding: 10px;
     background-color: $secondary_light;
     border: none;
-    border-radius: 5px;
-    font-size: 30px;
+    border-radius: 0;
+    font-size: $standard_font_size;
   }
 
   .button {
