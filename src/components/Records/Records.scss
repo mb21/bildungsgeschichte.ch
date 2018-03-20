@@ -3,32 +3,10 @@
 .Records {
   margin-right: 300px; // temp fix to push facets away
 
-  .record {
-    border-top: 1px solid $border_color;
-    padding: 10px 0 5px 0;
-    margin: 10px 0 30px 0;
-  }
-
   .status {
     margin: 20px 0;
     font-weight: $bold_font_weight;
     color: $primary_dark;
   }
 
-  h3 {
-    font-size: $title_font_size;
-    margin: 0 0 20px 0;
-  }
-  a:hover {
-    text-decoration: none;
-    color: $primary_color;
-  }
-
-  p {
-    margin: 0 0 20px 0;
-  }
-
-  ul {
-    padding-left: 25px;
-  }
 }

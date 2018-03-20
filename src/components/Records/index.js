@@ -1,10 +1,11 @@
 import React       from 'react'
-import { Link }    from 'react-router-dom'
-import {translate, translateFacet} from '../../utils/translate'
+import {translate} from '../../utils/translate'
+import Record      from '../../components/Record'
 
 import './Records.css'
 
 class Records extends React.Component {
+
   render() {
     return (
       <div className="Records">
@@ -18,29 +19,7 @@ class Records extends React.Component {
             : null
           }
         </div>
-        { this.props.records.map( rec => {
-          const doc = rec.content
-          return (
-            <div key={rec.id} className="record">
-              <h3>
-                <Link to={rec.id}>
-                  { doc.title }
-                </Link>
-              </h3>
-              <p>{ this.props.strings.collection }</p>
-              <p>format: { doc.format }</p>
-
-              <p>{ translateFacet('author') }:</p>
-              <ul>{ doc.author.map(a => <li key={a}>{a}</li>) }</ul>
-
-              <p>{ translateFacet('editor') }: { doc.editor }</p>
-              <p>{ translateFacet('rights') }: { doc.rights }</p>
-              <p>{ translateFacet('project') }: { doc.project }</p>
-
-              <p>{ doc.body ? doc.body.substr(0, 400) + '...' : ''}</p>
-            </div>
-          )
-        }) }
+        { this.props.records.map(r => <Record record={r} key={r.id} />) }
       </div>
     )
   }

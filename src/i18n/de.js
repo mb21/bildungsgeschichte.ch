@@ -1,13 +1,13 @@
 export default {
-  Facets: {
-    referencePeriod: 'Referenzzeitraum'
-  }
-, Global: {
+  Global: {
     appTitle:   'Wissensportal Bildungsgeschichte Schweiz'
   , collection: 'Sammlung'
   , loading:    'Lädt...'
+  , open:       'Öffnen'
   , from: 'Von'
   , until: 'Bis'
+  , publicationDate: 'Publikationsdatum'
+  , referencePeriod: 'Referenzzeitraum'
   }
 , Home: {
     welcome: 'Willkommen beim Wissensportal Bildungsgeschichte Schweiz'
