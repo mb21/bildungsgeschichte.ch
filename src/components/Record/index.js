@@ -14,6 +14,24 @@ const renderHighlight = (h, key) => {
 const renderDate  = str => (new Date(str)).toLocaleDateString('de-CH')
 const renderArray = arr => arr.join(", ")
 
+const renderIcon = kind => {
+  if (kind) {
+    let img;
+    switch (kind) {
+      case "text":
+        break;
+      case "picture_dk":
+        break;
+      case "multimedia":
+        break;
+      case "chart":
+        break;
+      default:
+    }
+    return <img src={img} alt={ translateFacet(kind) } />
+  }
+}
+
 const renderProperty = (doc, facetName, translateVals) => {
   let val = doc[facetName]
   if (val instanceof Array) {
@@ -52,7 +70,7 @@ class Record extends React.Component {
           </Link>
         </h3>
 
-        <img src={ doc.documentkind } alt={doc.documentkind} />
+        { renderIcon(doc.documentkind) }
 
         { renderHighlight(highlights[0], 0) }
 
@@ -91,8 +109,7 @@ class Record extends React.Component {
                   { renderDate(doc.date) }
                 </li>
               , renderProperty(doc, 'actors', true)
-              , /* renderProperty(doc, 'canton') */
-              , renderProperty(doc, 'collection')
+              , renderProperty(doc, 'canton')
               , renderProperty(doc, 'description')
               , renderProperty(doc, 'editor')
               , renderProperty(doc, 'educationsystem', true)
@@ -108,7 +125,7 @@ class Record extends React.Component {
               , renderProperty(doc, 'rights')
               , renderProperty(doc, 'subject', true)
               , renderProperty(doc, 'texttype', true)
-              , /* renderProperty(doc, 'transcript') */
+              , renderProperty(doc, 'transcript')
               , renderProperty(doc, 'version')
               ]
             : null
