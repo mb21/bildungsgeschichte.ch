@@ -25,7 +25,7 @@ export function getFacetTranslations() {
 // Returns a promise
 export async function getRecord(id) {
   const sd = await serverdata
-      , url = sd._links.item.href
+      , url = sd._links.getdoc.href
       ;
   return fetch(url.replace("{id}", id), {
     headers: {

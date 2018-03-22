@@ -42,7 +42,7 @@ const renderProperty = (doc, facetName, translateVals) => {
   }
   if (val) {
     return (
-      <li>
+      <li key={facetName}>
         <span className="label">{ translateFacet(facetName) }</span>
         { val }
       </li>
@@ -61,7 +61,7 @@ class Record extends React.Component {
   render() {
     const rec = this.props.record
         , doc = rec.content
-        , highlights = rec.highlights.body || []
+        , highlights = rec.highlights ? (rec.highlights.body || []) : []
     return (
       <div className="Record">
         <h3>
@@ -92,7 +92,7 @@ class Record extends React.Component {
         <ul className="properties">
           <li>
             <span className="label">{ translateFacet('author') }</span>
-            { truncate(renderArray(doc.author), 30) }
+            { truncate(renderArray(doc.author), this.state.open ? undefined : 30) }
           </li>
           <li>
             <span className="label">{this.props.strings.referencePeriod}</span>
@@ -104,7 +104,7 @@ class Record extends React.Component {
           </li>
           { this.state.open
             ? [
-                <li>
+                <li key="publicationDate">
                   <span className="label">{this.props.strings.publicationDate}</span>
                   { renderDate(doc.date) }
                 </li>

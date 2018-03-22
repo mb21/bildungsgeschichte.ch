@@ -1,7 +1,8 @@
 import React from 'react'
 
-import {getRecord}    from '../../utils'
-import {translate, getLocalizedProp} from '../../utils/translate'
+import {getRecord} from '../../utils'
+import {translate} from '../../utils/translate'
+import Record      from '../../components/Record'
 
 class RecordDetail extends React.Component {
   constructor(props) {
@@ -12,30 +13,16 @@ class RecordDetail extends React.Component {
       id: id
     , record: null
     };
-    getRecord(id).then( json => {
-        if (!json.found) {
-          alert("not found");
-        } else {
-          this.setState({record: json})
-        }
-      });
+    getRecord(id).then(data => {
+      this.setState({record: data})
+    });
   }
 
   render() {
-    const doc = this.state.record
-                ? this.state.record._source
-                : null
     return (
-      <div className="RecordDetail">
-        { doc
-          ? <div>
-              <h2>{ getLocalizedProp(doc, 'title') }</h2>
-              <p>{ this.props.strings.collection + ': ' + getLocalizedProp(doc, 'collection') }</p>
-              <p>{ doc.body }</p>
-            </div>
-          : <p>{ this.props.strings.loading }</p>
-        }
-      </div>
+      this.state.record
+      ? <Record record={this.state.record} />
+      : <p>{ this.props.strings.loading }</p>
     )
   }
 }
