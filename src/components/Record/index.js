@@ -44,7 +44,7 @@ const renderProperty = (doc, facetName, translateVals) => {
     return (
       <li key={facetName}>
         <span className="label">{ translateFacet(facetName) }</span>
-        { val }
+        <span className="value">{ val }</span>
       </li>
     );
   }
@@ -69,6 +69,18 @@ class Record extends React.Component {
             { doc.title }
           </Link>
         </h3>
+        <div className="fileicon">
+          <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/1999/xlink">
+              <g id="Art/-Movie-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-50.000000, 0.000000)">
+                  <g id="Group" transform="translate(50.000000, 0.000000)">
+                      <g id="Button-Copy" fill="#222222">
+                          <rect id="Bounds" x="0" y="0" width="50" height="50"></rect>
+                      </g>
+                      <polygon id="Page-1" fill="#A0A0A0" points="19 17 19 32 34 24.5"></polygon>
+                  </g>
+              </g>
+          </svg>
+        </div>
 
         { renderIcon(doc.documentkind) }
 
@@ -76,15 +88,13 @@ class Record extends React.Component {
 
         { this.state.open
           ? null
-          : <button className="toggle" onClick={this.toggle}>open</button>
+          : <button className="toggle" onClick={this.toggle}>+ { this.props.strings.more }</button>
         }
 
         { this.state.open
           ? <div>
               { highlights.slice(1, 3).map(renderHighlight) }
 
-              <a href={doc.source} target="_blank">{ this.props.strings.open }</a>
-              <a href={doc.source} download>Download</a>
             </div>
           : null
         }
@@ -92,21 +102,25 @@ class Record extends React.Component {
         <ul className="properties">
           <li>
             <span className="label">{ translateFacet('author') }</span>
-            { truncate(renderArray(doc.author), this.state.open ? undefined : 30) }
+            <span className="value">
+              { truncate(renderArray(doc.author), this.state.open ? undefined : 30) }
+            </span>
           </li>
           <li>
             <span className="label">{this.props.strings.referencePeriod}</span>
-            { doc.timebegin }
-            { doc.timebegin !== doc.timeend
-              ? "–" + doc.timeend
-              : null
-            }
+            <span className="value">
+              { doc.timebegin }
+              { doc.timebegin !== doc.timeend
+                ? "–" + doc.timeend
+                : null
+              }
+            </span>
           </li>
           { this.state.open
             ? [
                 <li key="publicationDate">
                   <span className="label">{this.props.strings.publicationDate}</span>
-                  { renderDate(doc.date) }
+                  <span className="value">{ renderDate(doc.date) }</span>
                 </li>
               , renderProperty(doc, 'actors', true)
               , renderProperty(doc, 'canton')
@@ -131,12 +145,20 @@ class Record extends React.Component {
             : null
           }
         </ul>
+
         { this.state.open
           ? <div>
-              { doc.filetype }, {doc.filesize}
+              <div className="fileinformation" >
+                { doc.filetype }, {doc.filesize}
+              </div>
+              <div className="actionoptions" >
+                <a className="actionlink" href={doc.source} target="_blank">{ this.props.strings.open }</a>
+                <a className="actionlink" href={doc.source} download>Download</a>
+              </div>
             </div>
           : null
         }
+
       </div>
     )
   }

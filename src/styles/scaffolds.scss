@@ -17,7 +17,7 @@ h2 {
 }
 
 p {
-  line-height: 24px;
+  line-height: $standard_line_height;
 }
 
 a {
@@ -50,7 +50,7 @@ input[type="checkbox"] {
   border-radius: 2px;
   display: inline-block;
   position: relative;
-  margin-right: 20px;
+  margin-right: 15px;
 
   &:hover {
     background-color: $border_color;

@@ -12,7 +12,7 @@
   z-index: 100;
   overflow-y: auto;
   font-family: $sans_serif_font;
-  font-weight: $bold_font_weight;
+  font-weight: $semi_font_weight;
 
   .facets {
     padding: 10px 20px;
@@ -46,10 +46,10 @@
   }
 
   .timeinput {
-    padding: 5px 20px;
+    padding: 0 20px 10px 0;
     label {
       display: inline-block;
-      width: 50px;
+      width: 36px;
     }
     ::placeholder {
       color: $border_color;

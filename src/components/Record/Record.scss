@@ -7,7 +7,9 @@
   position: relative;
 
   .label {
-    font-weight: bold;
+    font-weight: $semi_font_weight;
+    display: inline-block;
+    width: 160px;
     &::after {
       content: ": ";
     }
@@ -15,24 +17,62 @@
 
   .highlight {
     em {
-      font-weight: bold;
+      font-weight: $bold_font_weight;
+      font-style: normal;
     }
   }
 
   .toggle {
     position: absolute;
-    bottom: 0
+    bottom: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-weight: $semi_font_weight;
+    color: $primary_color;
+    &:hover {
+      color: $primary_light;
+      cursor: pointer;
+    }
+  }
+
+  .fileinformation {
+    text-align: right;
+    margin-bottom: 15px;
+  }
+
+  .actionoptions {
+    float: right;
+  }
+
+  .actionlink {
+    padding: 5px 14px;
+    margin: 0 0 10px 10px;
+    color: white;
+    font-weight: $semi_font_weight;
+    background-color: $primary_dark;
+    border-radius: 2px;
+    &:hover {
+      color: $primary_light;
+      background-color: $primary_color;
+    }
   }
 
   .properties {
+    list-style-type: none;
+    margin-top: 30px;
     @include respond-to(non_mobile) {
       column-count: 2;
+    }
+    li {
+      margin-bottom: 5px;
     }
   }
 
   h3 {
     font-size: $title_font_size;
-    margin: 0 0 20px 0;
+    font-weight: $bold_font_weight;
+    margin: 0 50px 20px 0;
   }
   a:hover {
     text-decoration: none;
@@ -44,6 +84,14 @@
   }
 
   ul {
-    padding-left: 25px;
+    padding-left: 0;
+  }
+
+  .fileicon {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 50px;
+    box-shadow: 0 5px 10px 0 $border_color;
   }
 }

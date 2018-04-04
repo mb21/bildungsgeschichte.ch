@@ -4,6 +4,7 @@ export default {
   , collection: 'Sammlung'
   , loading:    'Lädt...'
   , open:       'Öffnen'
+  , more:       'mehr anzeigen'
   , from: 'Von'
   , until: 'Bis'
   , publicationDate: 'Publikationsdatum'
