@@ -2,7 +2,7 @@
 
 .Facets {
   background: $background_color;
-  width: 400px;
+  width: $facets_width + 20px;
   margin-left: 30px;
   display: block;
   position: fixed;

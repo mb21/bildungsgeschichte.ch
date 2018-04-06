@@ -1,8 +1,10 @@
 @import "../../styles/base";
 
 .SortDropdown {
-  
     font-size: $standard_font_size;
     background: transparent;
     border: none;
+    float: right;
+    margin-right: $facets_width;
+    margin-bottom: 20px;
   }
