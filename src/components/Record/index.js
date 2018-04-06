@@ -3,6 +3,10 @@ import { Link }    from 'react-router-dom'
 import {translate, translateFacet} from '../../utils/translate'
 
 import './Record.css'
+import textIcon       from './text.svg'
+import pictureIcon    from './picture_dk.svg'
+import multimediaIcon from './multimedia.svg'
+import chartIcon      from './chart.svg'
 
 const truncate = (str, length) =>
   str.length > length ? str.substr(0, length) + "…" : str
@@ -19,12 +23,16 @@ const renderIcon = kind => {
     let img;
     switch (kind) {
       case "text":
+        img = textIcon;
         break;
       case "picture_dk":
+        img = pictureIcon;
         break;
       case "multimedia":
+        img = multimediaIcon;
         break;
       case "chart":
+        img = chartIcon;
         break;
       default:
     }
