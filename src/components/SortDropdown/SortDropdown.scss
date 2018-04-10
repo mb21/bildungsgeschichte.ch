@@ -7,4 +7,18 @@
     float: right;
     margin-right: $facets_width;
     margin-bottom: 20px;
+
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: 0;
+      border-radius: 2px;
+      background-color: $background_color;
+      font-size: $standard_font_size;
+      padding-left: 5px;
+      margin: 0 0 0 5px;
+      font-family: $sans_serif_font;
+      font-weight: $semi_font_weight;
+    }
   }
