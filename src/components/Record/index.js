@@ -10,9 +10,10 @@ import chartIcon      from './chart.svg'
 
 const truncate = (str, length) =>
   str.length > length ? str.substr(0, length) + "…" : str
-const renderHighlight = (h, key) => {
-  if(h) {
-    return <p className="highlight" dangerouslySetInnerHTML={{__html: h}} key={key}></p>
+const renderHighlights = (hs, key) => {
+  if(hs.length > 0) {
+    const h = hs.join(" […] ");
+    return <p className="highlights" dangerouslySetInnerHTML={{__html: h}} key={key}></p>
   }
 }
 const renderDate  = str => (new Date(str)).toLocaleDateString('de-CH')
@@ -80,20 +81,14 @@ class Record extends React.Component {
 
         { renderIcon(doc.documentkind) }
 
-        { renderHighlight(highlights[0], 0) }
+        { this.state.open ? null : renderHighlights(highlights.slice(0, 1)) }
 
         { this.state.open
           ? null
           : <button className="toggle" onClick={this.toggle}>+ { this.props.strings.more }</button>
         }
 
-        { this.state.open
-          ? <div>
-              { highlights.slice(1, 3).map(renderHighlight) }
-
-            </div>
-          : null
-        }
+        { this.state.open ? renderHighlights(highlights) : null }
 
         <ul className="properties">
           <li>
