@@ -32,7 +32,7 @@ class RecordList extends React.Component {
     };
   }
 
-  componentWillMount = () => {
+  componentDidMount = () => {
     if (this.state.q) {
       this.fetchRecords();
     } else {
