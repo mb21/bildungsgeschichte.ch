@@ -4,10 +4,14 @@ import './SearchField.css'
 import Lupe from './lupe.svg'
 
 class SearchField extends React.Component {
+  constructor(props) {
+    super(props);
+    this.searchInputRef = React.createRef();
+  }
 
   handleSubmit = e => {
     e.preventDefault();
-    this.props.onSubmit( this.refs.searchInput.value )
+    this.props.onSubmit( this.searchInputRef.current.value )
   }
 
   render() {
@@ -18,7 +22,7 @@ class SearchField extends React.Component {
         >
         <input
           type="text"
-          ref="searchInput"
+          ref={this.searchInputRef}
           className="searchfield"
           defaultValue={this.props.defaultValue}
           />
