@@ -8,7 +8,7 @@ class SortDropdown extends React.Component {
   render() {
     return (
       <div className="SortDropdown">
-        Sortieren nach
+        { this.props.strings.sortBy }
         <select value={this.props.value}
                 onChange={ e => this.props.onChange(e.target.value) }>
           <option value="default">{ this.props.strings.relevance }</option>

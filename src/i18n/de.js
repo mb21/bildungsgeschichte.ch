@@ -1,6 +1,6 @@
 export default {
   Global: {
-    appTitle: 'Wissensportal Bildungsgeschichte Schweiz'
+    appTitle: 'Bildungsgeschichte Schweiz'
   , loading: 'Lädt...'
   , open: 'Öffnen'
   , more: 'mehr anzeigen'
@@ -10,8 +10,8 @@ export default {
   , referencePeriod: 'Referenzzeitraum'
   }
 , Home: {
-    welcome: 'Willkommen beim Wissensportal Bildungsgeschichte Schweiz'
-  , quickInfo: 'Dieses Wissensportal ist ein Projekt der Uni Zürich. Ein kurzer Erklärungstext darüber, was das Wissensportal Bildungsgeschichte Schweiz ist und wozu es dient.'
+    welcome: ''
+  , quickInfo: 'Bildungsgeschichte Schweiz: Digitales Wissen zur historischen Entwicklung von Bildung und Erziehung'
   }
 , RecordDetail: {
   }
@@ -22,5 +22,6 @@ export default {
     asc: 'Älteste zuerst (Publikationsdatum)'
   , desc: 'Neueste zuerst (Publikationsdatum)'
   , relevance: 'Relevanz'
+  , sortBy: 'Sortieren nach'
   }
 }
