@@ -23,7 +23,7 @@ Run development server:
 
 ## Deploy
 
-To publish directly to GitHub Pages:
+To publish directly to GitHub Pages (after `git remote add github git@github.com:myUser/myRepo.git`):
 
     $ yarn deploy
 

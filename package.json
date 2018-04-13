@@ -1,5 +1,6 @@
 {
   "name": "wissensportal-bildungsgeschichte-schweiz",
+  "homepage": "https://Eurospider.github.io/IFE-MCS",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,6 +25,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build --remote pages --branch pages --dotfiles true"
+    "deploy": "gh-pages -d build --remote github --branch master --dotfiles true"
   }
 }
