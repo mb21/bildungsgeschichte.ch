@@ -16,7 +16,6 @@ const renderHighlights = (hs, key) => {
     return <p className="highlights" dangerouslySetInnerHTML={{__html: h}} key={key}></p>
   }
 }
-const renderDate  = str => (new Date(str)).toLocaleDateString('de-CH')
 const renderArray = arr => arr.join(", ")
 
 const renderIcon = kind => {
@@ -109,11 +108,7 @@ class Record extends React.Component {
           </li>
           { this.state.open
             ? [
-                <li key="publicationDate">
-                  <span className="label">{this.props.strings.publicationDate}</span>
-                  <span className="value">{ renderDate(doc.date) }</span>
-                </li>
-              , renderProperty(doc, 'actors', true)
+                renderProperty(doc, 'actors', true)
               , renderProperty(doc, 'canton')
               , renderProperty(doc, 'description')
               , renderProperty(doc, 'editor')
