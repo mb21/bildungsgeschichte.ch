@@ -21,7 +21,7 @@ class RecordDetail extends React.Component {
   render() {
     return (
       this.state.record
-      ? <Record record={this.state.record} />
+      ? <Record record={this.state.record} alreadyOpen={true} />
       : <p>{ this.props.strings.loading }</p>
     )
   }

@@ -61,7 +61,7 @@ const renderProperty = (doc, facetName, translateVals) => {
 class Record extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {open: false};
+    this.state = {open: this.props.alreadyOpen};
   }
   toggle = () => {
     this.setState({open: !this.state.open});
