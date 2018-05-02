@@ -1,39 +1,53 @@
 @import "../../styles/base";
 
 .SearchField {
-  position: relative;
-  margin-bottom: 20px;
 
   &.-home {
+    text-align: center;
+
     .searchfield {
+      margin-left: 40px; //to center the searchfield because of the button width.
+      max-width: 700px;
       height: 70px;
-      width: 90%;
       font-size: 30px;
       border-radius: 5px;
       padding: 10px 70px 10px 20px;
+      position: relative;
+      box-shadow: inset 0 0 10px $border_color;
+      @media (max-width: $break)
+      margin-left: 0;
     }
 
     .button {
-      height: 70px;
-      width: 60px;
-      right: 10%;
+      position: relative;
+      height: 40px;
+      width: 40px;
+      padding: 0;
+      right: 60px;
+      bottom: 7px;
     }
   }
 
   .searchfield {
     width: 100%;
     min-height: 50px;
-    padding: 10px;
+    position: fixed;
+    z-index: 101;
+    padding: 10px 20px;
+    margin: 0;
     background-color: $secondary_light;
     border: none;
+    outline: none;
     border-radius: 0;
     font-size: $standard_font_size;
+    box-shadow: 0 0 5px $border_color;
   }
 
   .button {
-    padding: 18px 18px;
+    padding: 18px;
     width: 25px;
-    position: absolute;
+    position: fixed;
+    z-index: 102;
     right: 10px;
 
     background-repeat: no-repeat;

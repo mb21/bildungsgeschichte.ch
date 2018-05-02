@@ -9,6 +9,12 @@ html, body {
   font-size: $standard_font_size;
   font-weight: $normal_font_weight;
   color: $black_color;
+  ::selection {
+    background: $primary_light; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: $primary_light; /* Gecko Browsers */
+  }
 }
 
 h2 {

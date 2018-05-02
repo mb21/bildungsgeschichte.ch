@@ -2,21 +2,22 @@
 /* Fonts */
 $sans_serif_font: "Open Sans", Helvetica, sans-serif;
 $standard_font_size: 16px;
-$standard_line_height: 20px;
-$title_font_size: 23px;
+$standard_line_height: 22px;
+$title_font_size: 20px;
 $normal_font_weight: 400;
 $semi_font_weight: 600;
 $bold_font_weight: 700;
 
 /* Colors */
 $background_color: #F5F5F5;
-$primary_dark:     #154398;
+$primary_dark:     #0440AF;
 $primary_color:    #005AFF;
-$primary_light:    #64B4FF;
-$secondary_light:  #D7D5CE;
+$primary_light:    rgba(0, 90, 255, 0.2);
+$secondary_light:  #DDDDDD;
+$secondary_dark:   #555555;
 $black_color:      #222222;
 $link_color:       #005AFF;
-$border_color:     #D7D2C8;
+$border_color:     rgba(34, 34, 34, 0.2);
 
 $facets_width: 380px;
 

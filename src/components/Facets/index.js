@@ -108,7 +108,7 @@ class Facets extends React.Component {
               <input
                 id="timebegin"
                 type="number"
-                placeholder="1918"
+                placeholder="YYYY"
                 onKeyPress={ this.handleTimeChange.bind(null, "timebegin") }
                 />
             </div>

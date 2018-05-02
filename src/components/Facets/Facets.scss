@@ -7,16 +7,17 @@
   display: block;
   position: fixed;
   bottom: 0;
-  top: 70px;
+  top: 0;
   right: 0;
   z-index: 100;
   overflow-y: auto;
   font-family: $sans_serif_font;
   font-weight: $semi_font_weight;
+  box-shadow: inset 0 0 15px $border_color;
 
   .facets {
     padding: 10px 20px;
-    margin: 0;
+    margin: 50px 0;
     line-height: 44px;
     font-size: 17px;
 
@@ -44,12 +45,15 @@
     cursor: pointer;
     border-top: 1px solid $border_color;
   }
+  ul > :first-child .label {
+    border-top: 0;
+  }
 
   .timeinput {
     padding: 0 20px 10px 0;
     label {
       display: inline-block;
-      width: 36px;
+      width: 50px;
     }
     ::placeholder {
       color: $border_color;

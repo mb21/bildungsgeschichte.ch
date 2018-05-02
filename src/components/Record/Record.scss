@@ -3,7 +3,7 @@
 .Record {
   border-top: 1px solid $border_color;
   padding: 10px 0 30px 0;
-  margin: 10px 0 30px 0;
+  margin: 10px 0 20px 0;
   position: relative;
 
   .label {
@@ -27,10 +27,9 @@
     border: none;
     margin: 0;
     padding: 0;
-    font-weight: $semi_font_weight;
     color: $primary_color;
     &:hover {
-      color: $primary_light;
+      color: $primary_dark;
       cursor: pointer;
     }
   }
@@ -49,17 +48,17 @@
     margin: 0 0 10px 10px;
     color: white;
     font-weight: $semi_font_weight;
-    background-color: $primary_dark;
+    background-color: $primary_color;
     border-radius: 2px;
     &:hover {
-      color: $primary_light;
-      background-color: $primary_color;
+      color: $background_color;
+      background-color: $primary_dark;
     }
   }
 
   .properties {
     list-style-type: none;
-    margin-top: 30px;
+    margin-top: 20px;
     @include respond-to(non_mobile) {
       column-count: 2;
     }
@@ -72,7 +71,7 @@
   h3 {
     font-size: $title_font_size;
     font-weight: $bold_font_weight;
-    margin: 0 50px 20px 0;
+    margin: 0 50px 10px 0;
   }
   a:hover {
     text-decoration: none;
