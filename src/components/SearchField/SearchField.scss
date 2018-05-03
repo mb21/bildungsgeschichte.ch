@@ -14,8 +14,9 @@
       padding: 10px 70px 10px 20px;
       position: relative;
       box-shadow: inset 0 0 10px $border_color;
-      @media (max-width: $break)
-      margin-left: 0;
+      @media (max-width: $break) {
+        margin-left: 0;
+      }
     }
 
     .button {
