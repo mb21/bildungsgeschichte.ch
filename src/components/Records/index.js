@@ -12,11 +12,9 @@ class Records extends React.Component {
         <div className="status">
           { this.props.loading
             ? <p>{ this.props.strings.loading }</p>
-            : null
-          }
-          { typeof this.props.nrHits === "number"
-            ? <p>{ this.props.nrHits + ' ' + this.props.strings.foundDocs }</p>
-            : null
+            : typeof this.props.nrHits === "number"
+              ? <p>{ this.props.nrHits + ' ' + this.props.strings.foundDocs }</p>
+              : null
           }
         </div>
         { this.props.records.map(r => <Record record={r} key={r.id} />) }
