@@ -30,19 +30,25 @@ let routes = [];
   });
 });
 
-export const App = () => {
-  return (
-    <Router>
-      <div className="App">
-        <Header />
-        <div className="main">
-        {routes.map( (r, i) =>
-          <Route key={r.path} exact strict path={r.path} component={r.component} />
-        )}
+class App extends React.Component {
+  componentDidCatch(error, info) {
+    document.write("<h1>Sorry, there was an error. Please reload the page.</h1>");
+    document.write(error)
+  }
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <Header />
+          <div className="main">
+          {routes.map( (r, i) =>
+            <Route key={r.path} exact strict path={r.path} component={r.component} />
+          )}
+          </div>
         </div>
-      </div>
-    </Router>
-  )
+      </Router>
+    )
+  }
 }
 
 export default App
