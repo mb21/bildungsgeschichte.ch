@@ -1,14 +1,20 @@
 import React    from 'react'
 
 import './Facets.css'
-
 import Dropdown from './dropdown.svg'
+import Close    from './close.svg'
+import Lupe     from './lupe.svg'
+
 import {getLocalizedProp, translate} from '../../utils/translate'
 import SearchField from '../../components/SearchField'
 
 class Facets extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {closed: true};
+  }
 
-  toggle = e => {
+  toggleFacet = e => {
     const valsUl = e.target.nextElementSibling
         , dropdownImg = e.target.firstElementChild
         ;
@@ -21,6 +27,10 @@ class Facets extends React.Component {
         dropdownImg.style.transform = 'rotate(180deg)';
       }
     }
+  }
+
+  toggleMenu = e => {
+    this.setState({closed: !this.state.closed});
   }
 
   handleFacetChange = (facetName, valName, e) => {
@@ -69,7 +79,7 @@ class Facets extends React.Component {
     if (vals.length > 0) {
       return (
         <li key={f.name}>
-          <span className="label" onClick={this.toggle}>
+          <span className="label" onClick={this.toggleFacet}>
             { getLocalizedProp(f, 'label') }
             <img alt="" src={Dropdown} className="dropdown" />
           </span>
@@ -103,7 +113,20 @@ class Facets extends React.Component {
 
   render() {
     return (
-      <div className="Facets">
+      <div className={'Facets ' + (this.state.closed ? '-closed' : '')}>
+        <button
+          className="openMenuBtn"
+          style={{backgroundImage: "url(" + Lupe + ")" }}
+          onClick={this.toggleMenu}
+          >
+        </button>
+        <button
+          className="closeMenuBtn"
+          style={{backgroundImage: "url(" + Close + ")" }}
+          onClick={this.toggleMenu}
+          >
+        </button>
+
         <SearchField defaultValue={this.props.q} onSubmit={this.props.onChangeQ} />
 
         <ul className="facets">
