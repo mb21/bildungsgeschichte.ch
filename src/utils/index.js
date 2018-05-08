@@ -52,5 +52,4 @@ export async function queryRecords(q, facets=[], sort="default") {
     method: "POST",
     body: JSON.stringify(query)
   }).then(handleResponse).catch(catchError)
-    .then( d => {console.log("queryRecords", q, facets, d); return d;} ) //debug
 }
