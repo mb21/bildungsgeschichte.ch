@@ -1,18 +1,18 @@
 @import "../../styles/base";
 
 .Header {
-  height: 50px;
-
-  .container {
-    box-sizing: border-box;
-    background: $black_color;
-    box-shadow: 0 0 5px $border_color;
-    font-weight: $bold_font_weight;
-    height: 50px;
-    width: 100%;
-    z-index: 50;
-    position: fixed;
-    top: 0;
+  box-sizing: border-box;
+  background: $black_color;
+  box-shadow: 0 0 5px $border_color;
+  font-weight: $bold_font_weight;
+  height: $header_height;
+  width: 100%;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  padding: 0 $layout_padding;
+  @include respond-to(mobile) {
+    padding: 0 $layout_padding_mobile;
   }
 
   .logo {

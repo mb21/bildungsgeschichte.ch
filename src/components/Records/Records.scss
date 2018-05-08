@@ -1,8 +1,9 @@
 @import "../../styles/base";
 
 .Records {
-  @include respond-to(non_mobile) {
-    margin-right: $facets_width;
+  margin-right: $facets_width;
+  @include respond-to(mobile) {
+    margin-right: 0;
   }
 
   .status {

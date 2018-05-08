@@ -5,10 +5,13 @@
   background: transparent;
   border: none;
   float: right;
-  margin-right: $facets_width;
-  margin-bottom: 20px;
   display: inline-block;
   position: relative;
+  margin-bottom: 20px;
+  @include respond-to(non_mobile) {
+    margin-right: $facets_width;
+  }
+
   &:after{
     content: '↓';
     position: absolute;
