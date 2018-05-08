@@ -11,7 +11,6 @@
   top: 0;
   right: 0;
   z-index: 100;
-  overflow-y: auto;
   font-family: $sans_serif_font;
   font-weight: $semi_font_weight;
   box-shadow: inset 0 0 15px $border_color;
@@ -44,7 +43,7 @@
       display: none;
     }
     .closeMenuBtn {
-      left: -40px;
+      left: -25px;
       width: 15px;
       background-size: 15px;
     }
@@ -64,6 +63,8 @@
     margin: 50px 0;
     line-height: 44px;
     font-size: 17px;
+    overflow: scroll;
+    height: calc(100% - 80px);
 
     ul {
       padding: 0;
