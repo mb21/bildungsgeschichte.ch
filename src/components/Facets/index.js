@@ -9,11 +9,17 @@ import SearchField from '../../components/SearchField'
 class Facets extends React.Component {
 
   toggle = e => {
-    const valsUl = e.target.nextElementSibling;
+    const valsUl = e.target.nextElementSibling
+        , dropdownImg = e.target.firstElementChild
+        ;
     if (valsUl) {
-      valsUl.style.display = valsUl.style.display === 'none'
-                               ? ''
-                               : 'none';
+      if (valsUl.style.display === 'none') {
+        valsUl.style.display = '';
+        dropdownImg.style.transform = null;
+      } else {
+        valsUl.style.display = 'none';
+        dropdownImg.style.transform = 'rotate(180deg)';
+      }
     }
   }
 
