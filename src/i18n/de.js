@@ -13,7 +13,8 @@ export default {
     welcome: ''
   , quickInfo: 'Bildungsgeschichte Schweiz: Digitales Wissen zur historischen Entwicklung von Bildung und Erziehung'
   }
-, RecordDetail: {
+, RecordList: {
+    resetFacetSearch: 'Suche ohne Einschränkungen wiederholen'
   }
 , Records: {
     foundDocs: 'Dokumente gefunden'

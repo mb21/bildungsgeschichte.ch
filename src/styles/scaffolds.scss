@@ -44,6 +44,9 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
   font-family: $sans_serif_font;
   background-color: transparent;
 }
+button {
+  cursor: pointer;
+}
 
 
 input[type="checkbox"] {

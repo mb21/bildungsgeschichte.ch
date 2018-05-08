@@ -1,4 +1,5 @@
 import React           from 'react'
+import {translate}     from '../../utils/translate'
 import URLSearchParams from 'url-search-params'; //polyfill
 
 import {queryRecords}  from '../../utils'
@@ -97,9 +98,15 @@ class RecordList extends React.Component {
           records={this.state.records}
           loading={this.state.loading}
           />
+        { this.state.nrHits === 0
+          ? <button onClick={this.handleCheckedFacetsChange.bind(null, [])}>
+              { this.props.strings.resetFacetSearch }
+            </button>
+          : null
+        }
       </div>
     )
   }
 }
 
-export default RecordList
+export default translate('RecordList')(RecordList)

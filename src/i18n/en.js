@@ -13,7 +13,8 @@ export default {
     welcome: ''
   , quickInfo: 'History of Education Switzerland: Digital knowledge on the historical evolution of schooling and education'
   }
-, RecordDetail: {
+, RecordList: {
+    resetFacetSearch: ''
   }
 , Records: {
     foundDocs: 'documents found'

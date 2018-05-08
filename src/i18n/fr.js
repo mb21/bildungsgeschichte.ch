@@ -13,7 +13,8 @@ export default {
     welcome: ''
   , quickInfo: 'Histoire de l’Éducation Suisse : Savoir digital sur l’évolution historique de la formation et de l’éducation'
   }
-, RecordDetail: {
+, RecordList: {
+    resetFacetSearch: ''
   }
 , Records: {
     foundDocs: 'documents trouvés'
