@@ -14,7 +14,7 @@ export default {
   , quickInfo: 'Storia dell’Educazione Svizzera: Sapere digitale sull’evoluzione storica di formazione ed educazione'
   }
 , RecordList: {
-    resetFacetSearch: ''
+    resetFacetSearch: 'Ripetere la ricerca senza restrizioni'
   }
 , Records: {
     foundDocs: 'documenti trovati'
