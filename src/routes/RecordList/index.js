@@ -98,7 +98,7 @@ class RecordList extends React.Component {
           records={this.state.records}
           loading={this.state.loading}
           />
-        { this.state.nrHits === 0
+        { this.state.nrHits === 0 && this.state.checkedFacets.length > 0
           ? <button onClick={this.handleCheckedFacetsChange.bind(null, [])}>
               { this.props.strings.resetFacetSearch }
             </button>
