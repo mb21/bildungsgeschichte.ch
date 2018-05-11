@@ -1,0 +1,34 @@
+@import "../../styles/base";
+
+.Footer {
+  box-sizing: border-box;
+  background: $background_color;
+  font-weight: $semi_font_weight;
+  height: $footer_height;
+  width: 100%;
+  z-index: 0;
+  position: relative;
+  bottom: 0;
+  padding: 15px $layout_padding;
+  @include respond-to(mobile) {
+    padding: 0 $layout_padding_mobile;
+  }
+
+  .link, .copyright {
+    margin: 0;
+    font-size: $standard_font_size;
+    color: $secondary_dark;
+  }
+  .link {
+    margin-right: 30px;
+  }
+  .link:hover {
+    color: $secondary_light;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .copyright {
+    float: right;
+  }
+
+}

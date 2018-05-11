@@ -8,10 +8,14 @@ export default {
   , until: 'Bis'
   , publicationDate: 'Publikationsdatum'
   , referencePeriod: 'Referenzzeitraum'
+  , theProject: 'Das Projekt'
+  , copyright: '© 2018, Universität Zürich'
+  , disclaimer: 'Rechtliche Hinweise'
   }
 , Home: {
     welcome: ''
-  , quickInfo: 'Bildungsgeschichte Schweiz: Digitales Wissen zur historischen Entwicklung von Bildung und Erziehung'
+  , quickInfo: 'Wissensportal zur Geschichte von Bildung und Erziehung.'
+  , tippsButton: 'Tipps & Tricks'
   }
 , RecordList: {
     resetFacetSearch: 'Suche ohne Einschränkungen wiederholen'

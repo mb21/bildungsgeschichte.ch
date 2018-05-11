@@ -46,6 +46,15 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
 }
 button {
   cursor: pointer;
+  padding: 5px 14px;
+  margin: 0;
+  color: white;
+  font-weight: $semi_font_weight;
+  border-radius: 2px;
+  border: none;
+  &:hover {
+    color: $background_color;
+  }
 }
 
 

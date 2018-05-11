@@ -7,6 +7,7 @@ import {
 
 import {langs}       from '../../utils/translate'
 import Header        from '../../components/Header'
+import Footer        from '../../components/Footer'
 
 import About         from '../../routes/About'
 import Home          from '../../routes/Home'
@@ -47,6 +48,7 @@ class App extends React.Component {
             <Route key={r.path} exact strict path={r.path} component={r.component} />
           )}
           </div>
+          <Footer />
         </div>
       </Router>
     )

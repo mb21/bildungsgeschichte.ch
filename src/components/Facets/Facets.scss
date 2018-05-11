@@ -13,7 +13,7 @@
   z-index: 100;
   font-family: $sans_serif_font;
   font-weight: $semi_font_weight;
-  box-shadow: inset 0 0 15px $border_color;
+  box-shadow: 0 0 25px $border_color;
 
   .openMenuBtn, .closeMenuBtn {
     display: none;
