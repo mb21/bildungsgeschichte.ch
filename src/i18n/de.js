@@ -25,4 +25,7 @@ export default {
   , relevance: 'Relevanz'
   , sortBy: 'Sortieren nach'
   }
+, About: {
+    aboutus: '<h1>Über uns</h1><p>foobar</p>'
+  }
 }

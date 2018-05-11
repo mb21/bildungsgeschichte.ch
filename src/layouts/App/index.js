@@ -8,6 +8,7 @@ import {
 import {langs}       from '../../utils/translate'
 import Header        from '../../components/Header'
 
+import About         from '../../routes/About'
 import Home          from '../../routes/Home'
 import RecordDetail  from '../../routes/RecordDetail'
 import RecordList    from '../../routes/RecordList'
@@ -18,6 +19,7 @@ import '../../styles/scaffolds.css'
 let routes = [];
 [ { path: "",             component: props => <Redirect to={props.location.pathname + '/'} /> }
 , { path: "/",            component: Home }
+, { path: "/about/",      component: About }
 , { path: "/records/:id", component: RecordDetail }
 , { path: "/records/",    component: RecordList }
 ].forEach(r => {
