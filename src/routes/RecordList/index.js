@@ -24,18 +24,35 @@ class RecordList extends React.Component {
 
     this.state = {
       nrHits: null
+    , nrPages: null
     , records: []
     , facets: []
     , q: q
     , checkedFacets: checkedFacets || []
     , sort: sort
+    , page: 1
     , loading: true
+    , loadingMore: false
     };
   }
 
   componentDidMount = () => {
     if (this.state.q) {
       this.fetchRecords();
+
+      // infinite-scroll
+      document.addEventListener('scroll', () => {
+        if( (window.scrollY || document.body.scrollTop || document.documentElement.scrollTop) + window.innerHeight + 400
+          >= Math.max(
+              document.body.scrollHeight
+            , document.body.offsetHeight
+            , document.documentElement.clientHeight
+            , document.documentElement.scrollHeight
+            , document.documentElement.offsetHeight)
+        ){
+          this.fetchMoreRecords();
+        }
+      });
     } else {
       alert("no query found");
     }
@@ -52,12 +69,13 @@ class RecordList extends React.Component {
     params.append("sort", sort)
     this.props.history.push("?" + params.toString() )
 
-    queryRecords(q, checkedFacets, sort).then( json => {
+    queryRecords(q, checkedFacets, sort, 1).then( json => {
       if (json.timed_out) {
         alert("search timed out");
       } else {
         this.setState({
           nrHits:  json.numberOfHits
+        , nrPages: json.numberOfPages
         , records: json.hits
         , facets:  json.header
         , loading: false
@@ -65,6 +83,23 @@ class RecordList extends React.Component {
       }
     });
     this.setState({loading: true});
+  }
+
+  fetchMoreRecords = () => {
+    if (!this.state.loadingMore &&
+        !this.state.loading &&
+        this.state.page < this.state.nrPages) {
+      const page = this.state.page + 1
+      queryRecords(this.state.q, this.state.checkedFacets, this.state.sort, page)
+        .then( json => {
+          this.setState({
+            records: this.state.records.concat(json.hits)
+          , page: page
+          , loadingMore: false
+          });
+        });
+      this.setState({loadingMore: true});
+    }
   }
 
   handleQChange = q => {
@@ -102,6 +137,10 @@ class RecordList extends React.Component {
           ? <button onClick={this.handleCheckedFacetsChange.bind(null, [])}>
               { this.props.strings.resetFacetSearch }
             </button>
+          : null
+        }
+        { this.state.loadingMore
+          ? <h3>{this.props.strings.loading}</h3>
           : null
         }
       </div>
