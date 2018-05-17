@@ -72,13 +72,14 @@ class Record extends React.Component {
         , highlights = rec.highlights ? (rec.highlights.body || []) : []
     return (
       <div className="Record">
+
+        { renderIcon(doc.documentkind) }
+
         <h3>
           <Link to={rec.id}>
             { doc.title }
           </Link>
         </h3>
-
-        { renderIcon(doc.documentkind) }
 
         { this.state.open ? null : renderHighlights(highlights.slice(0, 1)) }
 

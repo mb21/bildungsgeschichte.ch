@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 595.3 595.3" enable-background="new 0 0 595.3 595.3" xml:space="preserve">
+	 viewBox="80 0 480 480" enable-background="new 80 0 480 480" xml:space="preserve">
 <g id="Art_x2F_-Movie-2" transform="translate(-50.000000, 0.000000)">
 	<g id="Group" transform="translate(50.000000, 0.000000)">
 		<g id="Button-Copy">
-			<rect id="Bounds" fill="#222222" width="595.3" height="595.3"/>
+			<rect id="Bounds" x="80" fill="#222222" width="480" height="480"/>
 		</g>
 	</g>
 </g>
-<rect x="125.5" y="168.5" fill="#A0A0A0" width="344.3" height="25.8"/>
-<rect x="125.5" y="246" fill="#A0A0A0" width="344.3" height="25.8"/>
-<rect x="125.5" y="323.5" fill="#A0A0A0" width="344.3" height="25.8"/>
-<rect x="125.5" y="168.5" fill="#A0A0A0" width="25.8" height="258.2"/>
-<rect x="284.7" y="168.5" fill="#A0A0A0" width="25.8" height="258.2"/>
-<rect x="444" y="168.5" fill="#A0A0A0" width="25.8" height="258.2"/>
-<rect x="125.5" y="400.9" fill="#A0A0A0" width="344.3" height="25.8"/>
+<rect x="607.2" y="132.9" fill="none" stroke="#DDDDDD" stroke-width="12" stroke-miterlimit="10" width="96" height="260"/>
+<rect x="607.5" y="132.9" fill="none" stroke="#DDDDDD" stroke-width="12" stroke-miterlimit="10" width="95.3" height="65"/>
+<rect x="703.5" y="327.9" fill="none" stroke="#DDDDDD" stroke-width="12" stroke-miterlimit="10" width="95.3" height="65"/>
+<rect x="703.5" y="197.9" fill="none" stroke="#DDDDDD" stroke-width="12" stroke-miterlimit="10" width="95.3" height="65"/>
+<rect x="799.8" y="132.9" fill="none" stroke="#DDDDDD" stroke-width="12" stroke-miterlimit="10" width="95.3" height="65"/>
+<rect x="799.8" y="197.9" fill="none" stroke="#DDDDDD" stroke-width="12" stroke-miterlimit="10" width="95.3" height="65"/>
+<rect x="799.8" y="327.9" fill="none" stroke="#DDDDDD" stroke-width="12" stroke-miterlimit="10" width="95.3" height="65"/>
+<rect x="799.8" y="262.9" fill="none" stroke="#DDDDDD" stroke-width="12" stroke-miterlimit="10" width="95.3" height="65"/>
+<rect x="607.5" y="262.9" fill="none" stroke="#DDDDDD" stroke-width="12" stroke-miterlimit="10" width="95.3" height="65"/>
+<rect x="607.2" y="109" fill="#DDDDDD" stroke="#DDDDDD" stroke-width="12" stroke-miterlimit="10" width="288" height="23.9"/>
+<rect x="176" y="186.2" opacity="0.7" fill="#DDDDDD" width="96" height="206.9"/>
+<rect x="272" y="132.7" fill="#DDDDDD" width="96" height="260.4"/>
+<rect x="368" y="303" opacity="0.5" fill="#DDDDDD" width="96" height="90"/>
 </svg>

@@ -3,6 +3,8 @@
 .App {
   .main {
     padding: $header_height + 20px $layout_padding 0 $layout_padding;
+    max-width: 1200px;
+    margin: auto;
     @include respond-to(mobile) {
       padding-left:  $layout_padding_mobile;
       padding-right: $layout_padding_mobile;
