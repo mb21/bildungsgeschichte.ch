@@ -1,10 +1,18 @@
-<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <g id="Art/-Movie-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-50.000000, 0.000000)">
-        <g id="Group" transform="translate(50.000000, 0.000000)">
-            <g id="Button-Copy" fill="#222222">
-                <rect id="Bounds" x="0" y="0" width="50" height="50"></rect>
-            </g>
-            <polygon id="Page-1" fill="#A0A0A0" points="19 17 19 32 34 24.5"></polygon>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-502 -2 480 480" enable-background="new -502 -2 480 480" xml:space="preserve">
+<g id="Art_x2F_-Movie-2" transform="translate(-50.000000, 0.000000)">
+	<g id="Group" transform="translate(50.000000, 0.000000)">
+		<g id="Button-Copy">
+			<rect id="Bounds" x="-502" y="-2" fill="#222222" width="480" height="480"/>
+		</g>
+	</g>
+</g>
+<g id="Art_x2F_-Movie-2_1_" transform="translate(-50.000000, 0.000000)">
+	<g id="Group_1_" transform="translate(50.000000, 0.000000)">
+		<polygon id="Page-1" fill="#FFFFFF" points="-316.4,170.6 -316.4,305.4 -181.6,238 		"/>
+	</g>
+</g>
+<circle opacity="0.2" fill="#FFFFFF" cx="-262" cy="238" r="166.5"/>
 </svg>

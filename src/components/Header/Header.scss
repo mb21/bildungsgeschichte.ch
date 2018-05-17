@@ -15,10 +15,22 @@
     padding: 0 $layout_padding_mobile;
   }
 
-  .logo {
-    height: 35px;
-    margin: 7px 20px 0 0;
-  }
+  .Applogo {
+    display: inline-block;
+    margin-top: 7px;
+    }
+    .logopicture {
+      height: 32px;
+      margin-right: 15px;
+    }
+    .logoname {
+      position: relative;
+      display: inline;
+      font-size: 20px;
+      font-family: $logo_font_style;
+      font-weight: $semi_font_weight;
+      color: white;
+    }
 
   .langs {
     float: right;

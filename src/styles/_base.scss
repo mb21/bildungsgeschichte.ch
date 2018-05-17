@@ -1,6 +1,7 @@
 
 /* Fonts */
 $sans_serif_font: "Open Sans", Helvetica, sans-serif;
+$logo_font_style: "Barlow";
 $standard_font_size: 16px;
 $standard_line_height: 22px;
 $title_font_size: 20px;
@@ -10,18 +11,17 @@ $bold_font_weight: 700;
 
 /* Colors */
 $background_color: #F5F5F5;
-$primary_dark:     #0440AF;
-$primary_color:    #005AFF;
-$primary_light:    rgba(0, 90, 255, 0.2);
+$primary_dark:     #C80F32;
+$primary_color:    #EB3349;
+$primary_light:    #FF553C;
 $secondary_light:  #DDDDDD;
 $secondary_dark:   #555555;
 $black_color:      #222222;
-$link_color:       #005AFF;
 $border_color:     rgba(34, 34, 34, 0.4);
 
 $layout_padding: 80px;
 $layout_padding_mobile: 20px;
-$header_height: 50px;
+$header_height: 52px;
 $footer_height: 50px;
 $facets_width: 380px;
 

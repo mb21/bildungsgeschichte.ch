@@ -12,7 +12,10 @@ class Header extends React.Component {
     return (
       <header className="Header">
         <Link to={ getBaseUrl() }>
-          <img alt={ this.props.strings.appTitle } src={Logo} className="logo" />
+          <div className="Applogo">
+            <img alt={ this.props.strings.appTitle } src={Logo} className="logopicture" />
+            <h1 className="logoname">{ this.props.strings.appTitle }</h1>
+          </div>
         </Link>
         <ul className="langs">
           { langs.map( l =>
