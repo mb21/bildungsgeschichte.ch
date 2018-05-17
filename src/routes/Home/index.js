@@ -14,8 +14,7 @@ class Home extends React.Component {
   render() {
     return (
     <div className="Home">
-      <h2 className="welcome" >{ this.props.strings.welcome }</h2>
-      <p className="introduction" >{ this.props.strings.quickInfo }</p>
+      <h2 className="introduction" >{ this.props.strings.quickInfo }</h2>
       <div className="search">
         <SearchField home={true} onSubmit={ this.handleSubmit } />
         <button>{ this.props.strings.tippsButton }</button>

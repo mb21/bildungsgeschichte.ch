@@ -9,12 +9,13 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="Footer">
-        <Link className="link" to="about/">{ this.props.strings.theProject }</Link>
-        <a className="link" target="_blank">{ this.props.strings.disclaimer }</a>
+        <Link className="link" to="about">{ this.props.strings.about }</Link>
+        <Link className="link" to="projects">{ this.props.strings.projects }</Link>
+        <Link className="link" to="rights">{ this.props.strings.rights }</Link>
         <p className="copyright">{ this.props.strings.copyright }</p>
       </footer>
     )
   }
 }
 
-export default translate()(Footer)
+export default translate('Footer')(Footer)

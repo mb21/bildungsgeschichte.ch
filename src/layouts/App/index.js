@@ -6,10 +6,13 @@ import {
 } from 'react-router-dom'
 
 import {langs}       from '../../utils/translate'
+import ScrollToTop   from '../../components/ScrollToTop'
 import Header        from '../../components/Header'
 import Footer        from '../../components/Footer'
 
 import About         from '../../routes/About'
+import Projects      from '../../routes/Projects'
+import Rights        from '../../routes/Rights'
 import Home          from '../../routes/Home'
 import RecordDetail  from '../../routes/RecordDetail'
 import RecordList    from '../../routes/RecordList'
@@ -20,7 +23,9 @@ import '../../styles/scaffolds.css'
 let routes = [];
 [ { path: "",             component: props => <Redirect to={props.location.pathname + '/'} /> }
 , { path: "/",            component: Home }
-, { path: "/about/",      component: About }
+, { path: "/about",       component: About }
+, { path: "/projects",    component: Projects }
+, { path: "/rights",      component: Rights }
 , { path: "/records/:id", component: RecordDetail }
 , { path: "/records/",    component: RecordList }
 ].forEach(r => {
@@ -41,6 +46,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
+        <ScrollToTop>
         <div className="App">
           <Header />
           <div className="main">
@@ -50,6 +56,7 @@ class App extends React.Component {
           </div>
           <Footer />
         </div>
+        </ScrollToTop>
       </Router>
     )
   }
