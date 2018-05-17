@@ -5,7 +5,7 @@
   .welcome, .introduction {
     text-align: center;
     max-width: 700px;
-    margin: 70px auto 50px auto;
+    margin: 50px auto 20px auto;
   }
 
   .picturegallery {
@@ -31,12 +31,37 @@
       left: 0;
     }
     button {
+      color: white;
       margin-top: 30px;
+      padding: 5px 14px;
       box-shadow: 3px 9px 15px 2px $border_color;
       background-color: $primary_color;
     }
     button:hover {
+      color: $background_color;
       background-color: $primary_dark;
+    }
+  }
+
+  .langs {
+    text-align: center;
+    margin: 0 0 50px 0;
+    padding: 0;
+    font-size: $standard_font_size;
+    font-weight: $semi_font_weight;
+    >li {
+      display: inline-block;
+      list-style: none;
+    }
+    a {
+      color: $secondary_light;
+      padding: 0 8px;
+      margin: 0;
+      text-decoration: none;
+      &.active, &:hover {
+        color: $border_color;
+        background-color: $background_color;
+      }
     }
   }
 

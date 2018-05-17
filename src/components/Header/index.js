@@ -17,18 +17,6 @@ class Header extends React.Component {
             <h1 className="logoname">{ this.props.strings.appTitle }</h1>
           </div>
         </Link>
-        <ul className="langs">
-          { langs.map( l =>
-              <li key={l}>
-                <Link
-                  to={ getSwitchToLangUrl(l) }
-                  className={l === currentLang ? 'active' : ''}
-                  >
-                  { l.toUpperCase() }
-                </Link>
-              </li>
-            )}
-        </ul>
       </header>
     )
   }

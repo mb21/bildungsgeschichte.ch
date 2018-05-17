@@ -24,12 +24,7 @@
   .toggle {
     position: absolute;
     bottom: 0;
-    border: none;
-    margin: 0;
-    padding: 0;
-    color: $primary_color;
     &:hover {
-      color: $primary_dark;
       cursor: pointer;
     }
   }

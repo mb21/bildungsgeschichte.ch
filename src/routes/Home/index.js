@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-import {translate, getBaseUrl} from '../../utils/translate'
+import {translate, getBaseUrl, langs, getCurrentLang, getSwitchToLangUrl} from '../../utils/translate'
 import SearchField             from '../../components/SearchField'
 
 import './Home.css'
@@ -12,9 +13,23 @@ class Home extends React.Component {
   }
 
   render() {
+    const currentLang = getCurrentLang();
     return (
     <div className="Home">
+
       <h2 className="introduction" >{ this.props.strings.quickInfo }</h2>
+      <ul className="langs">
+        { langs.map( l =>
+            <li key={l}>
+              <Link
+                to={ getSwitchToLangUrl(l) }
+                className={l === currentLang ? 'active' : ''}
+                >
+                { l.toUpperCase() }
+              </Link>
+            </li>
+          )}
+      </ul>
       <div className="search">
         <SearchField home={true} onSubmit={ this.handleSubmit } />
         <button>{ this.props.strings.tippsButton }</button>

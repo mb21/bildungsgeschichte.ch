@@ -40,14 +40,14 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
 }
 button {
   cursor: pointer;
-  padding: 5px 14px;
+  padding: 0;
   margin: 0;
-  color: white;
+  color: $primary_color;
   font-weight: $semi_font_weight;
   border-radius: 2px;
   border: none;
   &:hover {
-    color: $background_color;
+    color: $primary_dark;
   }
 }
 
