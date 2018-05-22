@@ -28,7 +28,7 @@ export const userLang           = () => {
 }
 export const getBaseUrl         = () => "/" + getCurrentLang()
 export const getSwitchToLangUrl = l => {
-  const pth  =  window.location.pathname
+  const pth  = window.location.pathname
       , path = langs.indexOf( pth.substr(1, 2) ) > -1
                ? pth.substr(3)
                : pth

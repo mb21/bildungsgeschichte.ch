@@ -58,6 +58,14 @@ const renderProperty = (doc, facetName, translateVals) => {
   }
 }
 
+const renderRightsProperty = doc =>
+  <li key="rights">
+    <span className="label">{ translateFacet('rights') }</span>
+    <span className="value"
+      dangerouslySetInnerHTML={{__html: translateFacet('rights_' + doc.project) }} >
+    </span>
+  </li>
+
 class Record extends React.Component {
   constructor(props) {
     super(props);
@@ -120,7 +128,7 @@ class Record extends React.Component {
               , renderProperty(doc, 'nation')
               , renderProperty(doc, 'people')
               , renderProperty(doc, 'project', true)
-              , renderProperty(doc, 'rights', true)
+              , renderRightsProperty(doc)
               , renderProperty(doc, 'publicationdate')
               , renderProperty(doc, 'publicationplace')
               , renderProperty(doc, 'publicationreference')
