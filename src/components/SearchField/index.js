@@ -9,6 +9,10 @@ class SearchField extends React.Component {
     this.searchInputRef = React.createRef();
   }
 
+  componentDidMount(){
+    this.searchInputRef.current.focus();
+  }
+
   handleSubmit = e => {
     e.preventDefault();
     this.props.onSubmit( this.searchInputRef.current.value )
