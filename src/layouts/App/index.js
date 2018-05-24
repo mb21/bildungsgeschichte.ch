@@ -13,6 +13,7 @@ import Footer        from '../../components/Footer'
 import About         from '../../routes/About'
 import Projects      from '../../routes/Projects'
 import Rights        from '../../routes/Rights'
+import Tips          from '../../routes/Tips'
 import Home          from '../../routes/Home'
 import RecordDetail  from '../../routes/RecordDetail'
 import RecordList    from '../../routes/RecordList'
@@ -26,6 +27,7 @@ let routes = [];
 , { path: "/about",       component: About }
 , { path: "/projects",    component: Projects }
 , { path: "/rights",      component: Rights }
+, { path: "/tips",        component: Tips }
 , { path: "/records/:id", component: RecordDetail }
 , { path: "/records/",    component: RecordList }
 ].forEach(r => {

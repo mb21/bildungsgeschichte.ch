@@ -8,10 +8,10 @@ export default {
   , until: 'Al'
   , publicationDate: 'Data di pubblicazione'
   , referencePeriod: 'Periodo di riferimento'
+  , tipsTricks: 'Consigli & trucchi'
   }
 , Home: {
     quickInfo: 'Storia dell’Educazione Svizzera: Sapere digitale sull’evoluzione storica di formazione ed educazione'
-  , tipsButton: 'Consigli & trucchi'
   }
 , RecordList: {
     resetFacetSearch: 'Ripetere la ricerca senza restrizioni'
@@ -83,6 +83,10 @@ Sviluppo del motore di ricerca</p>
 <p><em>Storia dell’Educazione Svizzera</em> non ha copyright rispetto al contenuto del portale. I diritti, di norma, sono declinati ai proprietari.</p>
 <p>I documenti pubblicati in <em>Storia dell’Educazione Svizzera</em> sono messi a disposizione degli utenti per scopi non commerciali nel campo dell’insegnamento e della ricerca, come pure per l’uso privato.</p>
 <p>La pubblicazione di testi e immagini in pubblicazioni stampate e in pubblicazioni online è consentita solo previa autorizzazione del detentore del copyright. L'archiviazione sistematica, completa o parziale, dell'offerta elettronica su altri server richiede anche il consenso scritto dei titolari del copyright.</p>
+      `
+  }
+, Tips: {
+    text: `
       `
   }
 }

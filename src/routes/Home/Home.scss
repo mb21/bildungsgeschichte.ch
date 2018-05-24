@@ -30,16 +30,18 @@
       width: calc(100% - 40px);
       left: 0;
     }
-    button {
+    .btn {
+      display: inline-block;
       color: white;
       margin-top: 30px;
       padding: 5px 14px;
       box-shadow: 3px 9px 15px 2px $border_color;
       background-color: $primary_color;
     }
-    button:hover {
+    .btn:hover {
       color: $background_color;
       background-color: $primary_dark;
+      text-decoration: none;
     }
   }
 

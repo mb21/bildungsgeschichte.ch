@@ -8,10 +8,10 @@ export default {
   , until: 'To'
   , publicationDate: 'Publication date'
   , referencePeriod: 'Period of reference'
+  , tipsTricks: 'Tips & Tricks'
   }
 , Home: {
     quickInfo: 'History of Education Switzerland: Digital knowledge on the historical evolution of schooling and education'
-  , tipsButton: 'Tips & Tricks'
   }
 , RecordList: {
     resetFacetSearch: 'Retry the search without restrictions'
@@ -86,6 +86,10 @@ Search engine development</p>
 <p><em>History of Education Switzerland</em> holds no copyright over the knowledge portal contents. Generally content rights are held by the catalogue owners.</p>
 <p>The documents herby published by <em>History of Education Switzerland</em> are free for non-commercial use in teaching and research, as well as for personal use.</p>
 <p>The publication of texts and images in print and online form, is only permissible with the authorisation from their rights holders. Written authorisation from the rights holders is also required for the systematic storage on other servers of parts, or the whole, of the electronic resources provided here.</p>
+      `
+  }
+, Tips: {
+    text: `
       `
   }
 }

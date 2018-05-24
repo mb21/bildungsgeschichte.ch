@@ -8,10 +8,10 @@ export default {
   , until: 'A'
   , publicationDate: 'Date de publication'
   , referencePeriod: 'Période de référence'
+  , tipsTricks: 'Conseils & Astuces'
   }
 , Home: {
     quickInfo: 'Histoire de l’Éducation Suisse : Savoir digital sur l’évolution historique de la formation et de l’éducation'
-  , tipsButton: 'Conseils & Astuces'
   }
 , RecordList: {
     resetFacetSearch: 'Répéter la recherche sans restrictions'
@@ -84,6 +84,10 @@ Développement du moteur de recherche</p>
 <p><em>Histoire de l’éducation suisse</em> n'a aucun droit d'auteur sur le contenu du portail de connaissances. Les droits sont généralement avec les propriétaires.</p>
 <p>Les documents publiés sur la plateforme <em>Histoire de l’éducation suisse</em> sont accessibles gratuitement pour un usage non commercial, ou à des fins d'enseignement et de recherche.</p>
 <p>Des textes et des images ne peuvent être publiées dans des publications imprimées ou en ligne que sur autorisation préalable du détenteur des droits d'auteur. La copie systématique des parties de l'offre électronique sur d'autres serveurs nécessite également le consentement écrit du titulaire des droits d'auteur.</p>
+      `
+  }
+, Tips: {
+    text: `
       `
   }
 }

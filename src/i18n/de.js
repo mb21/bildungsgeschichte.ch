@@ -8,6 +8,7 @@ export default {
   , until: 'Bis'
   , publicationDate: 'Publikationsdatum'
   , referencePeriod: 'Referenzzeitraum'
+  , tipsTricks: 'Tipps & Tricks'
   }
 , Footer: {
     about: 'Das Projekt'
@@ -17,7 +18,6 @@ export default {
   }
 , Home: {
     quickInfo: 'Wissensportal zur Geschichte von Bildung und Erziehung'
-  , tipsButton: 'Tipps & Tricks'
   }
 , RecordList: {
     resetFacetSearch: 'Suche ohne Einschränkungen wiederholen'
@@ -93,6 +93,10 @@ Entwicklung der Suchmaschine</p>
 <p>Bildungsgeschichte Schweiz besitzt keine Urheberrechte an den Inhalten des Wissensportals. Die Rechte liegen in der Regel bei den Bestandseignern.</p>
 <p>Die auf Bildungsgeschichte Schweiz veröffentlichten Dokumente stehen für nicht-kommerzielle Zwecke in Lehre und Forschung sowie für die private Nutzung frei zur Verfügung.</p>
 <p>Das Veröffentlichen von Texten und Bildern in Print- und Online-Publikationen ist nur mit vorheriger Genehmigung der Rechteinhaber erlaubt. Die systematische Speicherung des ganzen oder von Teilen des elektronischen Angebots auf anderen Servern bedarf ebenfalls des schriftlichen Einverständnisses der Rechteinhaber.</p>
+      `
+  }
+, Tips: {
+    text: `
       `
   }
 }

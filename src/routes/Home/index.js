@@ -32,7 +32,7 @@ class Home extends React.Component {
       </ul>
       <div className="search">
         <SearchField home={true} onSubmit={ this.handleSubmit } />
-        <button>{ this.props.strings.tipsButton }</button>
+        <Link to="tips" className="btn">{ this.props.strings.tipsTricks }</Link>
       </div>
       <div className="picturegallery">
         <img src={require("./Gallery/BBF.jpg")} alt="" className="picture" />
