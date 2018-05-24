@@ -29,7 +29,8 @@ a {
 }
 
 input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea, button {
-  font-size: 1rem;
+  font-size: $standard_font_size;
+  margin: 0;
   padding: 5px;
   box-sizing: border-box;
   border: 2px solid $black_color;

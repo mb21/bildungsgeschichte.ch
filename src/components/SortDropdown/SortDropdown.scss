@@ -1,22 +1,15 @@
 @import "../../styles/base";
 
 .SortDropdown {
-  font-size: $standard_font_size;
-  background: transparent;
-  border: none;
-  float: right;
-  display: inline-block;
-  position: relative;
-  margin-bottom: 20px;
   @include respond-to(non_mobile) {
     margin-right: $facets_width;
   }
 
   &:after{
     content: '↓';
-    position: absolute;
-    right: 5px;
-    top: -5px;
+    position: relative;
+    right: 20px;
+    top: 2px;
     font-size: 24px;
     pointer-events: none;
   }
@@ -29,7 +22,7 @@
     border-radius: 2px;
     background-color: $background_color;
     font-size: $standard_font_size;
-    padding: 0 22px 0 5px;
+    padding: 0 20px 0 5px;
     margin: 0 0 0 5px;
     font-family: $sans_serif_font;
     font-weight: $semi_font_weight;
@@ -39,5 +32,9 @@
     border-radius: 0;
     font-family: $sans_serif_font;
     font-size: $standard_font_size;
+    @include respond-to(mobile) {
+      margin: 10px 0 0 0;
+      max-width: 260px;
+    }
   }
 }

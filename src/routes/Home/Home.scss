@@ -6,6 +6,9 @@
     text-align: center;
     max-width: 700px;
     margin: 50px auto 20px auto;
+    @include respond-to(mobile) {
+      margin: 20px auto 20px auto;
+    }
   }
 
   .picturegallery {
@@ -14,20 +17,28 @@
     display: grid;
     grid-gap: 20px 20px;
     grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    @include respond-to(mobile) {
+      grid-gap: 20px 8px;
+      grid-template-columns: repeat(auto-fill, minmax(140px,1fr));
+    }
     .picture {
       width: 200px;
       height: auto;
       justify-self: center;
+      @include respond-to(mobile) {
+        width: 135px;
+      }
     }
   }
 
   .search {
     position: fixed;
+    z-index: 100;
     margin-top: 10vh;
     text-align: center;
     left: calc(50% - 300px);
     @media only screen and (max-width: 640px) { //searchfield width + margin
-      margin: 5vh 20px 0 20px;
+      margin: 2vh 20px 0 20px;
       width: calc(100% - 40px);
       left: 0;
     }
@@ -58,6 +69,9 @@
     >li {
       display: inline-block;
       list-style: none;
+    }
+    @include respond-to(mobile) {
+      margin: 0 0 30px 0;
     }
     a {
       color: $secondary_light;

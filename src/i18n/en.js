@@ -26,7 +26,7 @@ export default {
     foundDocs: 'documents found'
   }
 , SortDropdown: {
-    asc: 'Oldest first(publication date)'
+    asc: 'Oldest first (publication date)'
   , desc: 'Newest first (publication date)'
   , relevance: 'Relevance'
   , sortBy: 'Sort by'
