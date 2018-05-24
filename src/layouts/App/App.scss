@@ -5,6 +5,7 @@
     padding: $header_height + 20px $layout_padding 0 $layout_padding;
     max-width: 1200px;
     margin: auto;
+    min-height: calc(100vh - #{$header_height} - 20px - #{$footer_height} - #{$footer_height});
     @include respond-to(mobile) {
       padding-left:  $layout_padding_mobile;
       padding-right: $layout_padding_mobile;
