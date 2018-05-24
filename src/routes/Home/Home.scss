@@ -17,6 +17,7 @@
     .picture {
       width: 200px;
       height: auto;
+      justify-self: center;
     }
   }
 
@@ -31,6 +32,9 @@
       left: 0;
     }
     .btn {
+      cursor: pointer;
+      border-radius: 2px;
+      font-weight: 600;
       display: inline-block;
       color: white;
       margin-top: 30px;
