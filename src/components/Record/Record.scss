@@ -12,6 +12,9 @@
     &::after {
       content: ": ";
     }
+    @include respond-to(mobile) {
+      margin-right: 3px;
+    }
   }
 
   .highlights {
@@ -58,8 +61,12 @@
       column-count: 2;
     }
     li {
+      line-height: $standard_line_height;
       margin-bottom: 5px;
       display: flex;
+      @media only screen and (max-width: 500px) {
+        display: block;
+      }
     }
     a {
       color: $primary_color;
