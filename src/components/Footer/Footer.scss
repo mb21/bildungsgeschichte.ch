@@ -26,6 +26,7 @@
     }
   }
   .link {
+    cursor: pointer;
     margin-right: 30px;
     @include respond-to(mobile) {
       margin: 0 0 10px 0;
@@ -34,7 +35,6 @@
   .link:hover {
     color: $secondary_light;
     text-decoration: none;
-    cursor: pointer;
   }
   .copyright {
     float: right;

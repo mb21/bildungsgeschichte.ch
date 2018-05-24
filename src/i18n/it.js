@@ -10,6 +10,12 @@ export default {
   , referencePeriod: 'Periodo di riferimento'
   , tipsTricks: 'Consigli & trucchi'
   }
+, Footer: {
+    about: 'Il progetto'
+  , projects: 'La continuità'
+  , rights: 'Informazioni legali'
+  , copyright: '© 2018, Università di Zurigo'
+  }
 , Home: {
     quickInfo: 'Storia dell’Educazione Svizzera: Sapere digitale sull’evoluzione storica di formazione ed educazione'
   }

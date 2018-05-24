@@ -10,6 +10,12 @@ export default {
   , referencePeriod: 'Period of reference'
   , tipsTricks: 'Tips & Tricks'
   }
+, Footer: {
+    about: 'The Project'
+  , projects: 'The Inventory'
+  , rights: 'Legal Notices'
+  , copyright: '© 2018, University of Zurich'
+  }
 , Home: {
     quickInfo: 'History of Education Switzerland: Digital knowledge on the historical evolution of schooling and education'
   }

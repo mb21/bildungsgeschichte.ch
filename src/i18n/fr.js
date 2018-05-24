@@ -10,6 +10,12 @@ export default {
   , referencePeriod: 'Période de référence'
   , tipsTricks: 'Conseils & Astuces'
   }
+, Footer: {
+    about: 'Le projet'
+  , projects: 'L’inventaire'
+  , rights: 'Informations légales'
+  , copyright: '© 2018, Université de Zurich'
+  }
 , Home: {
     quickInfo: 'Histoire de l’Éducation Suisse : Savoir digital sur l’évolution historique de la formation et de l’éducation'
   }

@@ -12,8 +12,8 @@ class Footer extends React.Component {
       <footer className="Footer">
         <Link className="link" to={ prefix + 'about'}>{ this.props.strings.about }</Link>
         <Link className="link" to={ prefix + 'projects'}>{ this.props.strings.projects }</Link>
-        <Link className="link" to={ prefix + 'rights'}>{ this.props.strings.rights }</Link>
         <Link className="link" to={ prefix + 'tips'}>{ this.props.strings.tipsTricks }</Link>
+        <Link className="link" to={ prefix + 'rights'}>{ this.props.strings.rights }</Link>
         <p className="copyright">{ this.props.strings.copyright }</p>
       </footer>
     )
