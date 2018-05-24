@@ -48,8 +48,8 @@ export default {
 <h4 id="projektkernteam-technische-entwicklungsphase">Projektkernteam (technische Entwicklungsphase)</h4>
 <p>Peter Schäuble (Eurospider Information Technology)<br />
 Entwicklung der Suchmaschine</p>
-<p>Amanda Sauter &amp; Mauro Bieg (2324.ch)</p>
-<p>Design und Entwicklung des Frontends</p>
+<p>Amanda Sauter &amp; Mauro Bieg (2324.ch)<br />
+Design und Entwicklung des Frontends</p>
 <p>Sergio Maffioletti (S3IT, Universität Zürich)</p>
 <p>Backend und Langzeit-Repository (Koordination DaSCH)</p>
 <p>Carmen Flury, Tamara Lehner-Loosli, Lars Heinzer (Universität Zürich)</p>

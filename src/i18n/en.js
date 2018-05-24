@@ -47,8 +47,8 @@ export default {
 <h4 id="core-project-team-technical-development-phase">Core project team (technical development phase)</h4>
 <p>Peter Schäuble (Eurospider Information Technology)<br />
 Search engine development</p>
-<p>Amanda Sauter &amp; Mauro Bieg (2324.ch)</p>
-<p>Frontend design and development</p>
+<p>Amanda Sauter &amp; Mauro Bieg (2324.ch)<br />
+Frontend design and development</p>
 <p>Sergio Maffioletti (S3IT, University of Zurich)</p>
 <p>Backend and long-term-repository (Koordination DaSCH)</p>
 <p>Carmen Flury, Tamara Lehner-Loosli, Lars Heinzer (University of Zurich)</p>

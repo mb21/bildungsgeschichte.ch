@@ -44,8 +44,8 @@ export default {
 <h4 id="team-del-progetto-fase-di-sviluppo-tecnico">Team del Progetto (fase di sviluppo tecnico)</h4>
 <p>Peter Schäuble (Eurospider Information Technology)<br />
 Sviluppo del motore di ricerca</p>
-<p>Amanda Sauter &amp; Mauro Bieg (2324.ch)</p>
-<p>Design e Sviluppo dell’Interfaccia</p>
+<p>Amanda Sauter &amp; Mauro Bieg (2324.ch)<br />
+Design e Sviluppo dell’Interfaccia</p>
 <p>Sergio Maffioletti (S3IT, Università di Zurigo)</p>
 <p>Backend e Repository a lungo termine (Coordinazione DaSCH)</p>
 <p>Carmen Flury, Tamara Lehner-Loosli, Lars Heinzer (Università di Zurigo)</p>

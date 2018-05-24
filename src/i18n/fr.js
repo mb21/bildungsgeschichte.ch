@@ -45,8 +45,8 @@ export default {
 <h4 id="equipe-de-base-du-projet-développement-technique">Equipe de base du projet (développement technique) </h4>
 <p>Peter Schäuble (Eurospider Information Technology)<br />
 Développement du moteur de recherche</p>
-<p>Amanda Sauter &amp; Mauro Bieg (2324.ch)</p>
-<p>Design et développement des Frontends</p>
+<p>Amanda Sauter &amp; Mauro Bieg (2324.ch)<br />
+Design et développement des Frontends</p>
 <p>Sergio Maffioletti (S3IT, Universität Zürich)</p>
 <p>Backend et Repository (Coordination DaSCH)</p>
 <p>Carmen Flury, Tamara Lehner-Loosli, Lars Heinzer (Université de Zürich)</p>
