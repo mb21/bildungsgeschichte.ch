@@ -29,7 +29,7 @@
       display: block;
       position: absolute;
       top: 8px;
-      height: 35px;
+      height: calc(#{$header_height} - 8px);
       background-repeat: no-repeat;
       border: none;
       &:focus {
@@ -45,8 +45,10 @@
     .closeMenuBtn {
       left: -25px;
       width: 15px;
-      top: 15px;
       background-size: 12px;
+      background-color: $black_color;
+      background-position: 0 9px;
+      padding: 0 25px 0px 0;
     }
     &.-closed {
       width: 0;
@@ -70,6 +72,9 @@
     font-size: 17px;
     overflow: scroll;
     height: calc(100% - 80px);
+    @include respond-to(mobile) {
+      padding: 10px $layout_padding_mobile;
+    }
 
     ul {
       padding: 0;
@@ -100,10 +105,13 @@
   }
 
   .timeinput {
-    padding: 0 20px 10px 0;
+    padding: 0 20px 0 0;
     label {
       display: inline-block;
       width: 50px;
+    }
+    input {
+      max-width: 150px;
     }
     ::placeholder {
       color: $border_color;
