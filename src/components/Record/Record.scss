@@ -68,9 +68,6 @@
         display: block;
       }
     }
-    a {
-      color: $primary_color;
-    }
   }
 
   h3 {
@@ -79,10 +76,6 @@
     min-height: 30px;
     margin: 0 50px 10px 0;
     word-wrap: break-word;
-  }
-  a:hover {
-    text-decoration: none;
-    color: $primary_color;
   }
 
   p {
