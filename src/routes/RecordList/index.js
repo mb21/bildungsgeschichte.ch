@@ -37,25 +37,21 @@ class RecordList extends React.Component {
   }
 
   componentDidMount = () => {
-    if (this.state.q) {
-      this.fetchRecords();
+    this.fetchRecords();
 
-      // infinite-scroll
-      document.addEventListener('scroll', () => {
-        if( (window.scrollY || document.body.scrollTop || document.documentElement.scrollTop) + window.innerHeight + 400
-          >= Math.max(
-              document.body.scrollHeight
-            , document.body.offsetHeight
-            , document.documentElement.clientHeight
-            , document.documentElement.scrollHeight
-            , document.documentElement.offsetHeight)
-        ){
-          this.fetchMoreRecords();
-        }
-      });
-    } else {
-      alert("no query found");
-    }
+    // infinite-scroll
+    document.addEventListener('scroll', () => {
+      if( (window.scrollY || document.body.scrollTop || document.documentElement.scrollTop) + window.innerHeight + 400
+        >= Math.max(
+            document.body.scrollHeight
+          , document.body.offsetHeight
+          , document.documentElement.clientHeight
+          , document.documentElement.scrollHeight
+          , document.documentElement.offsetHeight)
+      ){
+        this.fetchMoreRecords();
+      }
+    });
   }
 
   fetchRecords = () => {
