@@ -127,7 +127,6 @@ class Record extends React.Component {
               , renderProperty(doc, 'municipality')
               , renderProperty(doc, 'nation')
               , renderProperty(doc, 'people')
-              , renderProperty(doc, 'project', true)
               , renderRightsProperty(doc)
               , renderProperty(doc, 'publicationdate')
               , renderProperty(doc, 'publicationplace')
