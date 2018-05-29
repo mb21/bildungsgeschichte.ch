@@ -97,6 +97,20 @@ Design und Entwicklung des Frontends</p>
   }
 , Tips: {
     text: `
+<h2>Tipps &amp; Tricks</h2>
+<h3>Untertitel</h3>
+<p>Ein Absatz</p>
+<ol>
+  <li>geordnete Liste</li>
+  <li>geordnete Liste item 2</li>
+</ol>
+<p>
+  Ein weiterer Absatz mit <a href="http://2324.ch">Link</a> und <a href="mailto:redaktion@bildungsgeschichte.ch">Mail Link</a>.
+</p>
+<ul>
+  <li>ungeordnete Liste</li>
+  <li>ungeordnete Liste item 2</li>
+</ul>
       `
   }
 }
