@@ -16,6 +16,15 @@ h2 {
   font-weight: $bold_font_weight;
 }
 
+h3 {
+  font-size: $title_font_size;
+  font-weight: $bold_font_weight;
+}
+
+h3 a {
+  color: $black_color;
+}
+
 p {
   line-height: $standard_line_height;
 }

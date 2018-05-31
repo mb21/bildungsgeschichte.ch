@@ -13,7 +13,7 @@ class Records extends React.Component {
           { this.props.loading
             ? <p>{ this.props.strings.loading }</p>
             : typeof this.props.nrHits === "number"
-              ? <p>{ this.props.nrHits + ' ' + this.props.strings.foundDocs }</p>
+              ? <p>{ this.props.nrHits + ' ' + this.props.strings.foundDocs }</p>
               : null
           }
         </div>
