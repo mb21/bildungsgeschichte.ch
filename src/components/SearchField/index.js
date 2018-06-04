@@ -25,7 +25,7 @@ class SearchField extends React.Component {
         className={'SearchField ' + (this.props.home ? '-home' : '')}
         >
         <input
-          spellcheck="false"
+          spellCheck="false"
           type="text"
           ref={this.searchInputRef}
           className="searchfield"
