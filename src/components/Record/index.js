@@ -74,6 +74,22 @@ class Record extends React.Component {
   toggle = () => {
     this.setState({open: !this.state.open});
   }
+  renderTranscriptProperty = doc =>
+    doc.transcript
+    ? <li key="transcript">
+        <span className="label">{ translateFacet('transcript') }</span>
+        <span className="value">
+          <a href={doc.transcript} target="_blank">
+            { this.props.strings.open +
+              ( doc.transcript_is_ocr
+                ? ' (OCR)'
+                : '' )
+            }
+          </a>
+        </span>
+      </li>
+    : null
+
   render() {
     const rec = this.props.record
         , doc = rec.content
@@ -133,7 +149,7 @@ class Record extends React.Component {
               , renderProperty(doc, 'publicationreference')
               , renderProperty(doc, 'subject', true)
               , renderProperty(doc, 'texttype', true)
-              , renderProperty(doc, 'transcript')
+              , this.renderTranscriptProperty(doc)
               , renderProperty(doc, 'version')
               ]
             : null
