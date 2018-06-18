@@ -43,12 +43,14 @@
       display: none;
     }
     .closeMenuBtn {
-      left: -25px;
+      left: -40px;
       width: 15px;
       background-size: 12px;
-      background-color: $black_color;
-      background-position: 0 9px;
-      padding: 0 25px 0px 0;
+      background-color: $background_color;
+      border-radius: 0;
+      z-index: 1;
+      background-position: 12px 9px;
+      padding: 0 40px 0px 0;
     }
     &.-closed {
       width: 0;
@@ -95,13 +97,18 @@
   }
 
   .label {
+    font-weight: $bold_font_weight;
     width: 100%;
     display: inline-block;
     cursor: pointer;
     border-top: 1px solid $border_color;
+    padding-top: 10px;
+    margin-top: 10px;
   }
   ul > :first-child .label {
     border-top: 0;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .timeinput {

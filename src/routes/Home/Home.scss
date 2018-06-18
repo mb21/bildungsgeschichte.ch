@@ -51,7 +51,7 @@
       margin-top: 30px;
       padding: 5px 14px;
       box-shadow: 3px 9px 15px 2px $border_color;
-      background-color: $primary_color;
+      background-color: $primary_light;
     }
     .btn:hover {
       color: $background_color;
@@ -85,8 +85,8 @@
       margin: 0;
       text-decoration: none;
       &.active, &:hover {
-        color: $border_color;
-        background-color: $background_color;
+        color: $secondary_dark;
+        background-color: $secondary_light;
       }
     }
   }

@@ -2,7 +2,7 @@
 
 .Header {
   box-sizing: border-box;
-  background: $black_color;
+  background: $background_color;
   box-shadow: 0 0 5px $border_color;
   font-weight: $bold_font_weight;
   height: $header_height;
@@ -32,7 +32,7 @@
       font-size: 20px;
       font-family: $logo_font_style;
       font-weight: $semi_font_weight;
-      color: white;
+      color: $primary_light;
       @include respond-to(mobile) {
         display: none;
       }

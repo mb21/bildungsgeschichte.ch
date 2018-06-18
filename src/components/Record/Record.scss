@@ -27,6 +27,7 @@
   .toggle {
     position: absolute;
     bottom: 0;
+    right: 0;
     &:hover {
       cursor: pointer;
     }
@@ -46,7 +47,7 @@
     margin: 0 0 10px 10px;
     color: white;
     font-weight: $semi_font_weight;
-    background-color: $primary_color;
+    background-color: $primary_light;
     border-radius: 2px;
     &:hover {
       color: $background_color;
@@ -88,6 +89,6 @@
     position: relative;
     float: right;
     height: 50px;
-    box-shadow: 3px 2px 11px 0 $border_color, 0px 2px 5px 0 $border_color;
+    box-shadow: 1px 3px 5px 0 $border_color;
   }
 }

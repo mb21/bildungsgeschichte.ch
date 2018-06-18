@@ -31,7 +31,7 @@ p {
 
 a {
   text-decoration: none;
-  color: $primary_color;
+  color: $primary_light;
   &:hover {
     color: $primary_dark;
     text-decoration: none;
@@ -53,7 +53,7 @@ button {
   cursor: pointer;
   padding: 0;
   margin: 0;
-  color: $primary_color;
+  color: $primary_light;
   font-weight: $semi_font_weight;
   border-radius: 2px;
   border: none;
@@ -76,13 +76,12 @@ input[type="checkbox"] {
   margin-right: 15px;
 
   &:hover {
-    background-color: $border_color;
     cursor: pointer;
   }
 
   &:checked {
-    background-color: $primary_color;
-    border-color: $primary_color;
+    background-color: $primary_light;
+    border-color: $primary_light;
     color: white;
     content: "";
   }

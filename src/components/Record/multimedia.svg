@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="-502 -2 480 480" enable-background="new -502 -2 480 480" xml:space="preserve">
+	 viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
 <g id="Art_x2F_-Movie-2" transform="translate(-50.000000, 0.000000)">
 	<g id="Group" transform="translate(50.000000, 0.000000)">
 		<g id="Button-Copy">
-			<rect id="Bounds" x="-502" y="-2" fill="#222222" width="480" height="480"/>
+			<rect id="Bounds" x="-2" y="-2" fill="#E9E9E9" width="1000" height="1000"/>
 		</g>
 	</g>
 </g>
+<circle opacity="0.2" fill="#222222" enable-background="new    " cx="498" cy="498" r="346.9"/>
 <g id="Art_x2F_-Movie-2_1_" transform="translate(-50.000000, 0.000000)">
 	<g id="Group_1_" transform="translate(50.000000, 0.000000)">
-		<polygon id="Page-1" fill="#FFFFFF" points="-316.4,170.6 -316.4,305.4 -181.6,238 		"/>
+		<polygon id="Page-1" fill="#222222" points="384.7,357.6 384.7,638.4 665.5,498 		"/>
 	</g>
 </g>
-<circle opacity="0.2" fill="#FFFFFF" cx="-262" cy="238" r="166.5"/>
 </svg>
