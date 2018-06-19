@@ -35,26 +35,25 @@ export default {
     text: `
 <h2>Das Projekt</h2>
 <h3>Projektziele</h3>
-<p>Das Wissensportal <em>Bildungsgeschichte Schweiz</em> ermöglicht Forschenden,</p>
-<p>Studierenden, Lehrenden und einer interessierten Öffentlichkeit eine</p>
-<p>disziplinär strukturierte sowie mehrsprachige Recherche zu Quellen und</p>
-<p>Daten der historischen Bildungsforschung für die Schweiz. Das bildungshistorische Informationspotential unterschiedlicher digitaler Infrastrukturen wird über eine Suchmaske auffindbar.</p>
+<p>Das Wissensportal <em>Bildungsgeschichte Schweiz</em> ermöglicht Forschenden, Studierenden, Lehrenden und einer interessierten Öffentlichkeit eine disziplinär strukturierte sowie mehrsprachige Recherche zu Quellen und Daten der historischen Bildungsforschung für die Schweiz. Die unterschiedlichen digitalen Infrastrukturen werden über eine Suchmaske auffindbar.</p>
 <p>Forschenden wird eine einfache Möglichkeit zur Veröffentlichung bildungshistorischer Forschungsdaten im Sinne des Forschungsdatenmanagements (SNF-Strategie zu Open Research Data) ermöglicht.</p>
 <h3 id="projektorganisation">Projektorganisation</h3>
 <h4 id="disziplinäre-begleitgruppe">Disziplinäre Begleitgruppe</h4>
 <p>Arbeitsgruppe Historische Bildungsforschung (SGBF)</p>
-<h4 id="projektleitung-technische-entwicklungsphase">Projektleitung (technische Entwicklungsphase)</h4>
-<p>Prof. Dr. Lucien Criblez; Dr. Christina Rothen; Dr. Thomas Ruoss  (Universität Zürich)</p>
 <h4 id="projektkernteam-technische-entwicklungsphase">Projektkernteam (technische Entwicklungsphase)</h4>
+<p>Christina Rothen; Thomas Ruoss; Lucien Criblez (Universität Zürich)<br />
+Projektleitung
 <p>Peter Schäuble (Eurospider Information Technology)<br />
 Entwicklung der Suchmaschine</p>
 <p>Amanda Sauter &amp; Mauro Bieg (2324.ch)<br />
 Design und Entwicklung des Frontends</p>
-<p>Sergio Maffioletti (S3IT, Universität Zürich)</p>
-<p>Backend und Langzeit-Repository (Koordination DaSCH)</p>
-<p>Carmen Flury, Tamara Lehner-Loosli, Lars Heinzer (Universität Zürich)</p>
-<p>Projektmitarbeitende Bildung in Zahlen</p>
-<p>Bei Andrea Malits, Florian Steurer, Cyrus Beck, Simon Allemann, Alexandre Fontaine, Giorgia Masoni, Anja Giudici, Lars Müller und Wolfgang Saalfeld bedanken wir uns für ihre vielseitige Unterstützung.</p>
+<p>Sergio Maffioletti (S3IT, Universität Zürich)<br />
+Backend und Langzeit-Repository (Koordination DaSCH)</p>
+<p>Carmen Flury, Tamara Lehner-Loosli, Lars Heinzer (Universität Zürich)<br />
+Projektmitarbeitende Bildung in Zahlen</p>
+<p>Bei den Mitarbeitenden des Dipartimento formazione e apprendimento della Scuola universitaria professionale della Svizzera italiana (SUPSI DFA), der Bibliothek für Bildungsgeschichtliche Forschung des DIPF (BBF), des Schweizerischen Bundesarchivs, des Staatsarchivs Zürich, der Zentralbibliothek Zürich, der ETH-Bibliothek und der Stiftung Pestalozzianum sowie namentlich bei Flavian Imlig, Wolfgang Saalfeld, Lars Müller, Anja Giudici, Giorgia Masoni, Alexandre Fontaine, Karin Manz, Caroline Suter und Simon Allemann bedanken wir uns für die vielseitige Unterstützung.</p>
+<h3>Kontakt</h3>
+<p><a href="mailto:redaktion@bildungsgeschichte.ch">redaktion@bildungsgeschichte.ch</a></p>
       `
   }
 , Projects: {
@@ -63,23 +62,22 @@ Design und Entwicklung des Frontends</p>
 <p>(Stand 26.06.2018)</p>
 <h3 id="bildung-in-zahlen">Bildung in Zahlen</h3>
 <p>Institut für Erziehungswissenschaft Universität Zürich http://www.bildungsgeschichte.uzh.ch/de.html</p>
-<h3 id="scriptura-paedagogica-online"><a href="http://goobiweb.bbf.dipf.de/viewer/browse/">Scriptura Paedagogica Online</a></h3>
-<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin Pädagogische Nachschlagewerke und Pädagogische Zeitschriften</p>
+<h3 id="erziehungsdirektoren"><a href="http://www.bildungsgeschichte.uzh.ch">Erziehungsdirektoren</a></h3>
+<p>Institut für Erziehungswissenschaft Universität Zürich</p>
 <h3 id="fondo-gianini-e-rara"><a href="https://www.e-rara.ch/fondo/nav/classification/10916052">Fondo Gianini (e-rara)</a></h3>
 <p>Plattform für digitalisierte Drucke aus Schweizer Bibliotheken</p>
 <h3 id="fondo-gianini-supsi"><a href="http://fondo-gianini.supsi.ch/">Fondo Gianini (SUPSI)</a></h3>
-<p>La Scuola universitaria professionale della Svizzera italiana (SUPSI)</p>
-<h3 id="zürcher-klassenfotoarchiv"><a href="https://archives-quickaccess.ch/search/1">Zürcher Klassenfotoarchiv</a></h3>
-<p>Staatsarchiv des Kantons Zürich</p>
-<h3 id="zürcher-schulumfrage-177172"><a href="https://www.archives-quickaccess.ch/search/3">Zürcher Schulumfrage 1771/72</a></h3>
-<p>Staatsarchiv des Kantons Zürich</p>
+<p>Dipartimento formazione e apprendimento della Scuola univeritaria professionale della Svizzera italiana (SUPSI DFA)</p>
+<h3 id="scriptura-paedagogica-online"><a href="http://goobiweb.bbf.dipf.de/viewer/browse/">Scriptura Paedagogica Online</a></h3>
+<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin Pädagogische Nachschlagewerke und Pädagogische Zeitschriften</p>
 <h3 id="stapfer-enquête-1799"><a href="https://opendata.swiss/de/dataset/stapfer-enquete-schule-in-der-schweiz-1799">Stapfer-Enquête 1799</a></h3>
 <p><a href="http://www.stapferenquete.ch/projekt">Projektbeschrieb</a></p>
 <p>Schweizerisches Bundesarchiv</p>
 <h3 id="storiascuola"><a href="http://www2.supsi.ch/cms/storiascuola/">Storiascuola</a></h3>
-<p>La Scuola universitaria professionale della Svizzera italiana (SUPSI)</p>
-<h3 id="erziehungsdirektoren"><a href="http://www.bildungsgeschichte.uzh.ch">Erziehungsdirektoren</a></h3>
-<p>Institut für Erziehungswissenschaft Universität Zürich</p>
+<p>Dipartimento formazione e apprendimento della Scuola univeritaria professionale della Svizzera italiana (SUPSI DFA)</p><h3 id="zürcher-klassenfotoarchiv"><a href="https://archives-quickaccess.ch/search/1">Zürcher Klassenfotoarchiv</a></h3>
+<p>Staatsarchiv des Kantons Zürich</p>
+<h3 id="zürcher-schulumfrage-177172"><a href="https://www.archives-quickaccess.ch/search/3">Zürcher Schulumfrage 1771/72</a></h3>
+<p>Staatsarchiv des Kantons Zürich</p>
       `
   }
 , Rights: {
@@ -97,20 +95,29 @@ Design und Entwicklung des Frontends</p>
   }
 , Tips: {
     text: `
-<h2>Tipps &amp; Tricks</h2>
-<h3>Untertitel</h3>
-<p>Ein Absatz</p>
-<ol>
-  <li>geordnete Liste</li>
-  <li>geordnete Liste item 2</li>
-</ol>
-<p>
-  Ein weiterer Absatz mit <a href="http://2324.ch">Link</a> und <a href="mailto:redaktion@bildungsgeschichte.ch">Mail Link</a>.
-</p>
-<ul>
-  <li>ungeordnete Liste</li>
-  <li>ungeordnete Liste item 2</li>
-</ul>
+    <h2>Tipps &amp; Tricks</h2>
+    <h3>Suche nach Phrasen</h3>
+    <p>Suche nach zusammengehörigen Ausdrücken:"Höhere Töchterschule Zürich"<br /> (Verwenden sie dazu die sog. Doppelten Kodierungszeichen)</p>
+    <h3>Einschränkungen</h3>
+    <p>Die Suche kann eingeschränkt werden auf einzelne Bereiche des Dokuments</p>
+    <ul>
+      <li>title:Pestalozzi (Suche nur im Titel des Dokuments)</li>
+      <li>body:Pestalozzi (Suche nur im Volltext des Dokuments)</li>
+    </ul>
+    <p>Die Suche kann eingeschränkt werden auf einzelne Metadaten</p>
+    <ul>
+      <li>author:"Johann Heinrich Pestalozzi" (Suche nach Autor) </li>
+      <li>publicationplace:Bern (Suche nach Publikationsort)</li>
+      <li>publicationsdate:1831(Suche nach Publikationsdatum)</li>
+      <li>municipality:Aarau (Suche nach Gemeinde)</li>
+      <li>canton:Zürich (Suche nach Kanton)</li>
+      <li>nation:Frankreich (Suche nach Nation)</li>
+    </ul>
+    <h3>Boolsche Operatoren</h3>
+    <p>Standardmässig werden Suchausdrücke mit ODER verknüpft, d.h. <br/><em>Kindergarten municipality:Kilchberg</em><br/> sucht nach Dokumenten in denen entweder Kindergarten vorkommt oder die Gemeinde Kilchberg.</p>
+    <p>Wird das Zeichen + verwendet, kommt der nachstehende Begriff zwingend vor. Wird das Zeichen - verwendet, kommt der nachstehende Begriff zwingend nicht vor.<br /> Folgende zwei Beispiele verdeutlichen die genaue Anwendung:<br/> +Kindergarten +Fröbel (Alle Suchergebnisse
+      enthalten zwingend beide Begriffe Kindergarten und Fröbel)<br/> +Kindergarten -Fröbel (Alle Suchergebnisse enthalten Kindergarten ohne den Begriff Fröbel zu enthalten).
+      <p>
       `
   }
 }

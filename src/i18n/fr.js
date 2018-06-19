@@ -17,7 +17,7 @@ export default {
   , copyright: '© 2018, Université de Zurich'
   }
 , Home: {
-    quickInfo: 'Histoire de l’Éducation Suisse : Savoir digital sur l’évolution historique de la formation et de l’éducation'
+    quickInfo: 'Plateforme sur l’évolution historique de la formation et de l’éducation '
   }
 , RecordList: {
     resetFacetSearch: 'Répéter la recherche sans restrictions'
@@ -41,42 +41,45 @@ export default {
 <h4 id="suivi-du-projet">Suivi du projet</h4>
 <p>Groupe de travail Recherche en histoire de l’éducation (SSRE)</p>
 <h4 id="direction-du-projet-développement-technique">Direction du projet (développement technique)</h4>
-<p>Prof. Dr. Lucien Criblez; Dr. Christina Rothen; Dr. Thomas Ruoss  (Université de Zürich)</p>
+<p>Lucien Criblez; Christina Rothen; Thomas Ruoss  (Université de Zürich)<br />
+Direction du projet</p>
 <h4 id="equipe-de-base-du-projet-développement-technique">Equipe de base du projet (développement technique) </h4>
 <p>Peter Schäuble (Eurospider Information Technology)<br />
 Développement du moteur de recherche</p>
 <p>Amanda Sauter &amp; Mauro Bieg (2324.ch)<br />
 Design et développement des Frontends</p>
-<p>Sergio Maffioletti (S3IT, Universität Zürich)</p>
-<p>Backend et Repository (Coordination DaSCH)</p>
-<p>Carmen Flury, Tamara Lehner-Loosli, Lars Heinzer (Université de Zürich)</p>
-<p>Collaborteurs du projet Bildung in Zahlen</p>
-<p>Nous remercions Andrea Malits, Florian Steurer, Cyrus Beck, Simon Allemann, Alexandre Fontaine, Giorgia Masoni, Anja Giudici, Lars Müller et Wolfgang Saalfeld pour leur soutien multiforme.</p>
+<p>Sergio Maffioletti (S3IT, Universität Zürich)<br />
+Backend et Repository (Coordination DaSCH)</p>
+<p>Carmen Flury, Tamara Lehner-Loosli, Lars Heinzer (Université de Zürich)<br />
+Collaborteurs du projet Bildung in Zahlen</p>
+<p>Nous remercions les collaboratrices et collaborateures du Dipartimento formazione e apprendimento della Scuola universitaria professionale della Svizzera italiana (SUPSI DFA), de la Bibliothek für Bildungsgeschichtliche Forschung des DIPF (BBF), des Archives fédérles suisses, des Archives d'État de Zurich, de la Bibliothèque centrale de Zurich, de l' ETH-Bibliothek et de la Fondation Pestalozzianum. Nous remercions notamment Wolfgang Saalfeld, Flavian Imlig, Lars Müller, Giorgia Masoni, Anja Giudici, Alexandre Fontaine, Karin Manz, Caroline Suter et Simon Allemann pour leur soutien.</p>
+<h3>Contact</h3>
+<p><a href="mailto:redaktion@bildungsgeschichte.ch">redaction@histoiredeleducation.ch</a></p>
       `
   }
 , Projects: {
     text: `
 <h2 id="les-collections">Les collections</h2>
-<p>(Statut 23.05.2018)</p>
+<p>(Statut 26.06.2018)</p>
 <h3 id="bildung-in-zahlen">Bildung in Zahlen</h3>
 <p>Institut für Erziehungswissenschaft Universität Zürich http://www.bildungsgeschichte.uzh.ch/de.html</p>
-<h3 id="scriptura-paedagogica-online"><a href="http://goobiweb.bbf.dipf.de/viewer/browse/">Scriptura Paedagogica Online</a></h3>
-<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin Pädagogische Nachschlagewerke und Pädagogische Zeitschriften</p>
+<h3 id="erziehungsdirektoren"><a href="http://www.bildungsgeschichte.uzh.ch">Erziehungsdirektoren</a></h3>
+<p>Institut für Erziehungswissenschaft Universität Zürich</p>
 <h3 id="fondo-gianini-e-rara"><a href="https://www.e-rara.ch/fondo/nav/classification/10916052">Fondo Gianini (e-rara)</a></h3>
 <p>Le portail pour les imprimés numérisés des bibliothèques suisses</p>
 <h3 id="fondo-gianini-supsi"><a href="http://fondo-gianini.supsi.ch/">Fondo Gianini (SUPSI)</a></h3>
-<p>La Scuola universitaria professionale della Svizzera italiana (SUPSI)</p>
-<h3 id="zürcher-klassenfotoarchiv"><a href="https://archives-quickaccess.ch/search/1">Zürcher Klassenfotoarchiv</a></h3>
-<p>Archives d’Etat du canton de Zurich</p>
-<h3 id="zürcher-schulumfrage-177172"><a href="https://www.archives-quickaccess.ch/search/3">Zürcher Schulumfrage 1771/72</a></h3>
-<p>Archives d’Etat du canton de Zurich</p>
+<p>Dipartimento formazione e apprendimento della Scuola univeritaria professionale della Svizzera italiana (SUPSI DFA)</p>
+<h3 id="scriptura-paedagogica-online"><a href="http://goobiweb.bbf.dipf.de/viewer/browse/">Scriptura Paedagogica Online</a></h3>
+<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin Pädagogische Nachschlagewerke und Pädagogische Zeitschriften</p>
 <h3 id="stapfer-enquête-1799"><a href="https://opendata.swiss/de/dataset/stapfer-enquete-schule-in-der-schweiz-1799">Stapfer-Enquête 1799</a></h3>
 <p><a href="http://www.stapferenquete.ch/projekt">Description du projet</a></p>
 <p>Archives fédérale suisses</p>
 <h3 id="storiascuola"><a href="http://www2.supsi.ch/cms/storiascuola/">Storiascuola</a></h3>
-<p>La Scuola universitaria professionale della Svizzera italiana (SUPSI)</p>
-<h3 id="erziehungsdirektoren"><a href="http://www.bildungsgeschichte.uzh.ch">Erziehungsdirektoren</a></h3>
-<p>Institut für Erziehungswissenschaft Universität Zürich</p>
+<p>Dipartimento formazione e apprendimento della Scuola univeritaria professionale della Svizzera italiana (SUPSI DFA)</p>
+<h3 id="zürcher-klassenfotoarchiv"><a href="https://archives-quickaccess.ch/search/1">Zürcher Klassenfotoarchiv</a></h3>
+<p>Archives d’Etat du canton de Zurich</p>
+<h3 id="zürcher-schulumfrage-177172"><a href="https://www.archives-quickaccess.ch/search/3">Zürcher Schulumfrage 1771/72</a></h3>
+<p>Archives d’Etat du canton de Zurich</p>
       `
   }
 , Rights: {
@@ -94,6 +97,30 @@ Design et développement des Frontends</p>
   }
 , Tips: {
     text: `
-      `
+    <h2>Conseils &amp; Acustes </h2>
+      <h3>Recherche par expressions</h3>
+      <p>Recherche des expressions connexes: "École des filles de Fribourg"<br />
+      (Utilisez à cet égard les symboles de double codage " " )</p>
+      <h3>Restrictions</h3>
+        <p>Rechercher des éléments spécifiques du texte<br />
+        <li>title:"Didactica magna" (Recherche par titre du document)</li>
+        <li>body:Didactica (Recherche dans le corps du texte) </li>
+      </ul>
+      <p>Restreindre la recherche via métadonnées</p>
+      <ul>
+        <li>author:"Grégoire Girard (Recherche par auteur) </li>
+        <li>publicationplace:Neuchâtel (Recherche par lieu)</li>
+        <li>publicationsdate:1831(Recherche par date de publication)</li>
+        <li>municipality:Bienne (Recherche par commune)</li>
+        <li>canton:Zürich (Recherche par canton)</li>
+        <li>nation:Frankreich (Recherche par pays)</li>
+      </ul>
+      <h3>Opérateurs booléens</h3>
+      <p>L’opérateur OU est l’opérateur par défaut. L’espace entre deux termes est donc équivalent à l’opérateur OU, c’est-à-dire que en cherchant <br /><em>"Jardin d'enfants" municipality:Lausanne</em><br /> vous obtiendrez les documents qui concernent soit les jardin d’enfants soit la commune de Lausanne.</p>
+      <p>Si le signe + est utilisé, le terme suivant est obligatoire. Si le signe - est utilisé, le terme suivant n’est pas obligatoire. </p>
+  Les deux exemples suivants illustrent la marche à suivre :<br/>
+  +Mutuel +Girard (Tous les résultats de recherche contiennent nécessairement les deux termes Mutuel et Girard)<br />  +Mutuel -Girard (Tous les résultats de recherche contiennent Mutuel sans le terme Girard inclus)
+  <p>
+        `
   }
 }
