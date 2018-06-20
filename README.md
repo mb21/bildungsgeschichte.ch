@@ -1,14 +1,10 @@
-# Wissensportal Bildungsgeschichte Schweiz
+# Search portal on the history of education in Switzerland
 
-Testable under: <http://mb21.gitlab.io>
-
-## Setup
-
-Install `yarn`. If you are on macOS:
-
-    $ brew install yarn
+Live on <https://www.bildungsgeschichte.ch>
 
 ## Develop
+
+Install [`yarn`](https://yarnpkg.com), then `cd` into the directory.
 
 Fetch dependencies:
 
