@@ -2,8 +2,12 @@
 
 .SortDropdown {
   float: right;
-  position: relative;
   margin-bottom: 15px;
+  @media (min-width: 1000px) {
+    display: flex;
+    height: 25px;
+    margin-left: 10px;
+  }
   @include respond-to(non_mobile) {
     margin-right: $facets_width;
   }
