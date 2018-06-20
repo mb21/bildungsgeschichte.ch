@@ -81,7 +81,7 @@ class Record extends React.Component {
         <span className="value">
           <a href={doc.transcript} target="_blank">
             { this.props.strings.open +
-              ( doc.transcript_is_ocr
+              ( doc.transcript_is_ocr && doc.transcript_is_ocr !== "false"
                 ? ' (OCR)'
                 : '' )
             }
