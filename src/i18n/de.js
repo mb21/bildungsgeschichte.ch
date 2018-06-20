@@ -60,16 +60,16 @@ Projektmitarbeitende Bildung in Zahlen</p>
     text: `
 <h2 id="die-bestände">Die Bestände</h2>
 <p>(Stand 26.06.2018)</p>
-<h3 id="bildung-in-zahlen">Bildung in Zahlen</h3>
-<p>Institut für Erziehungswissenschaft Universität Zürich http://www.bildungsgeschichte.uzh.ch/de.html</p>
+<h3 id="bildung-in-zahlen"><a href="http://www.bildungsgeschichte.uzh.ch">Bildung in Zahlen</a></h3>
+<p>Institut für Erziehungswissenschaft, Universität Zürich</p>
 <h3 id="erziehungsdirektoren"><a href="http://www.bildungsgeschichte.uzh.ch">Erziehungsdirektoren</a></h3>
-<p>Institut für Erziehungswissenschaft Universität Zürich</p>
+<p>Institut für Erziehungswissenschaft, Universität Zürich</p>
 <h3 id="fondo-gianini-e-rara"><a href="https://www.e-rara.ch/fondo/nav/classification/10916052">Fondo Gianini (e-rara)</a></h3>
 <p>Plattform für digitalisierte Drucke aus Schweizer Bibliotheken</p>
 <h3 id="fondo-gianini-supsi"><a href="http://fondo-gianini.supsi.ch/">Fondo Gianini (SUPSI)</a></h3>
 <p>Dipartimento formazione e apprendimento della Scuola univeritaria professionale della Svizzera italiana (SUPSI DFA)</p>
 <h3 id="scriptura-paedagogica-online"><a href="http://goobiweb.bbf.dipf.de/viewer/browse/">Scriptura Paedagogica Online</a></h3>
-<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin Pädagogische Nachschlagewerke und Pädagogische Zeitschriften</p>
+<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin (Pädagogische Nachschlagewerke und Pädagogische Zeitschriften)</p>
 <h3 id="stapfer-enquête-1799"><a href="https://opendata.swiss/de/dataset/stapfer-enquete-schule-in-der-schweiz-1799">Stapfer-Enquête 1799</a></h3>
 <p><a href="http://www.stapferenquete.ch/projekt">Projektbeschrieb</a></p>
 <p>Schweizerisches Bundesarchiv</p>
@@ -116,8 +116,7 @@ Projektmitarbeitende Bildung in Zahlen</p>
     <h3>Boolsche Operatoren</h3>
     <p>Standardmässig werden Suchausdrücke mit ODER verknüpft, d.h. <br/><em>Kindergarten municipality:Kilchberg</em><br/> sucht nach Dokumenten in denen entweder Kindergarten vorkommt oder die Gemeinde Kilchberg.</p>
     <p>Wird das Zeichen + verwendet, kommt der nachstehende Begriff zwingend vor. Wird das Zeichen - verwendet, kommt der nachstehende Begriff zwingend nicht vor.<br /> Folgende zwei Beispiele verdeutlichen die genaue Anwendung:<br/> +Kindergarten +Fröbel (Alle Suchergebnisse
-      enthalten zwingend beide Begriffe Kindergarten und Fröbel)<br/> +Kindergarten -Fröbel (Alle Suchergebnisse enthalten Kindergarten ohne den Begriff Fröbel zu enthalten).
-      <p>
+      enthalten zwingend beide Begriffe Kindergarten und Fröbel)<br/> +Kindergarten -Fröbel (Alle Suchergebnisse enthalten Kindergarten ohne den Begriff Fröbel zu enthalten)<p>
       `
   }
 }

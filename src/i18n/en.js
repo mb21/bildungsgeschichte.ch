@@ -35,20 +35,20 @@ export default {
     text: `
 <h2>The Project</h2>
 <h3>Project Goals</h3>
-<p>The <em>History of Education</em> knowledge portal enables researchers,students, teachers and interested members of the public to carry out discipline-specific and multilingual research on sources and data relating to the history of education research in Switzerland. Various digital sources on the history of education are accessible through a search mask</p>
+<p>The <em>History of Education</em> knowledge portal enables researchers, students, teachers and interested members of the public to carry out discipline-specific and multilingual research on sources and data relating to the history of education research in Switzerland. Various digital sources on the history of education are accessible through a search mask.</p>
 <p>This site offers an easy way for researchers to publish their data in the field of history of education as laid out by the SNF open research data strategy's research data management plan.</p>
 <h3 id="project-organisation">Project Organisation</h3>
 <h4 id="subject-specific-experts">Subject specific experts</h4>
 <p>Working Group History of Education (SGBF)</p>
 <h4 id="core-project-team-technical-development-phase">Core project team (technical development phase)</h4>
-<p>Christina Rothen; Thomas Ruoss; Lucien Cribelz (University of Zurich)<br />
+<p>Christina Rothen; Thomas Ruoss; Lucien Criblez (University of Zurich)<br />
 Project lead</p>
 <p>Peter Schäuble (Eurospider Information Technology)<br />
 Search engine development</p>
 <p>Amanda Sauter &amp; Mauro Bieg (2324.ch)<br />
 Frontend design and development</p>
 <p>Sergio Maffioletti (S3IT, University of Zurich)<br />
-Backend and long-term-repository (Koordination DaSCH)</p>
+Backend and long-term-repository (Coordination DaSCH)</p>
 <p>Carmen Flury, Tamara Lehner-Loosli, Lars Heinzer (University of Zurich)<br />
 Project team Bildung in Zahlen (Education by Numbers)</p>
 <p>We would like to thank the employees of: the Dipartimento formazione e apprendimento della Scuola univeritaria professionale della Svizzera italiana (SUPSI DFA), the Bibliothek für Bildungsgeschichtliche Forschung des DIPF (BBF) (the DIPF library for research in the history of education), the Swiss federal archives, the Zurich state archives, the Zurich central library (ZB), the ETH library, and the Pestalozzianum foundation. Our thanks also go to Flavian Imlig, Wolfgang Saalfeld, Lars Müller, Anja Giudici, Giorgia Masoni, Alexandre Fontaine, Karin Manz, Caroline Suter and Simon Allemann for their valuable support.</p>
@@ -60,8 +60,8 @@ Project team Bildung in Zahlen (Education by Numbers)</p>
     text: `
 <h2 id="collections">Collections</h2>
 <p>(Status 26.06.2018)</p>
-<h3 id="bildung-in-zahlen">Bildung in Zahlen</h3>
-<p>Institut für Erziehungswissenschaft Universität Zürich http://www.bildungsgeschichte.uzh.ch/de.html</p>
+<h3 id="bildung-in-zahlen"><a href="http://www.bildungsgeschichte.uzh.ch">Bildung in Zahlen</a></h3>
+<p>Institut für Erziehungswissenschaft, Universität Zürich</p>
 <h3 id="erziehungsdirektoren"><a href="http://www.bildungsgeschichte.uzh.ch">Erziehungsdirektoren</a></h3>
 <p>Institut für Erziehungswissenschaft Universität Zürich</p>
 <h3 id="fondo-gianini-e-rara"><a href="https://www.e-rara.ch/fondo/nav/classification/10916052">Fondo Gianini (e-rara)</a></h3>
@@ -69,7 +69,7 @@ Project team Bildung in Zahlen (Education by Numbers)</p>
 <h3 id="fondo-gianini-supsi"><a href="http://fondo-gianini.supsi.ch/">Fondo Gianini (SUPSI)</a></h3>
 <p>Dipartimento formazione e apprendimento della Scuola univeritaria professionale della Svizzera italiana (SUPSI DFA)</p>
 <h3 id="scriptura-paedagogica-online"><a href="http://goobiweb.bbf.dipf.de/viewer/browse/">Scriptura Paedagogica Online</a></h3>
-<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin Pädagogische Nachschlagewerke und Pädagogische Zeitschriften</p>
+<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin (Pädagogische Nachschlagewerke und Pädagogische Zeitschriften)</p>
 <h3 id="stapfer-enquête-1799"><a href="https://opendata.swiss/de/dataset/stapfer-enquete-schule-in-der-schweiz-1799">Stapfer-Enquête 1799</a></h3>
 <p><a href="http://www.stapferenquete.ch/projekt">Project description</a></p>
 <p>Swiss Federal Archives</p>
@@ -101,10 +101,10 @@ Project team Bildung in Zahlen (Education by Numbers)</p>
  <h3>Limiting your search</h3>
  <p>The search can be restricted to specific segments of a text</p>
  <ul>
-   <li>title: Pestalozzi (searches only the title of the text)</li>
-   <li>body: Pestalozzi (searches only the body of the text)</li>
+   <li>title:Pestalozzi (searches only the title of the text)</li>
+   <li>body:Pestalozzi (searches only the body of the text)</li>
  </ul>
- <p>The search can be restricted according to specific metadatan</p>
+ <p>The search can be restricted according to specific metadata</p>
  <ul>
    <li>author:"Johann Heinrich Pestalozzi" (searches according to author) </li>
    <li>publicationplace:Bern (searches according to place of publication)</li>
@@ -114,7 +114,7 @@ Project team Bildung in Zahlen (Education by Numbers)</p>
    <li>nation:Frankreich (searches according to country)</li>
  </ul>
  <h3>Boolian Search Operators</h3>
- <p>By default, search terms are linked by the OR function This means that: <br /><em>Kindergarten municipality:Kilchberg</em><br /> searches for documents that contain either the term Kindergarten, or refer to the municipality of Kilchberg.</p>
+ <p>By default, search terms are linked by the OR function. This means that: <br /><em>Kindergarten municipality:Kilchberg</em><br /> searches for documents that contain either the term Kindergarten, or refer to the municipality of Kilchberg.</p>
  <p>When the + symbol is used before a term, only search results including that term will appear. When the - symbol is used before a term, it will be excluded from the search results.<br/> This is demonstrated by the following two examples:<br/> +Kindergarten
    +Fröbel (all search results include both Kindergarten and Fröbel)<br/> +Kindergarten -Fröbel (Search results will include the term Kindergarten but not Fröbel).
    <p>
