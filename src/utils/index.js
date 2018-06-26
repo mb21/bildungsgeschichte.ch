@@ -11,7 +11,7 @@ const catchError = e => {
   return Promise.reject(e);
 }
 
-const serverdata = fetch("http://uzhife.eurospider.com/configuration.json")
+const serverdata = fetch("https://uzhife.eurospider.com/configuration.json")
                      .then( d => d.json() ).catch(catchError)
 
 export function getInitialFacets() {
