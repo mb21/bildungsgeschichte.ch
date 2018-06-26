@@ -51,7 +51,7 @@ Frontend design and development</p>
 Backend and long-term-repository (Coordination DaSCH)</p>
 <p>Carmen Flury, Tamara Lehner-Loosli, Lars Heinzer (University of Zurich)<br />
 Project team Bildung in Zahlen (Education by Numbers)</p>
-<p>We would like to thank the employees of: the Dipartimento formazione e apprendimento della Scuola univeritaria professionale della Svizzera italiana (SUPSI DFA), the Bibliothek für Bildungsgeschichtliche Forschung des DIPF (BBF) (the DIPF library for research in the history of education), the Swiss federal archives, the Zurich state archives, the Zurich central library (ZB), the ETH library, and the Pestalozzianum foundation. Our thanks also go to Flavian Imlig, Wolfgang Saalfeld, Lars Müller, Anja Giudici, Giorgia Masoni, Alexandre Fontaine, Karin Manz, Caroline Suter and Simon Allemann for their valuable support.</p>
+<p>We would like to thank the employees of: the Dipartimento formazione e apprendimento della Scuola universitaria professionale della Svizzera italiana (SUPSI DFA), the Bibliothek für Bildungsgeschichtliche Forschung des DIPF (BBF) (the DIPF library for research in the history of education), the Swiss federal archives, the Zurich state archives, the Zurich central library (ZB), the ETH library, and the Pestalozzianum foundation. Our thanks also go to Flavian Imlig, Wolfgang Saalfeld, Lars Müller, Anja Giudici, Giorgia Masoni, Alexandre Fontaine, Karin Manz, Caroline Suter and Simon Allemann for their valuable support.</p>
 <h3>Contact</h3>
 <p><a href="mailto:redaktion@bildungsgeschichte.ch">redaktion@bildungsgeschichte.ch</a></p>
       `
@@ -67,14 +67,14 @@ Project team Bildung in Zahlen (Education by Numbers)</p>
 <h3 id="fondo-gianini-e-rara"><a href="https://www.e-rara.ch/fondo/nav/classification/10916052">Fondo Gianini (e-rara)</a></h3>
 <p>The platform for digitized rare books from Swiss libraries</p>
 <h3 id="fondo-gianini-supsi"><a href="http://fondo-gianini.supsi.ch/">Fondo Gianini (SUPSI)</a></h3>
-<p>Dipartimento formazione e apprendimento della Scuola univeritaria professionale della Svizzera italiana (SUPSI DFA)</p>
+<p>Dipartimento formazione e apprendimento della Scuola universitaria professionale della Svizzera italiana (SUPSI DFA)</p>
 <h3 id="scriptura-paedagogica-online"><a href="http://goobiweb.bbf.dipf.de/viewer/browse/">Scriptura Paedagogica Online</a></h3>
-<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin (Pädagogische Nachschlagewerke und Pädagogische Zeitschriften)</p>
+<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin (Pädagogische Nachschlagewerke und Pädagogische Zeitschriften) (8.2018)</p>
 <h3 id="stapfer-enquête-1799"><a href="https://opendata.swiss/de/dataset/stapfer-enquete-schule-in-der-schweiz-1799">Stapfer-Enquête 1799</a></h3>
 <p><a href="http://www.stapferenquete.ch/projekt">Project description</a></p>
 <p>Swiss Federal Archives</p>
 <h3 id="storiascuola"><a href="http://www2.supsi.ch/cms/storiascuola/">Storiascuola</a></h3>
-<p>Dipartimento formazione e apprendimento della Scuola univeritaria professionale della Svizzera italiana (SUPSI DFA)</p>
+<p>Dipartimento formazione e apprendimento della Scuola universitaria professionale della Svizzera italiana (SUPSI DFA)</p>
 <h3 id="zürcher-klassenfotoarchiv"><a href="https://archives-quickaccess.ch/search/1">Zürcher Klassenfotoarchiv</a></h3>
 <p>State Archives of the canton of Zurich</p>
 <h3 id="zürcher-schulumfrage-177172"><a href="https://www.archives-quickaccess.ch/search/3">Zürcher Schulumfrage 1771/72</a></h3>
@@ -86,12 +86,12 @@ Project team Bildung in Zahlen (Education by Numbers)</p>
 <h2>Legal Notice</h2>
 <h3>Liability disclaimer</h3>
 <p>Although <em>History of Education Switzerland</em> has made every effort to ensure the accuracy of the information published here, it assumes no liability, express or implied, for the correctness, accuracy, reliability, or completeness of the information, nor does it guarantee the information is up-to-date.</p>
-<p><em>History of Education Switzerland</em> accepts no liability, whether direct or indirect, for material or non-material damages resulting from access and use, or non-use of the information published here, or resulting from misuse of the connection or technical malfunctions.</p>
+<p><em>History of Education Switzerland</em> accepts no liability, whether direct or indirect, for material or non-material damages resulting from access and use, or non-use of the information published here, or resulting from misuse of the connection or technical malfunction.</p>
 <p><em>History of Education Switzerland</em> provides links to outside websites which are not held on its server, and over which it has no influence. <em>History of Education Switzerland</em> has not verified these sites, and is not responsible for the content or the services provided there. Should the contents of the linked websites provide reason for complaint, please inform <em>History of Education Switzerland</em>.</p>
 <h3>Terms of Use</h3>
-<p><em>History of Education Switzerland</em> holds no copyright over the knowledge portal contents. Generally content rights are held by the catalogue owners.</p>
+<p><em>History of Education Switzerland</em> holds no copyright over the knowledge portal contents. Generally, content rights are held by the catalogue owners.</p>
 <p>The documents herby published by <em>History of Education Switzerland</em> are free for non-commercial use in teaching and research, as well as for personal use.</p>
-<p>The publication of texts and images in print and online form, is only permissible with the authorisation from their rights holders. Written authorisation from the rights holders is also required for the systematic storage on other servers of parts, or the whole, of the electronic resources provided here.</p>
+<p>The publication of texts and images in print and online form is only permissible with the authorisation from their rights-holders. Written authorisation from the rights holders is also required for the systematic storage on other servers of parts, or the whole, of the electronic resources provided here.</p>
       `
   }
   , Tips: { text: `
@@ -108,16 +108,24 @@ Project team Bildung in Zahlen (Education by Numbers)</p>
  <ul>
    <li>author:"Johann Heinrich Pestalozzi" (searches according to author) </li>
    <li>publicationplace:Bern (searches according to place of publication)</li>
-   <li>publicationsdate:1831(searches according to publication date)</li>
+   <li>publicationdate:1831 (searches according to publication date)</li>
    <li>municipality:Aarau (searches according to municipality)</li>
    <li>canton:Zürich (searches according to canton)</li>
    <li>nation:Frankreich (searches according to country)</li>
+   <li>actors:Actors (searches according to actors)</li>
+   <li>texttype:Teaching material (searches according to type of text)</li>
+   <li>mediatype:Picture (searches according to type of media)</li>
+   <li>language:German (searches according to language)</li>
+   <li>project:Stapfer-Enquête (searches according to inventory/project)</li>
+   <li>educationssystem:"baccalaureate schools" (searches according to education system)</li>
+   <li>subject:Childhood (searches according to subject)</li>
  </ul>
- <h3>Boolian Search Operators</h3>
- <p>By default, search terms are linked by the OR function. This means that: <br /><em>Kindergarten municipality:Kilchberg</em><br /> searches for documents that contain either the term Kindergarten, or refer to the municipality of Kilchberg.</p>
+ <h3>Search Operators</h3>
+ <p>By default, search terms are linked by the <em>or</em> function. This means that: <br /><em>Kindergarten municipality:Kilchberg</em><br /> searches for documents that contain either the term Kindergarten, or refer to the municipality of Kilchberg.</p>
  <p>When the + symbol is used before a term, only search results including that term will appear. When the - symbol is used before a term, it will be excluded from the search results.<br/> This is demonstrated by the following two examples:<br/> +Kindergarten
-   +Fröbel (all search results include both Kindergarten and Fröbel)<br/> +Kindergarten -Fröbel (Search results will include the term Kindergarten but not Fröbel).
-   <p>
+   +Fröbel (all search results include both Kindergarten and Fröbel)<br/> +Kindergarten -Fröbel (Search results will include the term Kindergarten but not Fröbel).<p>
+ <p>To perform a multiple character wildcard search use the * symbol.<p>
+ <p>Pestal* (find Pestalozzi, Pestalozzianum, Pestalozzi-Schule, …)<p>
      `
     }
   }

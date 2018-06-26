@@ -35,7 +35,7 @@ export default {
     text: `
 <h2>Das Projekt</h2>
 <h3>Projektziele</h3>
-<p>Das Wissensportal <em>Bildungsgeschichte Schweiz</em> ermöglicht Forschenden, Studierenden, Lehrenden und einer interessierten Öffentlichkeit eine disziplinär strukturierte sowie mehrsprachige Recherche zu Quellen und Daten der historischen Bildungsforschung für die Schweiz. Die unterschiedlichen digitalen Infrastrukturen werden über eine Suchmaske auffindbar.</p>
+<p>Das Wissensportal <em>Bildungsgeschichte Schweiz</em> ermöglicht Forschenden, Studierenden, Lehrenden und einer interessierten Öffentlichkeit eine disziplinär strukturierte sowie mehrsprachige Recherche zu Quellen und Daten der historischen Bildungsforschung für die Schweiz. Die unterschiedlichen digitalen Infrastrukturen sind über eine Suchmaske auffindbar.</p>
 <p>Forschenden wird eine einfache Möglichkeit zur Veröffentlichung bildungshistorischer Forschungsdaten im Sinne des Forschungsdatenmanagements (SNF-Strategie zu Open Research Data) ermöglicht.</p>
 <h3 id="projektorganisation">Projektorganisation</h3>
 <h4 id="disziplinäre-begleitgruppe">Disziplinäre Begleitgruppe</h4>
@@ -67,14 +67,14 @@ Projektmitarbeitende Bildung in Zahlen</p>
 <h3 id="fondo-gianini-e-rara"><a href="https://www.e-rara.ch/fondo/nav/classification/10916052">Fondo Gianini (e-rara)</a></h3>
 <p>Plattform für digitalisierte Drucke aus Schweizer Bibliotheken</p>
 <h3 id="fondo-gianini-supsi"><a href="http://fondo-gianini.supsi.ch/">Fondo Gianini (SUPSI)</a></h3>
-<p>Dipartimento formazione e apprendimento della Scuola univeritaria professionale della Svizzera italiana (SUPSI DFA)</p>
+<p>Dipartimento formazione e apprendimento della Scuola universitaria professionale della Svizzera italiana (SUPSI DFA)</p>
 <h3 id="scriptura-paedagogica-online"><a href="http://goobiweb.bbf.dipf.de/viewer/browse/">Scriptura Paedagogica Online</a></h3>
-<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin (Pädagogische Nachschlagewerke und Pädagogische Zeitschriften)</p>
+<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin (Pädagogische Nachschlagewerke und Pädagogische Zeitschriften) (8.2018)</p>
 <h3 id="stapfer-enquête-1799"><a href="https://opendata.swiss/de/dataset/stapfer-enquete-schule-in-der-schweiz-1799">Stapfer-Enquête 1799</a></h3>
 <p><a href="http://www.stapferenquete.ch/projekt">Projektbeschrieb</a></p>
 <p>Schweizerisches Bundesarchiv</p>
 <h3 id="storiascuola"><a href="http://www2.supsi.ch/cms/storiascuola/">Storiascuola</a></h3>
-<p>Dipartimento formazione e apprendimento della Scuola univeritaria professionale della Svizzera italiana (SUPSI DFA)</p><h3 id="zürcher-klassenfotoarchiv"><a href="https://archives-quickaccess.ch/search/1">Zürcher Klassenfotoarchiv</a></h3>
+<p>Dipartimento formazione e apprendimento della Scuola universitaria professionale della Svizzera italiana (SUPSI DFA)</p><h3 id="zürcher-klassenfotoarchiv"><a href="https://archives-quickaccess.ch/search/1">Zürcher Klassenfotoarchiv</a></h3>
 <p>Staatsarchiv des Kantons Zürich</p>
 <h3 id="zürcher-schulumfrage-177172"><a href="https://www.archives-quickaccess.ch/search/3">Zürcher Schulumfrage 1771/72</a></h3>
 <p>Staatsarchiv des Kantons Zürich</p>
@@ -108,15 +108,24 @@ Projektmitarbeitende Bildung in Zahlen</p>
     <ul>
       <li>author:"Johann Heinrich Pestalozzi" (Suche nach Autor) </li>
       <li>publicationplace:Bern (Suche nach Publikationsort)</li>
-      <li>publicationsdate:1831(Suche nach Publikationsdatum)</li>
+      <li>publicationdate:1831 (Suche nach Publikationsdatum)</li>
       <li>municipality:Aarau (Suche nach Gemeinde)</li>
       <li>canton:Zürich (Suche nach Kanton)</li>
       <li>nation:Frankreich (Suche nach Nation)</li>
+      <li>actors:Behörden (Suche nach Akteuren)</li>
+      <li>texttype:Lehrmittel (Suche nach Texttypen)</li>
+      <li>mediatype:Grafik (Suche nach Medientyp)</li>
+      <li>language:Französisch (Suche nach Sprache)</li>
+      <li>project:Stapfer-Enquête (Suche nach Bestand/Projekt)</li>
+      <li>educationssystem:Vorschule (Suche nach Bildungssystematik)</li>
+      <li>subject:Geschlecht (Suche nach Bezugsthema)</li>
     </ul>
-    <h3>Boolsche Operatoren</h3>
-    <p>Standardmässig werden Suchausdrücke mit ODER verknüpft, d.h. <br/><em>Kindergarten municipality:Kilchberg</em><br/> sucht nach Dokumenten in denen entweder Kindergarten vorkommt oder die Gemeinde Kilchberg.</p>
+    <h3>Suchoperatoren</h3>
+    <p>Standardmässig werden Suchausdrücke mit <em>oder</em> verknüpft, d.h. <br/><em>Kindergarten municipality:Kilchberg</em><br/> sucht nach Dokumenten in denen entweder Kindergarten vorkommt oder die Gemeinde Kilchberg.</p>
     <p>Wird das Zeichen + verwendet, kommt der nachstehende Begriff zwingend vor. Wird das Zeichen - verwendet, kommt der nachstehende Begriff zwingend nicht vor.<br /> Folgende zwei Beispiele verdeutlichen die genaue Anwendung:<br/> +Kindergarten +Fröbel (Alle Suchergebnisse
       enthalten zwingend beide Begriffe Kindergarten und Fröbel)<br/> +Kindergarten -Fröbel (Alle Suchergebnisse enthalten Kindergarten ohne den Begriff Fröbel zu enthalten)<p>
+      <p> Um eine beliebige Anzahl Zeichen am Ende des Suchbegriffs offen zu lassen, kann das Zeichen * verwendet werden. </br>
+      Pestal* (Suchergebnisse sind Pestalozzi, Pestalozzianum, Pestalozzi-Schule, etc.) </p>
       `
   }
 }
