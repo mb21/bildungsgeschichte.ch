@@ -10,7 +10,7 @@ class Header extends React.Component {
   render() {
     return (
       <header className="Header">
-        <Link to={ getBaseUrl() }>
+        <Link to={ getBaseUrl() + '/' }>
           <div className="Applogo">
             <img alt={ this.props.strings.appTitle } src={Logo} className="logopicture" />
             <h1 className="logoname">{ this.props.strings.appTitle }</h1>

@@ -24,10 +24,10 @@ import '../../styles/scaffolds.css'
 let routes = [];
 [ { path: "",             component: props => <Redirect to={props.location.pathname + '/'} /> }
 , { path: "/",            component: Home }
-, { path: "/about",       component: About }
-, { path: "/projects",    component: Projects }
-, { path: "/rights",      component: Rights }
-, { path: "/tips",        component: Tips }
+, { path: "/about/",      component: About }
+, { path: "/projects/",   component: Projects }
+, { path: "/rights/",     component: Rights }
+, { path: "/tips/",       component: Tips }
 , { path: "/records/:id", component: RecordDetail }
 , { path: "/records/",    component: RecordList }
 ].forEach(r => {

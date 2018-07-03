@@ -33,7 +33,7 @@ class Home extends React.Component {
       <div className="search">
         <SearchField home={true} onSubmit={ this.handleSubmit } />
         <a className="poweredbyquote" href="https://www.eurospider.com">powered by eurospider</a>
-        <Link to="tips" className="btn">{ this.props.strings.tipsTricks }</Link>
+        <Link to="tips/" className="btn">{ this.props.strings.tipsTricks }</Link>
       </div>
       <div className="picturegallery">
         <img src={require("./Gallery/BBF.jpg")} alt="" className="picture" />
