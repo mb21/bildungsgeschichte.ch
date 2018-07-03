@@ -1,11 +1,13 @@
 import ArrayFind from 'array.prototype.find'
 import React    from 'react'
-import ReactDOM from 'react-dom'
 import App      from './layouts/App'
+import { hydrate, render } from 'react-dom';
 
 ArrayFind.shim();
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+const rootElement = document.getElementById('root');
+if (rootElement.hasChildNodes()) {
+  hydrate(<App />, rootElement);
+} else {
+  render(<App />, rootElement);
+}
