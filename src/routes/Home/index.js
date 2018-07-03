@@ -31,6 +31,7 @@ class Home extends React.Component {
           )}
       </ul>
       <div className="search">
+        <noscript>{ this.props.strings.noscript }</noscript>
         <SearchField home={true} onSubmit={ this.handleSubmit } />
         <a className="poweredbyquote" href="https://www.eurospider.com">powered by eurospider</a>
         <Link to="tips/" className="btn">{ this.props.strings.tipsTricks }</Link>

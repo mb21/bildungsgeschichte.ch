@@ -9,6 +9,7 @@ export default {
   , publicationDate: 'Date de publication'
   , referencePeriod: 'Période de référence'
   , tipsTricks: 'Conseils & Astuces'
+  , noscript: "S'il vous plaît activer JavaScript pour rechercher."
   }
 , Footer: {
     about: 'Le projet'
