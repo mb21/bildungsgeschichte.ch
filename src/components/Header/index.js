@@ -12,7 +12,7 @@ class Header extends React.Component {
       <header className="Header">
         <Link to={ getBaseUrl() + '/' }>
           <div className="Applogo">
-            <img alt={ this.props.strings.appTitle } src={Logo} className="logopicture" />
+            <img alt="" src={Logo} className="logopicture" />
             <h1 className="logoname">{ this.props.strings.appTitle }</h1>
           </div>
         </Link>
