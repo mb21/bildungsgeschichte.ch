@@ -23,8 +23,7 @@ export const getCurrentLang     = () => window.location.pathname.substr(1, 2)
 export const langs              = ["de", "fr", "it", "en"]
 export const userLang           = () => {
   const l = (navigator.language || navigator.userLanguage).split("-")[0]
-  // TODO: replace `["de"]` with `langs`
-  return ["de"].indexOf(l) > -1 ? l : "de"
+  return langs.indexOf(l) > -1 ? l : "de"
 }
 export const getBaseUrl         = () => "/" + getCurrentLang()
 export const getSwitchToLangUrl = l => {
@@ -70,7 +69,7 @@ export const translate = function(key) {
         }
 
         document.title = languages[currentLang].Global.appTitle
-        document.body.lang = currentLang
+        document.documentElement.lang = currentLang
 
         const dicts   = languages[currentLang]
         const strings = {...dicts.Global, ...dicts[key]}
