@@ -45,7 +45,7 @@ export default {
 <p>Christina Rothen; Thomas Ruoss; Lucien Criblez (Université de Zürich)<br />
 Direction du projet</p>
 <h4 id="equipe-de-base-du-projet-développement-technique">Equipe de base du projet (développement technique) </h4>
-<p>Peter Schäuble (Eurospider Information Technology)<br />
+<p>Peter Schäuble (<a href="https://www.eurospider.com/en/">Eurospider Information Technology)</a><br />
 Développement du moteur de recherche</p>
 <p>Amanda Sauter &amp; Mauro Bieg (2324.ch)<br />
 Design et développement web frontal</p>

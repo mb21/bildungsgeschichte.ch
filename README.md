@@ -29,3 +29,8 @@ Otherwise:
 
 Then copy the `/build` folder to your web server.
 
+## Common errror
+
+Your PATH must contain the `node_modules/.bin` folder otherwise `react-snap` is not found.
+
+Make sure to set this for headless Chrome mode: `sysctl -w kernel.unprivileged_userns_clone=1`.

@@ -44,7 +44,7 @@ export default {
 <h4 id="projektkernteam-technische-entwicklungsphase">Projektkernteam (technische Entwicklungsphase)</h4>
 <p>Christina Rothen; Thomas Ruoss; Lucien Criblez (Universität Zürich)<br />
 Projektleitung
-<p>Peter Schäuble (Eurospider Information Technology)<br />
+<p>Peter Schäuble (<a href="https://www.eurospider.com/de/">Eurospider Information Technology)</a><br />
 Entwicklung der Suchmaschine</p>
 <p>Amanda Sauter &amp; Mauro Bieg (2324.ch)<br />
 Design und Entwicklung des Frontends</p>

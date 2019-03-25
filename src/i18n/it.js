@@ -43,7 +43,7 @@ export default {
     <h4 id="team-del-progetto-fase-di-sviluppo-tecnico">Team del progetto (fase di sviluppo tecnico)</h4>
     <p> Christina Rothen; Thomas Ruoss; Lucien Criblez  (Università di Zurigo)<br />
     Gestione del progetto</p>
-    <p>Peter Schäuble (Eurospider Information Technology)<br />
+    <p>Peter Schäuble (<a href="https://www.eurospider.com/en/">Eurospider Information Technology)</a><br />
     Sviluppo del motore di ricerca</p>
     <p>Amanda Sauter &amp; Mauro Bieg (2324.ch)<br />
     Design e sviluppo dell’interfaccia</p>

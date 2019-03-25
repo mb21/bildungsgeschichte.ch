@@ -44,7 +44,7 @@ export default {
 <h4 id="core-project-team-technical-development-phase">Core project team (technical development phase)</h4>
 <p>Christina Rothen; Thomas Ruoss; Lucien Criblez (University of Zurich)<br />
 Project lead</p>
-<p>Peter Schäuble (Eurospider Information Technology)<br />
+<p>Peter Schäuble (<a href="https://www.eurospider.com/en/">Eurospider Information Technology</a>)<br />
 Search engine development</p>
 <p>Amanda Sauter &amp; Mauro Bieg (2324.ch)<br />
 Frontend design and development</p>
