@@ -29,3 +29,9 @@ Otherwise:
 
 Then copy the `/build` folder to your web server.
 
+## Common errrors when building on Archlinux
+
+Your PATH must contain the `node_modules/.bin` folder, otherwise `react-snap` is not found.
+
+Make sure to set this for headless Chrome mode: `sysctl -w kernel.unprivileged_userns_clone=1`
+(otherwise react-snapp fails to start Chrome via puppeteer).
