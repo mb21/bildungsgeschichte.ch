@@ -17,7 +17,7 @@ export default {
     about: 'Il progetto'
   , projects: 'La continuità'
   , rights: 'Informazioni legali'
-  , copyright: '© 2018, Università di Zurigo'
+  , copyright: '© 2019, Università di Zurigo'
   }
 , Home: {
     quickInfo: "Portale sulla storia dell’educazione e della formazione"
@@ -43,7 +43,7 @@ export default {
     <h4>Gruppo disciplinare</h4>
     <p>Gruppo di lavoro storia dell’educazione (SSRE)</p>
     <h4 id="team-del-progetto-fase-di-sviluppo-tecnico">Team del progetto (fase di sviluppo tecnico)</h4>
-    <p> Christina Rothen; Thomas Ruoss; Lucien Criblez  (Università di Zurigo)<br />
+    <p> Stefan Kessler; Christina Rothen; Thomas Ruoss (-2018); Lucien Criblez  (Università di Zurigo)<br />
     Gestione del progetto</p>
     <p>Peter Schäuble (<a href="https://www.eurospider.com/en/">Eurospider Information Technology AG)</a><br />
     Sviluppo del motore di ricerca</p>
@@ -51,7 +51,7 @@ export default {
     Design e sviluppo dell’interfaccia</p>
     <p>Sergio Maffioletti (S3IT, Università di Zurigo)<br />
     Backend e repository a lungo termine (Coordinazione DaSCH)</p>
-    <p>Carmen Flury, Tamara Lehner-Loosli, Lars Heinzer (Università di Zurigo)<br />
+    <p>Carmen Flury (-2019), Tamara Lehner-Loosli, Lars Heinzer, Raffaela de Vries (Università di Zurigo)<br />
     Collaboratore e collaboratrici Bildung in Zahlen</p>
     <p>Ringraziamo le collaboratrici e i collaboratori del Dipartimento formazione e apprendimento della Scuola universitaria professionale della Svizzera italiana (SUPSI DFA), della Bibliothek für Bildungsgeschichtliche Forschung al Deutsches Institut für Internationale Pädagogische Forschung (BBF), dell’Archivio federale svizzero, dello archivio di stato del cantone Zurigo, della Zentralbibliothek Zürich, della ETH-Bibliothek e della Stiftung Pestalozzianum. Ringraziamo in particolare Flavian Imlig, Wolfgang Saalfeld, Lars Müller, Anja Giudici, Giorgia Masoni, Alexandre Fontaine, Karin Manz, Caroline Suter e Simon Allemann per il loro prezioso aiuto.</p>
     <h3>Contatti</h3>
@@ -61,7 +61,7 @@ export default {
 , Projects: {
     text: `
 <h2 id="le-collezioni">Le collezioni</h2>
-<p>(Stato 26.06.2018)</p>
+<p>(Stato 28.06.2019)</p>
 <h3 id="bildung-in-zahlen"><a href="http://www.bildungsgeschichte.uzh.ch">Bildung in Zahlen</a></h3>
 <p>Institut für Erziehungswissenschaft, Universität Zürich</p>
 <h3 id="erziehungsdirektoren"><a href="http://www.bildungsgeschichte.uzh.ch">Erziehungsdirektoren</a></h3>
@@ -71,7 +71,7 @@ export default {
 <h3 id="fondo-gianini-supsi"><a href="http://fondo-gianini.supsi.ch/">Fondo Gianini (SUPSI)</a></h3>
 <p>Dipartimento formazione e apprendimento della Scuola universitaria professionale della Svizzera italiana (SUPSI DFA)</p>
 <h3 id="scriptura-paedagogica-online"><a href="http://goobiweb.bbf.dipf.de/viewer/browse/">Scriptura Paedagogica Online</a></h3>
-<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin (Pädagogische Nachschlagewerke und Pädagogische Zeitschriften) (8.2018)</p>
+<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin (Pädagogische Nachschlagewerke und Pädagogische Zeitschriften)</p>
 <h3 id="stapfer-enquête-1799"><a href="https://opendata.swiss/de/dataset/stapfer-enquete-schule-in-der-schweiz-1799">Stapfer-Enquête 1799</a></h3>
 <p><a href="http://www.stapferenquete.ch/projekt">Descrizione del progetto</a></p>
 <p>Archivio federale svizzero</p>

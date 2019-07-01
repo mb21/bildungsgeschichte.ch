@@ -17,7 +17,7 @@ export default {
     about: 'The Project'
   , projects: 'The Inventory'
   , rights: 'Legal Notices'
-  , copyright: '© 2018, University of Zurich'
+  , copyright: '© 2019, University of Zurich'
   }
 , Home: {
     quickInfo: 'Knowledge portal on the history of schooling and education'
@@ -44,7 +44,7 @@ export default {
 <h4 id="subject-specific-experts">Subject specific experts</h4>
 <p>Working Group History of Education (SGBF)</p>
 <h4 id="core-project-team-technical-development-phase">Core project team (technical development phase)</h4>
-<p>Christina Rothen; Thomas Ruoss; Lucien Criblez (University of Zurich)<br />
+<p>Stefan Kessler; Christina Rothen; Thomas Ruoss (-2018); Lucien Criblez (University of Zurich)<br />
 Project lead</p>
 <p>Peter Schäuble (<a href="https://www.eurospider.com/en/">Eurospider Information Technology AG</a>)<br />
 Search engine development</p>
@@ -52,7 +52,7 @@ Search engine development</p>
 Frontend design and development</p>
 <p>Sergio Maffioletti (S3IT, University of Zurich)<br />
 Backend and long-term-repository (Coordination DaSCH)</p>
-<p>Carmen Flury, Tamara Lehner-Loosli, Lars Heinzer (University of Zurich)<br />
+<p>Carmen Flury (-2019), Tamara Lehner-Loosli, Lars Heinzer, Raffaela de Vries (University of Zurich)<br />
 Project team Bildung in Zahlen (Education by Numbers)</p>
 <p>We would like to thank the employees of: the Dipartimento formazione e apprendimento della Scuola universitaria professionale della Svizzera italiana (SUPSI DFA), the Bibliothek für Bildungsgeschichtliche Forschung des DIPF (BBF) (the DIPF library for research in the history of education), the Swiss federal archives, the Zurich state archives, the Zurich central library (ZB), the ETH library, and the Pestalozzianum foundation. Our thanks also go to Flavian Imlig, Wolfgang Saalfeld, Lars Müller, Anja Giudici, Giorgia Masoni, Alexandre Fontaine, Karin Manz, Caroline Suter and Simon Allemann for their valuable support.</p>
 <h3>Contact</h3>
@@ -62,7 +62,7 @@ Project team Bildung in Zahlen (Education by Numbers)</p>
 , Projects: {
     text: `
 <h2 id="collections">Collections</h2>
-<p>(Status 26.06.2018)</p>
+<p>(Status 28.06.2019)</p>
 <h3 id="bildung-in-zahlen"><a href="http://www.bildungsgeschichte.uzh.ch">Bildung in Zahlen</a></h3>
 <p>Institut für Erziehungswissenschaft, Universität Zürich</p>
 <h3 id="erziehungsdirektoren"><a href="http://www.bildungsgeschichte.uzh.ch">Erziehungsdirektoren</a></h3>
@@ -72,7 +72,7 @@ Project team Bildung in Zahlen (Education by Numbers)</p>
 <h3 id="fondo-gianini-supsi"><a href="http://fondo-gianini.supsi.ch/">Fondo Gianini (SUPSI)</a></h3>
 <p>Dipartimento formazione e apprendimento della Scuola universitaria professionale della Svizzera italiana (SUPSI DFA)</p>
 <h3 id="scriptura-paedagogica-online"><a href="http://goobiweb.bbf.dipf.de/viewer/browse/">Scriptura Paedagogica Online</a></h3>
-<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin (Pädagogische Nachschlagewerke und Pädagogische Zeitschriften) (8.2018)</p>
+<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin (Pädagogische Nachschlagewerke und Pädagogische Zeitschriften)</p>
 <h3 id="stapfer-enquête-1799"><a href="https://opendata.swiss/de/dataset/stapfer-enquete-schule-in-der-schweiz-1799">Stapfer-Enquête 1799</a></h3>
 <p><a href="http://www.stapferenquete.ch/projekt">Project description</a></p>
 <p>Swiss Federal Archives</p>
@@ -120,7 +120,7 @@ Project team Bildung in Zahlen (Education by Numbers)</p>
    <li>mediatype:Picture (searches according to type of media)</li>
    <li>language:German (searches according to language)</li>
    <li>project:Stapfer-Enquête (searches according to inventory/project)</li>
-   <li>educationssystem:"baccalaureate schools" (searches according to education system)</li>
+   <li>educationsystem:"baccalaureate schools" (searches according to education system)</li>
    <li>subject:Childhood (searches according to subject)</li>
  </ul>
  <h3>Search Operators</h3>
