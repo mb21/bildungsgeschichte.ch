@@ -17,7 +17,7 @@ export default {
     about: 'Das Projekt'
   , projects: 'Die Bestände'
   , rights: 'Rechtliche Hinweise'
-  , copyright: '© 2018, Universität Zürich'
+  , copyright: '© 2019, Universität Zürich'
   }
 , Home: {
     quickInfo: 'Wissensportal zur Geschichte von Bildung und Erziehung'
@@ -44,17 +44,17 @@ export default {
 <h4 id="disziplinäre-begleitgruppe">Disziplinäre Begleitgruppe</h4>
 <p>Arbeitsgruppe Historische Bildungsforschung (SGBF)</p>
 <h4 id="projektkernteam-technische-entwicklungsphase">Projektkernteam (technische Entwicklungsphase)</h4>
-<p>Christina Rothen; Thomas Ruoss; Lucien Criblez (Universität Zürich)<br />
-Projektleitung
-<p>Peter Schäuble (<a href="https://www.eurospider.com/de/">Eurospider Information Technology AG)</a><br />
+<p>Stefan Kessler; Christina Rothen; Thomas Ruoss (–2018); Lucien Criblez (Universität Zürich)<br />
+Projektleitung</p>
+<p>Peter Schäuble (<a href="https://www.eurospider.com/de/">Eurospider Information Technology AG</a>)<br />
 Entwicklung der Suchmaschine</p>
 <p>Amanda Sauter &amp; Mauro Bieg (2324.ch)<br />
 Design und Entwicklung des Frontends</p>
 <p>Sergio Maffioletti (S3IT, Universität Zürich)<br />
 Backend und Langzeit-Repository (Koordination DaSCH)</p>
-<p>Carmen Flury, Tamara Lehner-Loosli, Lars Heinzer (Universität Zürich)<br />
+<p>Carmen Flury (-2019), Tamara Lehner-Loosli, Lars Heinzer, Raffaela de Vries (Universität Zürich)<br />
 Projektmitarbeitende Bildung in Zahlen</p>
-<p>Bei den Mitarbeitenden des Dipartimento formazione e apprendimento della Scuola universitaria professionale della Svizzera italiana (SUPSI DFA), der Bibliothek für Bildungsgeschichtliche Forschung des DIPF (BBF), des Schweizerischen Bundesarchivs, des Staatsarchivs Zürich, der Zentralbibliothek Zürich, der ETH-Bibliothek und der Stiftung Pestalozzianum sowie namentlich bei Flavian Imlig, Wolfgang Saalfeld, Lars Müller, Anja Giudici, Giorgia Masoni, Alexandre Fontaine, Karin Manz, Caroline Suter und Simon Allemann bedanken wir uns für die vielseitige Unterstützung.</p>
+<p>Bei den Mitarbeitenden des Dipartimento formazione e apprendimento della Scuola universitaria professionale della Svizzera italiana (SUPSI DFA), der Bibliothek für Bildungsgeschichtliche Forschung des DIPF (BBF), des Schweizerischen Bundesarchivs, des Staatsarchivs Zürich, der Zentralbibliothek Zürich, der ETH-Bibliothek und der Stiftung Pestalozzianum sowie namentlich bei Flavian Imlig, Wolfgang Sahlfeld, Lars Müller, Anja Giudici, Giorgia Masoni, Alexandre Fontaine, Karin Manz, Caroline Suter und Simon Allemann bedanken wir uns für die vielseitige Unterstützung.</p>
 <h3>Kontakt</h3>
 <p><a href="mailto:redaktion@bildungsgeschichte.ch">redaktion@bildungsgeschichte.ch</a></p>
       `
@@ -62,7 +62,7 @@ Projektmitarbeitende Bildung in Zahlen</p>
 , Projects: {
     text: `
 <h2 id="die-bestände">Die Bestände</h2>
-<p>(Stand 26.06.2018)</p>
+<p>(Stand 28.06.2019)</p>
 <h3 id="bildung-in-zahlen"><a href="http://www.bildungsgeschichte.uzh.ch">Bildung in Zahlen</a></h3>
 <p>Institut für Erziehungswissenschaft, Universität Zürich</p>
 <h3 id="erziehungsdirektoren"><a href="http://www.bildungsgeschichte.uzh.ch">Erziehungsdirektoren</a></h3>
@@ -72,7 +72,7 @@ Projektmitarbeitende Bildung in Zahlen</p>
 <h3 id="fondo-gianini-supsi"><a href="http://fondo-gianini.supsi.ch/">Fondo Gianini (SUPSI)</a></h3>
 <p>Dipartimento formazione e apprendimento della Scuola universitaria professionale della Svizzera italiana (SUPSI DFA)</p>
 <h3 id="scriptura-paedagogica-online"><a href="http://goobiweb.bbf.dipf.de/viewer/browse/">Scriptura Paedagogica Online</a></h3>
-<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin (Pädagogische Nachschlagewerke und Pädagogische Zeitschriften) (8.2018)</p>
+<p>Bibliothek für Bildungsgeschichtliche Forschung Berlin (Pädagogische Nachschlagewerke und Pädagogische Zeitschriften)</p>
 <h3 id="stapfer-enquête-1799"><a href="https://opendata.swiss/de/dataset/stapfer-enquete-schule-in-der-schweiz-1799">Stapfer-Enquête 1799</a></h3>
 <p><a href="http://www.stapferenquete.ch/projekt">Projektbeschrieb</a></p>
 <p>Schweizerisches Bundesarchiv</p>
@@ -92,7 +92,7 @@ Projektmitarbeitende Bildung in Zahlen</p>
 <p>Bildungsgeschichte Schweiz hat fremde, das heisst nicht auf ihren Servern oder in ihrem Einflussbereich liegende Websites, die mit dieser Website über Verknüpfung allenfalls verbunden sind, nicht überprüft und übernimmt keine Verantwortung für die Inhalte oder die darauf angebotenen Dienstleistungen. Sollten die Inhalte verlinkter Seiten Anlass zur Beanstandung geben, bittet Bildungsgeschichte Schweiz um Mitteilung.</p>
 <h3>Nutzungsbedingungen</h3>
 <p>Bildungsgeschichte Schweiz besitzt keine Urheberrechte an den Inhalten des Wissensportals. Die Rechte liegen in der Regel bei den Bestandseignern.</p>
-<p>Die auf Bildungsgeschichte Schweiz veröffentlichten Dokumente stehen für nicht-kommerzielle Zwecke in Lehre und Forschung sowie für die private Nutzung frei zur Verfügung.</p>
+<p>Die auf Bildungsgeschichte Schweiz veröffentlichten Dokumente stehen für nicht-kommerzielle Zwecke in Lehre und Forschung sowie für die private Nutzung frei zur Verfügung.</p>
 <p>Das Veröffentlichen von Texten und Bildern in Print- und Online-Publikationen ist nur mit vorheriger Genehmigung der Rechteinhaber erlaubt. Die systematische Speicherung des ganzen oder von Teilen des elektronischen Angebots auf anderen Servern bedarf ebenfalls des schriftlichen Einverständnisses der Rechteinhaber.</p>
       `
   }
@@ -120,7 +120,7 @@ Projektmitarbeitende Bildung in Zahlen</p>
       <li>mediatype:Grafik (Suche nach Medientyp)</li>
       <li>language:Französisch (Suche nach Sprache)</li>
       <li>project:Stapfer-Enquête (Suche nach Bestand/Projekt)</li>
-      <li>educationssystem:Vorschule (Suche nach Bildungssystematik)</li>
+      <li>educationsystem:Vorschule (Suche nach Bildungssystematik)</li>
       <li>subject:Geschlecht (Suche nach Bezugsthema)</li>
     </ul>
     <h3>Suchoperatoren</h3>
